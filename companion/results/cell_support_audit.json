@@ -1,0 +1,12 @@
+{
+  "ray_count": 1603,
+  "nonzero_cells": 16438,
+  "polynomials": 35,
+  "ray_support_failures": [],
+  "cell_support_failures": [],
+  "certificate_weights_match_cell_sums": true,
+  "lineality_dimension_recorded": [
+    "0"
+  ],
+  "scope": "Exact max-normal support compatibility, not completeness or irredundancy of fan."
+}
