@@ -1,0 +1,19 @@
+{
+  "cell": 346,
+  "original_input_initials_recomputed": true,
+  "subsystem_consequences_verified": true,
+  "CM_and_AC_remainders_verified": true,
+  "ratio_resultant_verified": true,
+  "independent_specialized_sylvester_determinant": "50625",
+  "necessary_mass_polynomial": "(-a + 4*c)*(a + 4*c)*(a**2 + 4*c**2)**2*(a**4 + 4*a**3*c + 6*a**2*c**2 + 3*a*c**3 + c**4)*(a**8 - a**7*c + a**6*c**2 - a**4*c**4 + 8*a**3*c**5 + 3*a**2*c**6 - 3*a*c**7 + c**8)",
+  "nonvanishing_assumptions": [
+    "a",
+    "c",
+    "all ten distances"
+  ],
+  "derived_nonvanishing": [
+    "1+t^3 (from H and nonzero c,h)",
+    "1+t (divides 1+t^3)"
+  ],
+  "conclusion": "The original initial-generator system at cell 346 has no torus solution over Q(a,b,c); for fixed masses the nonzero resultant is a sufficient exclusion condition with a*c != 0."
+}

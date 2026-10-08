@@ -1,0 +1,6 @@
+{
+  "verified_records": 443,
+  "closure_sha256": "9df1d18200af58d71a3b6493ad550c9881427173632010e1f7f0a219ef657682",
+  "auditor_sha256": "f5678119d454ac4126101a13383f157e4f8f412b6af94437103786bfbb401762",
+  "scope": "Checks content provenance, positive proportionality and noncircular source types; polynomial-system symmetry itself is verified by symmetry_closure.py."
+}
