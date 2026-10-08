@@ -1,0 +1,27 @@
+{
+  "counts": {
+    "Laurent identities": 5258,
+    "Laurent/structural companion": 10965,
+    "Additional symmetry transport": 4,
+    "Elimination": 25,
+    "Modular stars": 16,
+    "Scaling ray": 1,
+    "Resultant specialization": 8,
+    "Single-term virial": 57,
+    "Split trees": 6
+  },
+  "excluded": 16340,
+  "residual": 98,
+  "total": 16438,
+  "directory_counts": {
+    "cert": 3589,
+    "companion": 10965,
+    "gcert": 457,
+    "sigma": 4,
+    "dcert": 1272,
+    "elim": 25,
+    "lemS": 16,
+    "ecert": 6,
+    "hcert": 6
+  }
+}

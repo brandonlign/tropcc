@@ -1,0 +1,506 @@
+\documentclass[11pt]{amsart}
+\usepackage[letterpaper,margin=1in]{geometry}
+\usepackage{amssymb,amsmath,booktabs,microtype}
+\usepackage{xurl}
+\usepackage{hyperref}
+\hypersetup{hidelinks}
+\urlstyle{tt}
+\emergencystretch=1.5em
+\raggedbottom
+\renewcommand{\bibliofont}{\small}
+\newcommand{\topic}[1]{\par\addvspace{1.4ex}\noindent\textbf{#1}\par\nobreak\smallskip\noindent}
+\newcommand{\Z}{\mathbb{Z}}
+\newtheorem{theorem}{Theorem}\newtheorem{lemma}[theorem]{Lemma}\newtheorem{proposition}[theorem]{Proposition}
+\theoremstyle{definition}\newtheorem{definition}[theorem]{Definition}\theoremstyle{remark}\newtheorem{remark}[theorem]{Remark}
+\newcommand{\Trop}{\operatorname{Trop}}\newcommand{\inn}{\operatorname{in}}\newcommand{\Q}{\mathbb{Q}}
+\title[Five-body central configurations for equal-pair masses]{Finiteness of planar five-body central configurations\\ for generic equal-pair masses}
+\author{Brandon Li}
+\date{}
+\begin{document}
+\begin{abstract}
+For a nonempty relative Zariski-open set of positive triples $(a,b,c)$, the planar five-body problem with masses $(a,a,b,b,c)$ has finitely many central configurations up to similarity. This family lies in the exceptional mass set of Albouy and Kaloshin. We prove the result by excluding cells of a tropical prevariety with exact Laurent identities, elimination, and modular computations that check entire cone stars. The remaining cells lie in an open half-space. Fixed-potential augmentation and the finiteness of the set of potential values then give the physical finiteness statement.
+\end{abstract}
+
+\maketitle
+% sec_intro
+\section{Introduction}
+A configuration of $n$ point masses $m_i>0$ at positions $x_i\in\mathbb{R}^2$ is a \emph{central configuration} (CC) if
+\[
+ \sum_{j\ne i} \frac{m_j(x_j-x_i)}{|x_j-x_i|^3}
+ = -\lambda(x_i-x_{\mathrm{cm}})\qquad\text{for all }i,
+\]
+where $x_{\mathrm{cm}}$ is the center of mass and $\lambda>0$.
+Smale's sixth problem asks whether, for every choice of positive masses, there are only finitely many CCs up to similarity.
+Hampton and Moeckel settled the case $n=4$~\cite{HM}. Albouy and Kaloshin~\cite{AK} settled $n=5$ for all masses outside an explicit
+codimension-two subvariety $\mathcal{S}$ of the mass space. In Section~8.6, equation~(32) of~\cite{AK} is precisely $m_1=m_2$ and $m_3=m_4$. Their Theorem~6, proof part~(ii), adds this locus and its relabelings to the exceptional set. Parts~(i), (iii), and (iv) add other codimension-two mass loci; the equal-pair locus is not the entire positive-mass exceptional set. Our theorem concerns a relative-generic subset of this one family.
+Jensen and Leykin~\cite{JL} gave a tropical proof for generic masses in the ambient mass space. Their equal-pair valuation experiments do not yield pointed recession cones. Equal valuations allow unequal masses with the same leading order; here we impose the exact identities $m_1=m_2$ and $m_3=m_4$ in the coefficient field. The additional algebraic exclusions, rather than the support fan alone, remove the obstruction to pointedness. Moczurad and Zgliczy\'nski~\cite{MZ} certify counts at selected exceptional mass choices, including choices in the same equal-pair family, and discuss persistence in small neighborhoods. Their investigation of this family concerns specific mass choices rather than a relative Zariski-open subset of the family.
+
+The all-equal planar case was already classified by Moczurad and Zgliczy\'nski~\cite{MZ19}; Lee and Santoprete~\cite{LS} had earlier classified isolated equal-mass solutions. These results concern a special point of the mass family. Results on kite configurations~\cite{HK}, symmetric stacked configurations~\cite{GL}, and trapezoidal configurations with two equal mass pairs~\cite{SKS} impose geometric restrictions. The mass equalities in the present theorem do not impose reflection symmetry or a prescribed shape on the central configurations.
+
+Hampton and Jensen~\cite{HJ} previously used polyhedral initial-ideal computations and elimination to prove spatial five-body finiteness with explicit mass exceptions. Chang and Chen~\cite{CC1,CC2} develop symbolic diagram and mass-relation methods toward planar six-body finiteness; their combined preprint~\cite{CCpre}, Section~10.6, retains a five-body equal-pair mass relation up to relabeling. We do not rule out that diagram by mass inequalities: we exclude distance-initial systems within the exact equal-pair family, allowing the fixed-potential identities as additional equations. Recent exact replication and tropical certificate screening by Santib\'a\~nez-Leal~\cite{SL} concern ambient-generic results and valuation experiments. These works are precedents for the algebraic and verification techniques used here. Wang and Zhao~\cite[Theorem~8.1 and Corollary~8.2]{WZ} obtain perturbative finiteness for non-scalar balanced configurations under a central-configuration finiteness hypothesis; their five-body corollary uses masses outside the Albouy--Kaloshin exceptional set.
+
+Our contribution is a relative-generic finiteness result within the equal-pair exceptional mass family, allowing all real planar configurations without a geometric symmetry assumption. The argument extends the known ambient-generic results into this family. The result gives neither all-mass finiteness nor exact counts.
+
+\begin{theorem}\label{thm:main}
+There is a nonempty Zariski-open subset $\mathcal O\subset\{(a,b,c)\in\mathbb{R}_{>0}^3\}$ such that for every $(a,b,c)\in\mathcal O$, the planar
+five-body problem with masses $(a,a,b,b,c)$ has finitely many central configurations up to similarity. Here similarity identifies translations, rotations, reflections, and positive changes of scale; body labels are retained.
+\end{theorem}
+The exceptional mass polynomials are not completely extracted; the specialization lemma below proves that their union is proper. In particular, the modular test point $(3,7,1)$ is not asserted to lie in $\mathcal O$.
+
+% sec_setup
+\section{Equations and tropical set-up}\label{sec:setup}
+We use coordinates $r_{ij}$, $1\le i<j\le5$, in lexicographic pair order, with $r_{ji}=r_{ij}$ and $r_{ii}=0$. Normalize the multiplier to $\lambda=M=\sum_i m_i$ and set $S_{ik}=r_{ik}^{-3}-1$ for $i\ne k$. The ordered distance equations are
+\begin{equation}\label{eq:AC}
+ A_{ij}=\sum_{k\ne i}m_k S_{ik}
+       (r_{jk}^2-r_{ik}^2-r_{ij}^2)=0,
+       \qquad i\ne j.
+\end{equation}
+There are $5\cdot4=20$ equations, because the first index specifies the force vector being tested. We also use the ten redundant symmetric equations $A_{ij}+A_{ji}=0$, $i<j$, and the five determinants
+\begin{equation}\label{eq:CM}
+ \det\begin{pmatrix}
+ 0&1&1&1&1\\
+ 1&0&r_{ij}^2&r_{ik}^2&r_{i\ell}^2\\
+ 1&r_{ij}^2&0&r_{jk}^2&r_{j\ell}^2\\
+ 1&r_{ik}^2&r_{jk}^2&0&r_{k\ell}^2\\
+ 1&r_{i\ell}^2&r_{j\ell}^2&r_{k\ell}^2&0
+ \end{pmatrix}=0,
+ \quad i<j<k<\ell.
+\end{equation}
+Multiply $A_{ij}$ by $\prod_{k\ne i}r_{ik}^3$, and each symmetric equation by the product of the corresponding two denominators. Removing common distance monomials and nonzero rational scalars gives the stored system $F=(f_1,\ldots,f_{35})$: the twenty ordered equations, the ten symmetric equations, then the determinants. Within each block the indices are lexicographic. These removals are units on the distance torus; no mass factor is removed. The formula comparison in \path{companion/checkers/verify_equations.py} reconstructs all thirty-five polynomials from \eqref{eq:AC}--\eqref{eq:CM} and matches \path{data/sys.json} exactly up to those units. The formulas agree with~\cite[Section~2.2]{JL}. The symmetric sums are redundant algebraically, but their support hypersurfaces can strengthen the tropical prevariety.
+
+\begin{lemma}[Physical meaning of the distance equations]\label{lem:physical}
+For positive masses and a collision-free real planar configuration, its positive mutual distances satisfy the twenty equations \eqref{eq:AC} if and only if the configuration is central with multiplier $M$. This includes collinear configurations. Every such distance tuple satisfies \eqref{eq:CM} and hence $F$.
+\end{lemma}
+\begin{proof}
+Put $q_i=\sum_{k\ne i}m_k S_{ik}(x_k-x_i)$. The cosine identity gives
+$A_{ij}=-2q_i\cdot(x_j-x_i)$. Since $q_i$ belongs to the real span of the vectors $x_j-x_i$, vanishing of all $A_{ij}$ forces $q_i=0$. This argument holds when that span has dimension one. Moreover,
+\[
+ q_i=\sum_{k\ne i}\frac{m_k(x_k-x_i)}{r_{ik}^3}
+       +M(x_i-x_{\mathrm{cm}}).
+\]
+Thus $q_i=0$ is exactly the normalized central-configuration equation, and the converse follows from the same identity. The determinants vanish for four points in the plane.
+\end{proof}
+These are scalar-product equations, not area-factor equations that vanish identically on a line. We require the equivalence only on real Euclidean distance tuples; arbitrary complex zeros of $F$ need not represent physical configurations.
+
+Each ordered or symmetric polynomial is homogeneous of degree one in the masses; the determinants do not involve masses. We may therefore divide all masses by $c>0$ and take $c=1$. Write $k_0=\Q(a,b)$, $K=\overline{k_0}$, with trivial valuation, and $X=V(F)\subset(K^*)^{10}$.
+
+\topic{Fixed potential.} The normalization above is $\lambda=M$, where $M=\sum_i m_i$. If $I=\sum_i m_i|x_i-x_{\mathrm{cm}}|^2$, then $MI=\sum_{i<j}m_im_jr_{ij}^2$, and the virial identity is $U=MI$, with $U=\sum_{i<j}m_im_j/r_{ij}$. Define
+\[
+ \begin{aligned}
+ G&=\sum_{i<j}m_im_jr_{ij}^2-U,\\
+ H&=\sum_{i<j}m_im_j\prod_{(k,l)\ne(i,j)}r_{kl}
+       -U\prod_{k<l}r_{kl}.
+ \end{aligned}
+\]
+Here $U$ is an additional torus coordinate. For a fixed $u\ne0$, write $G_u,H_u$ for $U=u$ and put $X'_u=V(F,G_u,H_u)$. Every real normalized central configuration of potential $u$ lies in $X'_u$. Lemma~\ref{lem:U} reduces the physical problem to finitely many such nonzero potential values. Our final pointedness argument applies to these augmented varieties, and does not assert finiteness of the full complex variety $V(F)$.
+
+\topic{Prevariety fan.} Let $\Sigma$ be the polyhedral fan computed by \texttt{gfan \_tropicalintersection} from the supports
+of $f_1,\dots,f_{35}$ (max convention; file \path{data/fan.out}). It has f-vector $(1,1603,6110,6525,2200)$, 16{,}438 nonzero cones and
+trivial lineality space. We have $\Trop(X)\subseteq\bigcap_i \Trop(V(f_i))=|\Sigma|$.
+
+% sec_lemmas
+\section{Geometric and specialization lemmas}\label{sec:lemmas}
+Throughout, $\inn_w f$ is the max-initial form: the sum of the terms of $f$ whose exponents maximize $\langle w,\cdot\rangle$.
+$\Trop(X)$ is the set of $w\in\mathbb{R}^{10}$ such that $\inn_w I(X)$ contains no monomial.
+By the Fundamental Theorem~\cite[Thm.~3.2.3]{MS} and the Structure Theorem~\cite[Thm.~3.3.5]{MS}, this is the tropicalization over the trivially valued algebraically closed field $K$. We use the max convention throughout; the min convention in~\cite{MS} transfers by $w\mapsto-w$.
+For a cone $C=\operatorname{cone}(v_1,\dots,v_s)\in\Sigma$ we put $w_C=\sum_j v_j$.
+
+\begin{lemma}[Cell constancy]\label{lem:A}
+Let $f$ be a polynomial whose initial form is used, with cone rays extended by a zero $U$-coordinate when necessary, and let
+\[
+ \mathcal A_f=\bigcap_j\arg\max_{m\in\operatorname{supp} f}\langle v_j,m\rangle.
+\]
+If
+$\mathcal A_f\ne\varnothing$, then $\inn_w f=\inn_{w_C} f$ for every $w$ in the relative interior of $C$.
+\end{lemma}
+\begin{proof}
+Write $w=\sum\lambda_jv_j$ with all $\lambda_j>0$. For $m_0\in\mathcal A_f$ and $m\in\operatorname{supp}f$, each
+$\langle v_j,m_0-m\rangle\ge0$. Hence $\langle w,m_0-m\rangle\ge 0$, with equality iff every term vanishes, i.e.\ iff $m\in\mathcal A_f$.
+\end{proof}
+The verifier checks the hypothesis of Lemma~\ref{lem:A} for every generator used in every certificate.
+
+\begin{lemma}[Exclusion by a unit certificate]\label{lem:B}
+Let $\Phi$ be a polynomial system in $n$ torus coordinates $r$, over $\Q[a,b]$, and let $C\subset\mathbb R^n$ be a rational pointed cone. Choose $\mathcal P\subseteq\Phi$ satisfying Lemma~\ref{lem:A} on $C$. Let $\mathcal H$ be the common homogeneity space of the forms $\inn_{w_C}f$, $f\in\mathcal P$, and let $J$ be coordinates such that $\mathcal H\to\Q^J$ is surjective. Denote by $\bar f$ the form obtained by fixing $r_j=1$ for $j\in J$. Suppose
+\[
+ \sum_{f\in\mathcal P}T_f\bar f+
+ T_0\bigl(1-\zeta\prod_{j\notin J}r_j\bigr)=\ell,
+ \qquad 0\ne\ell\in\Q[a,b],
+\]
+where all cofactors are in $\Q[a,b][(r_j)_{j\notin J},\zeta]$. Then $\operatorname{relint}(C)\cap\Trop(V(\Phi))=\varnothing$ over $K$. The identity remains an exclusion after specializing masses whenever $\ell\ne0$ and the used initial supports are preserved.
+\end{lemma}
+\begin{proof}
+If the initial ideal at $w\in\operatorname{relint}(C)$ contains no monomial, its subideal generated by the chosen initial forms is proper in $K[r^{\pm1}]$. The Nullstellensatz gives a common torus zero $z$. Integer vectors in $\mathcal H$ act on these zeros by coordinatewise torus scaling. The surjective projection onto $J$ supplies an integer matrix with nonzero determinant on those coordinates. Over the algebraically closed field $K$, the corresponding isogeny of tori is surjective, so a zero can be moved to the slice $r_j=1$, $j\in J$. Substituting this zero and $\zeta=(\prod_{j\notin J}r_j)^{-1}$ into the identity gives $0=\ell$, a contradiction. The same identity proves the specialized assertion.
+\end{proof}
+We use the lemma both in ten distance coordinates and in eleven coordinates $(r,U)$, extending each distance weight by a zero $U$-coordinate. The auxiliary variable $\zeta$ is distinct from the fixed potential value $u$.
+
+\begin{lemma}[Exclusion from one modular specialization]\label{lem:S}
+Let $\Phi=F\cup\{G,H\}$ as defined in Section~\ref{sec:setup}, with $U$ the extra coordinate of weight $0$. For a cone $D\in\Sigma$ let
+$\Phi_D$ be the set of $f\in\Phi$ that satisfy Lemma~\ref{lem:A} on $D$ and whose form $\inn_{w_D}f$ does not involve $U$.
+Let $C\in\Sigma$ with $F\subseteq\Phi_C$. Suppose that there are a prime $p$ and $(a_0,b_0)\in\mathbb{Z}^2$ such that
+\begin{enumerate}
+\item every coefficient (an element of $\mathbb{Z}[a,b]$) of every form $\inn_{w_C}f$, $f\in\Phi_C$, is nonzero modulo $p$ at $(a_0,b_0)$, and
+\item for every cone $D\in\Sigma$ having $C$ as a face (including $D=C$), the forms $\inn_{w_D}f$, $f\in\Phi_C\cap\Phi_D$, specialized at $(a_0,b_0)$
+and reduced modulo $p$, have no common zero in the torus over $\overline{\mathbb{F}}_p$.
+\end{enumerate}
+Then the forms $\inn_{w_C}f$, $f\in\Phi_C$, have no common zero in the torus over $K=\overline{\mathbb{Q}(a,b)}$. Consequently, the cone is excluded for every augmented fixed-potential variety $X'_u$, $u\ne0$, at generic masses.
+\end{lemma}
+\begin{proof}
+Write $h\in\mathbb{Z}[a,b]$ as $h=\sum\gamma_{ij}(a-a_0)^i(b-b_0)^j$ with $\gamma_{ij}\in\mathbb{Z}$, and put
+$\nu(h)=\min\{v_p(\gamma_{ij})+i\sqrt2+j\sqrt3\}$. Since $1,\sqrt2,\sqrt3$ are linearly independent over $\mathbb{Q}$, the minimum is attained by exactly one
+term, and this term is multiplicative. So $\nu$ extends to a valuation of $\mathbb{Q}(a,b)$. Its residue field is $\mathbb{F}_p$, and
+$\nu(h)=0$ iff $h(a_0,b_0)\not\equiv0\pmod p$. Extend $\nu$ to $K$ (residue field $\overline{\mathbb{F}}_p$, value group $\Gamma\subseteq\mathbb{R}$ divisible), and fix a splitting
+$\lambda\mapsto t^\lambda$ of $\nu$ on $\Gamma$~\cite[Lemma~2.1.15]{MS}.
+
+Suppose that $z$ is a common zero in the torus over $K$, and write $z=t^{-w}y$ with $w\in\Gamma^{11}$, $\nu(y_i)=0$. Because the forms do not involve $U$,
+we may replace the $U$-entry of $w$ by $0$. Let $g=\inn_{w_C}f=\sum c_m r^m$ with $f\in\Phi_C$. By (i), every $\nu(c_m)=0$. Multiplying $g(z)=0$ by
+$t^{M}$, with $M=\max_m\langle w,m\rangle$, and reducing gives $\overline{\inn_w g}(\bar y)=0$. Here the bar denotes specialization at $(a_0,b_0)$ modulo $p$.
+For $\varepsilon>0$ small enough (uniformly for the finitely many $f$), $\inn_w\inn_{w_C}f=\inn_{w'}f$ with $w'=w_C+\varepsilon w$.
+If $w'\notin|\Sigma|$, then some $f\in F\subseteq\Phi_C$ has a monomial $\inn_{w'}f$. Its specialized coefficient is nonzero, so it cannot vanish at $\bar y$, a contradiction.
+Otherwise $w'\in\operatorname{relint}D$ for some $D\in\Sigma$. Since $\varepsilon$ is small and $w_C\in\operatorname{relint}C$, $C$ is a face of $D$.
+For $f\in\Phi_C\cap\Phi_D$, Lemma~\ref{lem:A} gives $\inn_{w'}f=\inn_{w_D}f$. Thus $\bar y$ is a common torus zero of the
+specialized forms $\inn_{w_D}f$, $f\in\Phi_C\cap\Phi_D$, contradicting (ii). The final statement follows from the unit ideal over $k_0$ and Lemma~\ref{lem:spread} below; its generators do not involve $U$, so the mass condition is uniform in $u$.
+\end{proof}
+The valuation and initial-degeneration principles underlying Lemma~\ref{lem:S} are standard; see~\cite[Theorem~5.6]{Gub} and~\cite{MS}. The lemma packages them into a sufficient criterion for this computation. Lemma~\ref{lem:S} turns a modular computation into a proof. It needs \emph{no} computation over $\mathbb{Q}(a,b)$, only that no escape to the
+boundary of the cell is possible modulo $p$, which (ii) states as exclusion of every cone of the star of $C$. Condition (ii) is checked by modular cofactor identities and exact elimination replays, orchestrated by \path{verifier/verify_lemS.py}. The target-cell replays and their exceptional branches are described in Section~\ref{sec:cert}.
+
+\begin{remark}[Why the star condition is needed]
+Emptiness of a specialized fiber can coexist with generic torus solutions even when every coefficient survives. For example, $f_1=x+y$ and $f_2=x+(1+a)y+1$ have no common zero at $a=0$, but have the torus solution $(x,y)=(1/a,-1/a)$ for $a\ne0$. For the neighboring weight $(1,1)$, the specialized max-initial forms both become $x+y$, which has torus zeros. The additional star check detects this escape to infinity.
+\end{remark}
+
+\begin{lemma}[Residual half-space implies finiteness]\label{lem:C}\label{prop:assemble}
+Let $W\subset(K^*)^n$ be an algebraic variety over a trivially valued algebraically closed field of characteristic zero. Suppose $\Trop(W)$ is contained in a rational pointed fan. Exclude relative interiors of a collection of its nonzero cones, and let $\mathcal R$ be the rays of all remaining cones. If $\eta\in\Z^n$ satisfies $\langle\eta,v\rangle>0$ for every $v\in\mathcal R$, then $W$ is finite.
+\end{lemma}
+\begin{proof}
+Every nonzero point of a remaining cone is a nonnegative combination of its rays, so $\langle\eta,w\rangle>0$ for all nonzero $w\in\Trop(W)$. For an irreducible component $Y$ and the monomial map $r\mapsto r^\eta$, the tropicalization of the image closure is the linear image $\langle\eta,\Trop(Y)\rangle$~\cite[Corollary~3.2.13]{MS}. A closed irreducible subset of the one-dimensional torus is a point or the whole torus. Its tropicalization is respectively $\{0\}$ or $\mathbb R$, and the latter cannot be contained in $[0,\infty)$. Thus $\langle\eta,w\rangle=0$ on $\Trop(Y)$, forcing $\Trop(Y)=\{0\}$. The dimension theorem~\cite[Theorem~3.3.5]{MS} gives $\dim Y=0$. There are finitely many components.
+\end{proof}
+
+\begin{lemma}[Finitely many physical potential values]\label{lem:U}
+Fix positive real masses. Among collision-free real planar central configurations normalized by $\lambda=M$, the potential takes only finitely many values, all positive. Every such configuration satisfies $U=MI=\sum_{i<j}m_im_jr_{ij}^2$.
+\end{lemma}
+\begin{proof}
+Take the algebraic lift in position and nonzero distance coordinates, with center of mass zero, equations $r_{ij}^2=(x_i-x_j)\cdot(x_i-x_j)$, and denominator-cleared normalized force equations. The real configurations use the positive distance branches. On the smooth locus of each complex irreducible component of this lift, differentiating the distance relations gives
+\[
+ dU=-\frac M2\,dI,\qquad
+ U=MI,
+\]
+where the second identity follows by dotting the force equations with $m_i x_i$ and summing. Consequently $d(U+\frac M2 I)=0$ and $U+\frac M2 I=\frac32U$. A regular function with zero differential on an irreducible variety in characteristic zero is constant; use the dense smooth locus to conclude. The lift has finitely many irreducible components, hence finitely many potential values on its real positive-distance points. Finally $MI=\sum_{i<j}m_im_jr_{ij}^2$ for center of mass zero, and positivity gives $U>0$. This is the physical version of~\cite[Lemma~2]{AK}.
+\end{proof}
+
+\begin{lemma}[The scaling ray and other negative directions]\label{lem:scal}
+Fix positive real masses, let $u\in\mathbb{C}^*$ and let $G_u=\sum_{i<k}m_im_kr_{ik}^2-u$. Put $X_u=V(F\cup\{G_u\})\subseteq(\mathbb{C}^*)^{10}$.
+Every real planar central configuration lies in some $X_{u_j}$ with $u_j\neq0$. If $w\in\mathbb{R}^{10}$ has all coordinates negative,
+then $\operatorname{in}_w G_u=-u$ is a unit, so $w\notin\Trop(X_u)$. In particular the scaling ray $\mathbb{R}_{>0}(-1,\dots,-1)$ (cell~79) is excluded
+for every $X_u$. More generally, a cone on whose relative interior $\operatorname{in}_wG_u$ is a single fixed monomial is excluded (96 cells before overlap with other exclusions).
+\end{lemma}
+\begin{proof}
+Real configurations have $U>0$, so $u_j=U\neq0$. The monomials of $G_u$ have $w$-weights $2w_{ik}<0$ and the constant has weight $0$.
+\end{proof}
+
+\begin{remark}[Certificates for the augmented system]\label{rem:FG}
+Some certificates are for $Y=V(F\cup\{G\})\subseteq(\mathbb{C}^*)^{11}$, where $G=\sum_{i<k}m_im_kr_{ik}^2-U$ and $U$ is an extra torus coordinate. For $u\neq0$ the map $r\mapsto(r,u)$ embeds $X_u$ into $Y$. With the trivial valuation, the $U$-coordinate has valuation $0$, so $\Trop(X_u)\times\{0\}\subseteq\Trop(Y)$. Hence if a unit certificate (Lemma~\ref{lem:B}, with Lemma~\ref{lem:A} applied in $\mathbb{R}^{11}$) shows that $(w,0)\notin\Trop(Y)$ for all $w\in\operatorname{relint}C$, then $\operatorname{relint}C\cap\Trop(X_u)=\emptyset$ for every $u\neq0$. The cone's rays are extended by a $0$ in the $U$-coordinate, and constancy of the initial forms is checked on the cone $C\times\{0\}$. Such certificates are just as good as certificates for $X$ in the proof below, since the proof only uses the $X_{u_j}$.
+\end{remark}
+
+\begin{remark}[Certificates using the definition of $U$]\label{rem:FGH}
+Let
+\[
+ \begin{aligned}
+ H&=\sum_{i<k}m_im_k\prod_{(j,l)\neq(i,k)}r_{jl}-U\prod_{j<l}r_{jl}\\
+  &=\biggl(\sum_{i<k}\frac{m_im_k}{r_{ik}}-U\biggr)\prod_{j<l}r_{jl},
+ \end{aligned}
+\]
+which is the denominator-cleared potential identity (file \path{verifier/verify.py}, \texttt{augmentH}; index $36$). For $u\ne0$ put $X'_u=V(F\cup\{G_u,H_u\})\subseteq X_u$. A real planar central configuration with potential $U=u$ satisfies $H_u=0$, because $U=\sum m_im_k/r_{ik}$ is its potential. So it lies in $X'_u$, and the real central configurations lie in $\bigcup_j X'_{u_j}$. As in Remark~\ref{rem:FG}, $\Trop(X'_u)\times\{0\}\subseteq\Trop(Y')$ with $Y'=V(F\cup\{G,H\})\subseteq(\mathbb{C}^*)^{11}$, and $\Trop(X'_u)\subseteq\Trop(X_u)$. Hence certificates for $F$, for $F\cup\{G\}$ and for $F\cup\{G,H\}$ (header \texttt{system F+G+H}, directory \path{exact/hcert/}) all exclude their cones from $\Trop(X'_u)$, and the proof of the theorem goes through with $X'_{u_j}$ in place of $X_{u_j}$.
+\end{remark}
+
+\begin{lemma}[Spreading exclusions to mass parameters]\label{lem:spread}
+Consider finitely many initial systems over $\Q[a,b]$, each with no torus zero over $\overline{\Q(a,b)}$. There is a nonzero polynomial $q\in\Q[a,b]$ such that all these systems have no torus zero after any characteristic-zero specialization with $q(a,b)\ne0$. A single such $q$ can also preserve every support of a specified finite polynomial system.
+\end{lemma}
+\begin{proof}
+For each initial system, add $1-\zeta\prod r_j$ and apply the Nullstellensatz. The resulting ideal is the unit ideal over $\overline{\Q(a,b)}$, hence over $\Q(a,b)$ by faithful scalar extension. Clear the finitely many mass denominators in a unit identity to obtain a nonzero polynomial $q_i\in\Q[a,b]$. Multiplying these $q_i$ and all nonzero coefficient polynomials of the specified system gives $q$. For $q\ne0$, the identities specialize and no coefficient vanishes, so the supports are unchanged. Equivalently, the parameter set where a torus zero exists is constructible and misses the generic point; its closure is proper. The identities give a direct proof of that properness.
+\end{proof}
+For augmented systems, the explicit certificates have coefficients in $\Q(a,b)$ and treat $U$ as a torus variable. The structural and modular exclusions use $U$-free forms. Apply the lemma to these systems (including $U$ as a coordinate when needed). The resulting mass polynomial is independent of $u$, so one open set works for every fixed $u\ne0$. The coefficients of $G_u,H_u$ also preserve their distance supports for positive masses and $u\ne0$.
+
+\begin{proof}[Proof of Theorem~\ref{thm:main} from the certificates]
+First work at generic masses over $\overline{\Q(a,b)}$. The identities, elimination replays, and Lemma~\ref{lem:S} exclude the certified cones for every $X'_u$, $u\ne0$. In particular, the forms used by Lemma~\ref{lem:S} do not involve $U$, so this exclusion is independent of the chosen nonzero potential value.
+
+Lemma~\ref{lem:spread}, the denominators of the explicit identities, and the coefficient polynomials of $F$ give a proper closed mass set $B\subset\mathbb A^2_\Q$. Outside $B$, the support fan and all exclusions remain valid, uniformly in $u\ne0$.
+
+The coverage and half-space checks in Section~\ref{sec:comp} therefore make every $X'_u$ finite by Lemma~\ref{lem:C}. Lemma~\ref{lem:U} supplies finitely many positive potential values for the real central configurations. Their distance tuples lie in a finite union of these varieties. A labeled real distance tuple determines a configuration up to Euclidean isometry, including reflection, and $\lambda=M$ fixes scale. Finally, a nonzero polynomial cannot vanish on the entire positive quadrant, so $\mathbb R_{>0}^2\setminus B$ is nonempty. Pull it back under $(a,b,c)\mapsto(a/c,b/c)$; after clearing powers of $c$, this is the required relative Zariski-open set $\mathcal O$.
+
+\end{proof}
+\begin{remark}\label{rem:explicitU}
+Explicit Laurent certificates record mass denominators. For exclusions established only by structural elimination or Lemma~\ref{lem:S}, the additional mass polynomials in Lemma~\ref{lem:spread} are proved to exist but are not all extracted. Thus the modular point $(3,7)$ verifies the specified stars, not every exclusion at that named mass pair.
+\end{remark}
+
+% sec_computation
+\section{Computation}\label{sec:comp}
+\topic{Symmetry.} The swaps $(1\,2)$ and $(3\,4)$ preserve the polynomial system and the fan, giving 4,781 orbits under this order-four group of the 16,438 nonzero cones. The relabeling $\sigma=(1\,3)(2\,4)$, together with $a\leftrightarrow b$, supplies an additional symmetry. The generated group has order eight. The scripts \path{symcheck.py} and \path{symcheck2.py} reconstruct and check the polynomial and fan actions; transported identities are checked again against their target cones.
+
+\topic{Search and exact certificates.} Initial systems were first screened at mass values modulo $32003$. Such a unit test was used to choose subsets and computation orders. The direct characteristic-zero pipeline, using \textsc{Singular}~\cite{Sing}, then computed unit ideals over $\Q(a,b)$, extracted lift cofactors, and checked the resulting identities independently. Dividing initial forms by their common monomial, using a power of the product of the torus coordinates as the right-hand side, and halving exponents of variables that occur only evenly substantially reduced several computations. Some cases instead used split trees or structural elimination replays. Section~\ref{sec:cert} describes the formats and their mathematical justification.
+
+\topic{The final three exclusions.} Direct lifting remained expensive for representatives 81, 121, and 206. For each representative the final argument uses Lemma~\ref{lem:S} at $(a,b)=(3,7)$, $p=32003$. Each star has 60 cones, including its target. All 37 initial forms of $F\cup\{G,H\}$ are constant, $U$-free, and retain every coefficient at this specialization. The neighboring-cone checks use modular cofactor identities, except for cluster cones 2174, 2885, and 3494, which use a short exact elimination replay. The target-cell checks use the linear even-variable reduction and the bivariate leaf argument described below. The mass-swapping symmetry also excludes their partners 316, 50, and 220.
+
+\topic{Coverage and residual.} Table~\ref{tab:coverage} gives disjoint counts, assigning each cone to the first applicable certificate in the checked ledger. Symmetry images under the pair swaps are included in their source rows; the additional transport row records the remaining four mass-exchange images. The 96 single-term virial cells overlap earlier rows, leaving 57 in that row and the separate scaling ray.
+\begin{table}[ht]
+\centering
+\caption{Disjoint accounting of the nonzero support-fan cones.}\label{tab:coverage}
+\begin{tabular}{lr}
+\toprule
+Certificate or residual class&Cones\\
+\midrule
+Companion Laurent and structural identities&10,965\\
+Other Laurent identities&5,258\\
+Resultant specialization&8\\
+Split trees&6\\
+Structural elimination&25\\
+Modular star criterion&16\\
+Additional mass-exchange transport&4\\
+Single-term virial initial forms&57\\
+Scaling ray&1\\
+\midrule
+Excluded total&16,340\\
+Residual&98\\
+\midrule
+Total&16,438\\
+\bottomrule
+\end{tabular}
+\end{table}
+The residual has 77 distinct primitive rays. Every one has positive pairing with
+\begin{equation}\label{eq:eta}
+ \eta=(-23,1,1,51,1,1,51,24,13,13).
+\end{equation}
+The checker reconstructs the residual from the certificate coverage and verifies these pairings in integer arithmetic.
+
+\topic{Interpretation and controls.} A weight $w$ records possible distance growth orders $r_{ij}\sim t^{-w_{ij}}$. The residual cones are candidate asymptotic distance patterns consistent with the supports and not removed by our certificates. They are not classified as actual degenerations of real configurations. Their common half-space is sufficient: no positive-dimensional tropical variety can be supported there. the elementary example following Lemma~\ref{lem:S} supplies an exact negative control for the modular argument: its target specialization is empty, but the adjacent cell has torus zeros. The checker in \path{verifier/review_checks.py} confirms both statements and also confirms why a test only over $\mathbb F_p$ is insufficient.
+
+% sec_certificates
+\section{Certificates and independent verification}\label{sec:cert}
+\topic{Format.} \texttt{data/exact/cert/$k$.cof} contains:
+\begin{itemize}
+\item the cone index $k$;
+\item the subset $\mathcal P$ (0-based indices into \path{data/sys.json});
+\item the ring variables (kept coordinates and the auxiliary variable, named \texttt{u} in the files);
+\item for each generator in order, the terms of its cofactor $T_g$ as \begin{quote}
+\small\texttt{numerator|denominator|exponent vector},
+\end{quote}
+where numerator and denominator are in $\mathbb{Z}[a,b]$.
+\end{itemize}
+\topic{Verifier.} \path{verifier/verify.py} uses python-flint's FLINT exact multivariate arithmetic~\cite{flint} and does not use \textsc{Singular} or sympy. It
+\begin{enumerate}
+\item parses \path{fan.out} and \path{sys.json} itself;
+\item checks the hypothesis of Lemma~\ref{lem:A} for every $g\in\mathcal P$;
+\item recomputes $\mathcal H$ and checks surjectivity onto the fixed coordinates $J$;
+\item clears the denominators into $L=\operatorname{lcm}$ and verifies the following identity in exact arithmetic:
+\[
+ \sum (L T_g)\bar g+(LT_0)\bigl(1-\zeta\prod r\bigr)=L.
+\]
+\end{enumerate}
+The following variants are also accepted.
+\begin{itemize}
+\item \texttt{system F+G}: the certificate refers to the augmented system $F\cup\{G\}$ in the 11 coordinates $(r_{ij},U)$, where $G=\sum_{i<j}m_im_jr_{ij}^2-U$ has index 35. $U$ has weight $0$ because its fixed value is a nonzero constant with trivial valuation (Remark~\ref{rem:FG}). The verifier builds $G$ itself from the masses $(a,a,b,b,1)$. This is used for the scaling cone 79, for the 96 cones on which $\inn_w G$ is a single term (a one-term certificate $T_G=1/\mathrm{coeff}$), and for representatives whose unit test over $\Q(a,b)$ timed out without $G$.
+\item \texttt{divmono}: each $\bar g$ is divided by the greatest common monomial of its terms before the identity is checked. Monomials are units of the Laurent ring, so this does not change the torus zero set.
+\item \texttt{even} $v_1,\dots$: each listed variable occurs in every $\bar g$ only with even exponents, and the verifier halves those exponents, i.e.\ writes $\bar g(r)=\bar g'(r_{v}^2)$. The map $r_v\mapsto s_v=r_v^2$ is a surjective endomorphism of the torus. A Laurent identity $\sum T_i'\bar g_i'=s^N$ therefore pulls back to $\sum T_i'(r^2)\,\bar g_i=r^{2N}$, which is again a unit certificate for $\langle\bar g\rangle$.
+\item \texttt{rhs prod\^{}N}: no Rabinowitsch variable. The identity checked is $\sum_g (LT_g)\bar g = L\cdot\big(\prod_{j\in Q} r_j\big)^N$ in $\Q[a,b][r_Q]$, where $Q$ is the set of kept coordinates. On the torus the right-hand side vanishes nowhere (for $L(a,b)\neq0$), so $V(\inn_w F)\cap T=\emptyset$, exactly as in the Rabinowitsch form.
+\end{itemize}
+Denominators in the certificates must lie in $\Z[a,b]$ (the verifier checks this). The identity therefore holds in $\Q[a,b][r,\zeta]$ after multiplying by $L$. It specializes to every mass pair with $L(a,b)\neq0$, which is a nonempty Zariski-open (generic) condition, and the finitely many polynomials $L$ are recorded in the verifier output.
+
+\begin{samepage}
+\topic{Split-tree certificates.} For a few cones the single lift identity is too large to compute, although the ideal splits naturally. Typically one initial form factors as $g_1g_2$ modulo a binomial of the system. For cone 378, for example,
+\[
+ a^2+ab\,r_{13}^2+ab\,r_{24}^2+b^2r_{34}^2
+ \equiv(a+b\,r_{13}^2)(a+b\,r_{24}^2)
+\]
+modulo $r_{34}^2-r_{13}^2r_{24}^2$.
+\end{samepage}
+A split-tree certificate (\path{exact/split/<k>.split}, checker \path{verifier/verify_split.py}) is a finite binary tree. A node $v$ with path ideal $\mathfrak J_v=\mathfrak J+(p_1,\dots,p_s)$ (the base Rabinowitsch ideal $\mathfrak J$ of \path{verify.py} plus the polynomials chosen at the ancestors) is either a \emph{leaf}, carrying cofactors with $\sum_iT_ik_i=L_v\in\Q[a,b]\setminus\{0\}$, or a \emph{split} node with polynomials $q_1,q_2$ and cofactors with $\sum_iT_ik_i=L_vq_1q_2$. Both children $\mathfrak J_v+(q_1)$ and $\mathfrak J_v+(q_2)$ must be certified. Over $\Q(a,b)$, if $q_1q_2\in\mathfrak J_v$ and $1=x_1+c_1q_1=x_2+c_2q_2$ with $x_j\in\mathfrak J_v$, then
+\[
+ 1=(x_1+c_1q_1)(x_2+c_2q_2)\in\mathfrak J_v.
+\] By induction $1\in\mathfrak J$, which is exactly the statement certified by a \path{.cof} file. The support and torus-slice checks are shared with \path{verify.py} (they are run on the header). All identities are checked exactly with \texttt{python-flint}, and the generic condition is that no $L_v$ vanishes.
+\topic{Elimination certificates (cones 334, 1767 and 49, 2171, 2174, 2175).} These cones are certified by an explicit elimination that the checkers \path{verifier/verify_334.py} and \path{verifier/verify_49.py} replay in exact arithmetic (python-flint, no \textsc{Singular}). In both groups six initial forms $g_1,\dots,g_6$ in five variables suffice, and they are identical for all cones of the group. The checkers recompute them from the fan through the support and torus-slice checks of \path{verify.py}. The argument is pointwise. Let $z$ be a common zero of the $g_i$ on the torus over the algebraic closure $K$ of the coefficient field, with the masses algebraically independent. Each derived polynomial below vanishes at $z$, and every branch ends in a contradiction.
+\begin{enumerate}
+\item Three of the forms are affine-linear in three squares; by Cramer's rule $D\,r^2-N_r$ is an explicit combination of them, and $D$ is a monomial. Replacing squares and squaring away the linear unknowns gives division-free polynomials $E_1,\dots,E_{14}$ in two variables $(x,y)$.
+\item Polynomials are divided only by factors known to be nonzero at $z$: monomials, the masses, and the factors $X_q,Y_q,S_q$ of $N_r$ (nonzero because $D r^2=N_r$ and $r\neq0$). The remaining factors $F_i$ (the Cramer determinant of the second linear system) are treated as separate branches $F_i(z)=0$.
+\item Resultants lie in the ideal of their arguments, so they vanish at $z$. The final non-vanishing $\operatorname{Res}_y(R',R'')\neq0$ is certified by specialization: at one rational parameter point modulo a prime the relevant degrees are preserved and the specialized gcd is $1$. As in \path{verify_res.py}, this proves that the resultant is a nonzero element of $\Z[a,b]$. The common factors that are left are explicit. For 49 it is the irreducible cubic $\phi=(ay+1)^3-b^2(ay^3+1)$. Over the field $\mathbb L=\Q(a,b)[y]/(\phi)$ the checker exhibits $\psi=-B/A$ (from the first subresultant of $X_q,Y_q$). It verifies $X_q(\psi)=0$ and $(x-\psi)^2\mid H_{10},H_{13}$ in $\mathbb L[x]$, and $\deg\gcd_{\mathbb L}(H_{10},H_{13})\le2$. The degree bound holds because the principal subresultant coefficient is nonzero at a specialization, and Gauss's lemma applies since $\phi$ is primitive. So $x(z)=\psi$ and $X_q(z)=0$, a contradiction.
+\end{enumerate}
+For 334 all six forms are homogeneous of degree one in $(a,b)$; divide them by $b\ne0$ and replace $a$ by $a/b$. This is an equivalence on the mass torus and justifies $b=1$, rather than a specialization to a possibly exceptional fiber. The diagonal $r_{23}=r_{24}$ is closed by a resultant chain in $\Z[a]$. Off the diagonal, the symmetry $(r_{13}\,r_{14})(r_{23}\,r_{24})$ of $g_1,\dots,g_5$ (not of $g_6$, which enters only through norms $E\cdot\sigma E$) reduces to $s=r_{23}+r_{24}$, $p=r_{23}r_{24}$. The only common zero left, $p=3/(a^2-1)$, $s=-3a/(a^2-1)$, has $X_qY_qS_q=0$. The six exact input polynomials and the division-free definitions of the derived polynomials are given in Appendix~\ref{app:elim}. The irreducibility and specialization steps are justified there as well.
+\topic{Dehomogenised computations.} For some cones every generator of the chosen subset is homogeneous in the masses $(a,b)$ (the mass torus acts on the subsystem). The cofactors are then computed over $\Q(a)$ at $b=1$ and re-homogenised: if
+\[
+ \sum_i T_i(a)\,\bar g_i(a,1)=1
+\]
+and $\bar g_i$ is homogeneous of degree $d_i$ in $(a,b)$, then
+\[
+ \sum_i b^{-d_i}T_i(a/b)\,\bar g_i(a,b)=1
+\] (\path{exact/ecert/rehom.py}). The resulting file is an ordinary certificate over $\Q(a,b)$ and is checked by \path{verify.py} without any reference to this construction.
+\topic{Independent support-fan verification.} The gfan~\cite{gfan} computations with versions 0.7 and 0.6.2 agree on primitive rays and cones. This is a cross-version replication, not an independent implementation. The version-0.7 build record lists portability changes to memory-resource headers, integer overloads, and execution policies; the original patch diff is not retained. Our separate check does not rely on those changes.
+
+First, for each of the 3,120 inclusion-maximal stored cones and each of the 35 supports, the intersection of maximizing faces on its rays contains at least two terms. Lemma~\ref{lem:A} proves that the entire cone belongs to every tropical hypersurface. For the converse, cddlib with GMP~\cite{cdd} converts each cone's explicit generating rays to an exact rational half-space description. A separate rational-linear solver asks whether a weight outside the union of these cones lies in all thirty-five tropical hypersurfaces. For each support $\mathcal A_i$ it introduces a maximum $t_i$ and imposes
+\[
+ t_i\ge\langle w,m\rangle\quad(m\in\mathcal A_i),\qquad
+ \#\{m\in\mathcal A_i:t_i=\langle w,m\rangle\}\ge2.
+\]
+Membership in the stored cones is negated using their exact half-spaces. Homogeneity allows $\max_j|w_j|=1$. The verified order-eight symmetry action has three coordinate orbits represented by $r_{12},r_{13},r_{15}$, so it suffices to check their positive and negative normalized cases. For $r_{12}$ fixed, its stabilizer can place the largest of the four cross-pair coordinates at $r_{13}$; for $r_{13}$ fixed it can arrange $w_{12}\ge w_{34}$; for $r_{15}$ fixed it can arrange $w_{13}\ge w_{14}$. These inequalities reduce search without removing any symmetry orbit.
+
+All six cases returned \texttt{UNSAT} in Z3's exact rational arithmetic~\cite{Z3}, independently of gfan's intersection computation. Since a nonempty difference of these rational polyhedral sets has a rational point, this proves containment for all real weights. Thus the stored fan has exactly the prevariety support required by Lemma~\ref{lem:S}. The audit code, input hashes, checked base query, and per-case results are distributed with the verifier. As a control, it proves completeness for the three-ray tropical line of $1+x+y$ and finds a witness when one ray is removed. A timeout or \texttt{UNKNOWN} is never accepted as a completeness result.
+
+\topic{Modular specialization certificates.} For each of the three targets $k=81,121,206$, \path{verify_lemS.py} computes the star directly from \path{fan.out}. It requires all 37 initial forms to be constant and $U$-free, verifies that every coefficient remains nonzero modulo $32003$ at $(3,7)$, and checks every cone of the star. This explicitly enforces the intersection $\Phi_C\cap\Phi_D$ required by Lemma~\ref{lem:S}. Most neighboring cones have ordinary modular cofactor identities in \path{lemS/cert/}. The cluster cones 2174, 2885, and 3494 instead use \path{cluster_mod.py}: it reconstructs six forms, derives three square relations by Cramer's rule, replays division-free elimination to fourteen bivariate polynomials, and checks that their common roots force a zero torus coordinate. The transported cluster forms are reconstructed at their actual cones.
+
+\topic{Target-cell replays.} The checker \path{verify_lemS_rep.py} reconstructs all target forms, validates its homogeneous torus slice, and replaces the three even variables by their squares. One form eliminates a squared coordinate; a second gives
+\[
+ c_{23}(x,y)s_{23}+c_{24}(x,y)s_{24}=0.
+\]
+Outside $c_{23}=c_{24}=0$, put $s_{23}=\lambda P$, $s_{24}=\lambda Q$, with $\lambda,P,Q$ and the eliminated squared coordinate nonzero. Homogeneous equations then supply lambda-free forms. Three of them determine $S^2,T^2,W^2$; two cube equations make $1/T$ and $1/W$ affine in $1/S$. Squaring the first relation determines $1/S$ rationally. Every denominator is checked as nonzero on the branch; for cell 206 an additional bivariate leaf proves the required denominator cannot vanish. Substitution into further initial forms gives four bivariate polynomials. Their common zero set is checked exactly outside the explicitly excluded factors. Cases where a cube-relation coefficient vanishes are handled separately by four further leaves, so division does not discard a branch.
+
+The exceptional branch $c_{23}=c_{24}=0$ gives $(x^3,y^3)=(1,1)$ for 81 and 121, and $(1,-1/13)$ for 206. Since $32003\equiv2\pmod3$, a cube root of the nonzero constant lies in $\mathbb F_{32003}$, and all roots lie in its quadratic extension. Each branch has nine root pairs. The generator \path{b0_generate.py} found small cofactor identities for these cases. The independent checker \path{b0_verify.py} reconstructs their input polynomials and verifies all nine identities in $\mathbb F_{32003}[t]/(t^2+t+1)$. The branch check is mandatory; a partial replay cannot certify a cell.
+
+\topic{Bivariate leaf check.} The helper \path{leafchk.py} computes a nonzero resultant in $x$ of two of the input polynomials. Every common affine root has a $y$-coordinate among the roots of this resultant. For each irreducible factor, the checker forms the corresponding finite extension field, specializes all input polynomials, and computes their univariate gcd in $x$. It removes only factors belonging to the explicitly excluded polynomials. A constant gcd in every fiber proves the absence of a permitted common root. Extra variables are rejected. This is finite-field exact arithmetic and does not call \textsc{Singular}.
+
+\topic{Coverage and pointedness.} The complete replay reconstructs the cones excluded by actual identities and elimination branches, then checks \eqref{eq:eta} on every residual ray. The companion replay checks its Laurent, structural, and symmetry proofs against the 10,965-cell union. Neither search output nor cached success markers establishes an exclusion.
+
+% sec_repro
+\section{Code and certificate data}\label{sec:repro}
+The source, verifier, and certificate archive are versioned at
+\begin{center}\url{https://github.com/brandonlign/tropcc/tree/v1.1.0}\end{center}
+The repository is private; access must be granted for independent replay. The versioned certificate archive is attached to release \texttt{v1.0.0}; its SHA-256 digest and all extracted file hashes are recorded in \path{certificate_manifest.json}. No archival DOI has been assigned. The repository README gives installation and full replay commands; \path{CERTIFICATES.md} maps claims to checks. Software setup, hardware details, and execution logs belong to that reproduction package.
+
+\appendix
+\section{Explicit elimination inputs and derived polynomials}\label{app:elim}
+We give finite algebraic definitions rather than expanding the large resultant coefficients. Together with the branch prescriptions below, these determine every polynomial used in the two elimination replays. The six input forms are also stored in \path{data/elimination_forms.json}, and the independent reconstruction checks their agreement with $F$ and the stated cones.
+
+\topic{Cone group 334.} Put $(A,B,T,x,y)=(r_{13},r_{14},r_{34},r_{23},r_{24})$ and take $b=1$ after the homogeneous mass reduction above. The six forms, in their checked order, are
+\[
+\begin{aligned} g_{1}&=- A^{3} B^{3} a -  A^{3}\\ &{}+ A B^{3} a \left(x - 1\right) \left(x + 1\right) -  A B^{2}\\ &{}+ A T^{2} -  2 B^{3}\end{aligned}
+\]
+\[
+\begin{aligned} g_{2}&=- A^{3} B^{3} a + A^{3} B a \left(y - 1\right) \left(y + 1\right)\\ &{}-  2 A^{3} -  A^{2} B\\ &{}-  B^{3} + B T^{2}\end{aligned}
+\]
+\[
+\begin{aligned} g_{3}&=A^{2} y^{3} + B^{2} x^{3}\\ &{}-  2 a x^{3} y^{3} - x^{3} y^{2} - x^{3} - x^{2} y^{3} - y^{3}\end{aligned}
+\]
+\[
+\begin{aligned} g_{4}&=A^{2} a x y^{3} + T^{2} x\\ &{}-  a x^{3} y^{3} - a x y^{3} - x^{3} - x y^{2} - 2 y^{3}\end{aligned}
+\]
+\[
+\begin{aligned} g_{5}&=B^{2} a x^{3} y + T^{2} y\\ &{}-  a x^{3} y^{3} - a x^{3} y - 2 x^{3} - x^{2} y - y^{3}\end{aligned}
+\]
+\[
+\begin{aligned} g_{6}&=- 2 B^{3} T^{3} a -  B^{3} T^{2} y\\ &{}+ B^{3} y \left(x - y\right) \left(x + y\right) -  B^{2} T^{3} a y\\ &{}-  T^{3} a y \left(y - 1\right) \left(y + 1\right)\end{aligned}
+\]
+The same forms occur at cone 1767.
+
+\topic{Cone group 49.} Put $(A,B,T,x,y)=(r_{14},r_{15},r_{45},r_{34},r_{35})$. Here both parameters remain. The six forms are
+\[
+\begin{aligned} g_{1}&=- A^{3} B^{3} b -  A^{3}\\ &{}+ A B^{3} b \left(x - 1\right) \left(x + 1\right) -  A B^{2}\\ &{}+ A T^{2} -  2 B^{3} b\end{aligned}
+\]
+\[
+\begin{aligned} g_{2}&=- A^{3} B^{3} b + A^{3} B b \left(y - 1\right) \left(y + 1\right)\\ &{}-  2 A^{3} -  A^{2} B b\\ &{}-  B^{3} b + B T^{2} b\end{aligned}
+\]
+\[
+\begin{aligned} g_{3}&=A^{2} b y^{3} + B^{2} x^{3}\\ &{}-  2 a x^{3} y^{3} - b x^{2} y^{3} - b y^{3} - x^{3} y^{2} - x^{3}\end{aligned}
+\]
+\[
+\begin{aligned} g_{4}&=A^{2} a x y^{3} + T^{2} x\\ &{}-  a x^{3} y^{3} - a x y^{3} - 2 b y^{3} - x^{3} - x y^{2}\end{aligned}
+\]
+\[
+\begin{aligned} g_{5}&=B^{2} a x^{3} y + T^{2} b y\\ &{}-  a x^{3} y^{3} - a x^{3} y - b x^{2} y - b y^{3} - 2 x^{3}\end{aligned}
+\]
+\[
+\begin{aligned} g_{6}&=- 2 B^{3} T^{3} b -  B^{3} T^{2} b y\\ &{}+ B^{3} b y \left(x - y\right) \left(x + y\right) -  B^{2} T^{3} a y\\ &{}-  T^{3} a y \left(y - 1\right) \left(y + 1\right)\end{aligned}
+\]
+They agree at cones 49, 2171, 2174, and 2175.
+
+\topic{A common division-free construction.} In either group write
+\[
+ (g_3,g_4,g_5)^{\mathsf T}=
+ \mathsf M(A^2,B^2,T^2)^{\mathsf T}-v,
+\]
+where $\mathsf M,v$ are obtained by coefficient extraction from the displayed forms. Put $d=\det\mathsf M$ and let $n_A,n_B,n_T$ be its Cramer numerators. Thus
+\[
+ d(A^2,B^2,T^2)^{\mathsf T}-(n_A,n_B,n_T)^{\mathsf T}
+       =\operatorname{adj}(\mathsf M)(g_3,g_4,g_5)^{\mathsf T}.
+\]
+The determinant $d$ is a nonzero monomial, so is a unit on the generic mass and distance torus. For a polynomial $P$, define $\rho(P)$ termwise: replace each $A^{2i+e}B^{2j+f}T^{2k+h}$ by
+$n_A^i n_B^j n_T^k A^eB^fT^h d^{N-i-j-k}$, where $e,f,h\in\{0,1\}$ and $N$ is the largest $i+j+k$ among its terms. On a common zero, $\rho(P)=d^NP$.
+Let $\operatorname{prim}$ remove integer content and the greatest common monomial, including mass monomials. These factors are nonzero on the generic torus. Set $R_i=\operatorname{prim}\rho(g_i)$ for $i=1,2,6$ and extract coefficients by
+\[
+ \begin{aligned}
+ R_1&=A(a_1B+b_1)+c_1B,\\
+ R_2&=B(a_2A+c_2)+b_2A,\\
+ R_6&=T(a_6B+b_6)+c_6B.
+ \end{aligned}
+\]
+All lowercase coefficients here are polynomials in $x,y$ over the mass ring, not mass parameters. Applying $\operatorname{prim}\rho$ to
+$c_1^2B^2-A^2(a_1B+b_1)^2$,
+$b_2^2A^2-B^2(a_2A+c_2)^2$, and
+$c_6^2B^2-T^2(a_6B+b_6)^2$ gives, respectively,
+\[
+ \alpha B+\beta,\qquad \gamma A+\delta,\qquad \alpha_6B+\beta_6.
+\]
+Next, take $\operatorname{Res}_A(R_1,R_2)$ and $\operatorname{Res}_B(R_1,R_2)$, remove their maximal factors $B$ and $A$, respectively, then apply $\operatorname{prim}\rho$. The results are $\mu B+\nu$ and $\mu_2A+\nu_2$. Define the following polynomials, applying $\operatorname{prim}$ to each right-hand side:
+\begin{align*}
+ E_1&=\beta^2d-\alpha^2n_B,& E_2&=\delta^2d-\gamma^2n_A,\\
+ E_3&=\alpha_6\beta-\alpha\beta_6,\\
+ E_4&=a_1\beta\delta-b_1\alpha\delta-c_1\gamma\beta,\\
+ E_5&=a_2\delta\beta-c_2\beta\gamma-b_2\delta\alpha,\\
+ E_6&=(b_1\delta)^2d-(c_1\gamma-a_1\delta)^2n_B,\\
+ E_7&=(b_2\delta)^2d-(c_2\gamma-a_2\delta)^2n_B,\\
+ E_8&=(c_1\beta)^2d-(b_1\alpha-a_1\beta)^2n_A,\\
+ E_9&=(c_2\beta)^2d-(b_2\alpha-a_2\beta)^2n_A,\\
+ E_{10}&=\nu^2d-\mu^2n_B,&E_{11}&=\mu\beta-\alpha\nu,\\
+ E_{12}&=\mu\beta_6-\alpha_6\nu,&E_{13}&=\nu_2^2d-\mu_2^2n_A,\\
+ E_{14}&=\mu_2\delta-\gamma\nu_2.
+\end{align*}
+Each $E_i$ vanishes at a common torus zero; these constructions use multiplication, squaring, resultants, and division only by known units.
+
+\topic{Factors and branches for group 49.} The factors which must be nonzero are
+\[
+\begin{aligned}
+ X_q&=a^2x^4y^4+abx^3y^4+abxy^4+b^2y^4-x^4,\\
+ Y_q&=a^2x^4y^4+ax^4y^3+ax^4y-b^2y^4+x^4,\\
+ S_q&=a^2x^4y^4-b^2y^4-bx^3y-bxy^3-x^4.
+\end{aligned}
+\]
+Indeed $n_A=-2x^3X_q$, $n_B=-2by^3Y_q$, $n_T=2ax^3y^3S_q$. Remove their maximal powers from $E_i$ to obtain $\widetilde H_i$. On the leaf also remove powers, while the quotient is nonconstant, of
+\[
+ ax^2y^2\pm by^2\pm x^2\quad\text{(all four sign choices)},
+ \qquad ax^3y^3+by^3+x^3,
+\]
+to obtain $H_i$; the zero loci of these five factors are checked separately using $\widetilde H_1,\widetilde H_2,\widetilde H_3$. Thus no division discards a branch. The leaf uses $\operatorname{Res}_x(H_{10},H_{13})$ and $\operatorname{Res}_x(H_{10},H_{12})$ as described in Section~\ref{sec:cert}.
+
+\topic{Irreducibility and the specialization bound.} Let
+$\phi=(ay+1)^3-b^2(ay^3+1)$. Over $\Q(a,y)$ the quotient
+$(ay+1)^3/(ay^3+1)$ is not a square: its order at $y=-1/a$ is three, since the denominator there is $1-a^{-2}\ne0$. Hence $\phi$, viewed as a quadratic in $b$, is irreducible over $\Q(a,y)$. Its two coefficients are coprime in $\Q(a)[y]$, so Gauss's lemma gives irreducibility in $\Q(a)[y,b]$. As a polynomial in $y$ it is primitive over $\Q(a)[b]$ (its $y$-coefficient is the unit $3a$ there), giving irreducibility over $\Q(a,b)$. Therefore $\mathbb L=\Q(a,b)[y]/(\phi)$ is a field.
+
+A principal subresultant coefficient is polynomial in the coefficients of its two arguments. If it vanished in $\mathbb L$, its polynomial numerator would be divisible by $\phi$ after clearing coefficient denominators. Primitivity in $\Z[a,b][y]$ follows because the coefficients $3a$ and $1-b^2$ are coprime over $\Q[a,b]$; Gauss's lemma makes the divisibility valid before specializing. It would then vanish at every modular root of the specialized $\phi$ for which denominators survive. The checked specialization preserves the $x$-degrees and has gcd degree two, so its degree-two principal subresultant coefficient is nonzero. This proves the generic bound $\deg\gcd_{\mathbb L}(H_{10},H_{13})\le2$. Together with the verified double root $x=\psi$, it identifies the gcd and yields $X_q=0$, a contradiction.
+
+\topic{Branches for group 334.} The diagonal $x=y$ first gives $B=\pm A$. The negative sign forces $T=0$; the positive sign is excluded by the resultant chain stated in Section~\ref{sec:cert}. Off the diagonal let $s=x+y$, $\pi=xy$ and use the swap $(A\ B)(x\ y)$. For $i\in\{1,2,4,5,6,7,8,9,10,11,13,14\}$ take the symmetric part $E_i+\sigma E_i$ and the divided antisymmetric part $(E_i-\sigma E_i)/(x-y)$; for $i=3,12$ take the norm $E_i\sigma E_i$. Rewrite each exactly in $(s,\pi)$, verifying back-substitution. The branch factors are
+\[
+ a\pi^2-s^2+2\pi,\quad a\pi^2+s^2-2\pi,\quad
+ a\pi^3+s^3-3s\pi,\quad a^2\pi^4-s^4+4s^2\pi.
+\]
+The checker treats their zero loci separately. On the leaf it uses the symmetric and antisymmetric parts of $E_{10}$ and the norm of $E_{12}$. The only residual candidate has $(a^2-1)\pi=3$ and $(a^2-1)s=-3a$, where $n_An_Bn_T=0$. Since $a$ is transcendental in this generic calculation, $a^2-1\ne0$; its vanishing belongs to the mass exceptions when spreading the result. This completes the generic elimination.
+
+\bibliographystyle{plain}
+\begin{thebibliography}{99}
+\bibitem{AK} A.~Albouy, V.~Kaloshin, Finiteness of central configurations of five bodies in the plane, Ann.\ of Math.\ 176 (2012) 535--588.
+\bibitem{HM} M.~Hampton, R.~Moeckel, Finiteness of relative equilibria of the four-body problem, Invent.\ Math.\ 163 (2006) 289--312.
+\bibitem{JL} A.~Jensen, A.~Leykin, Smale's 6th problem for generic masses, arXiv:2301.02305v2, 2025.
+\bibitem{MS} D.~Maclagan, B.~Sturmfels, Introduction to Tropical Geometry, AMS GSM 161, 2015.
+\bibitem{MZ} M.~Moczurad, P.~Zgliczy\'nski, Central Configurations with Unequal Masses: Finiteness in Several Exceptional Cases of Five Bodies, arXiv:2601.01165v2, 2026.
+\bibitem{WZ} Y.~Wang, L.~Zhao, On the Finiteness Issue of Four-Body Balanced Configurations in the Plane, Regular and Chaotic Dynamics 31 (2026), 560--590; arXiv:2412.17639.
+\bibitem{MZ19} M.~Moczurad, P.~Zgliczy\'nski, Central configurations in planar $n$-body problem with equal masses for $n=5,6,7$, Celestial Mech.\ Dynam.\ Astronom.\ 131 (2019), 46; arXiv:1812.07279.
+\bibitem{LS} T.-L.~Lee, M.~Santoprete, Central configurations of the five-body problem with equal masses, arXiv:0906.0148, 2009.
+\bibitem{HJ} M.~Hampton, A.~Jensen, Finiteness of spatial central configurations in the five-body problem, Celestial Mech.\ Dynam.\ Astronom.\ 109 (2011), 321--332.
+\bibitem{HK} M.~Hampton, Finiteness of kite relative equilibria in the five-vortex and five-body problems, Qual.\ Theory Dyn.\ Syst.\ 8 (2009), 349--356; doi:10.1007/s12346-010-0016-7.
+\bibitem{GL} M.~Gidea, J.~Llibre, Symmetric planar central configurations of five bodies: Euler plus two, preprint, 2009, \url{https://web.ma.utexas.edu/mp_arc/c/09/09-198.pdf}.
+\bibitem{SKS} M.~Shoaib, A.~R.~Kashif, A.~Sivasankaran, Planar central configurations of symmetric five-body problems with two pairs of equal masses, Advances in Astronomy (2016), Article 9897681.
+\bibitem{CC1} K.-M.~Chang, K.-C.~Chen, Toward finiteness of central configurations for the planar six-body problem by symbolic computations. (I) Determine diagrams and orders, J.\ Symbolic Comput.\ 123 (2024), 102277.
+\bibitem{CC2} K.-M.~Chang, K.-C.~Chen, Toward finiteness of central configurations for the planar six-body problem by symbolic computations. (II) Determine mass relations, SIAM J.\ Appl.\ Dyn.\ Syst.\ 24 (2025), 2369--2404.
+\bibitem{CCpre} K.-M.~Chang, K.-C.~Chen, Toward finiteness of central configurations for the planar six-body problem by symbolic computations, arXiv:2303.02853v1, 2023.
+\bibitem{SL} F.~Santib\'a\~nez-Leal, Exact replication and screening of tropical finiteness certificates for central configurations, preprint v0.10, September 18, 2026, doi:10.5281/zenodo.22835093.
+\bibitem{Gub} W.~Gubler, A guide to tropicalizations, arXiv:1108.6126v2, 2012.
+\bibitem{gfan} A.~Jensen, Gfan, a software system for Gr\"obner fans and tropical varieties.
+\bibitem{Sing} W.~Decker, G.-M.~Greuel, G.~Pfister, H.~Sch\"onemann, \textsc{Singular} 4.2.1.
+\bibitem{flint} The FLINT team, FLINT: Fast Library for Number Theory; python-flint bindings.
+\bibitem{cdd} K.~Fukuda and contributors, cddlib, double-description library with GMP rational arithmetic, \url{https://github.com/cddlib/cddlib}.
+\bibitem{Z3} The Z3 contributors, Z3 theorem prover, version 5.1.0, \url{https://github.com/Z3Prover/z3}.
+\end{thebibliography}
+\end{document}
