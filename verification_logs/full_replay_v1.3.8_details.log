@@ -1,0 +1,268 @@
+TropCC fresh v1.3.8 replay — October 8, 2026 (America/New_York)
+Verified commit: eb2645f5946a2a938c6bd1ca0e0338196096fa02
+Command: set -o pipefail; /usr/bin/time -l ../tropcc/.venv/bin/python -u scripts/verify_all.py 2>&1 | tee verification_logs/full_replay_v1.3.8.log
+Exit status: 0
+Elapsed time: 1696.70 seconds (28 minutes 16.70 seconds)
+Maximum resident set size: 3799564288 bytes
+Machine: Apple M3, 16 GB RAM, macOS 26.6
+Environment: Python 3.14.6, python-flint 0.9.0, SymPy 1.14.0, Z3 5.1.0, Yices 2.7.0, cddlib 0.94n
+All 114 source inventory hashes and 1865 certificate hashes matched before and after the replay.
+This is an internal replay on the existing machine; no independent human replication or proof-assistant formalization is claimed.
+The complete stage logs follow. Historical filenames and JSON keys retain cell terminology.
+
+===== review_controls =====
+PASS elimination inputs 334
+PASS elimination inputs 49
+PASS homogeneous mass reduction (a,b) -> (a/b,1)
+PASS odd-order nonsquare and primitive phi: irreducibility by Gauss
+PASS negative control: empty special fiber but generic solutions; star detects escape
+PASS finite-field negative control: no F_3 torus root, but roots over its closure
+ALL PASS
+
+===== supports =====
+polys 35 35 supports equal
+
+===== pair_symmetry =====
+polys invariant under (12) True
+polys invariant under (34) True
+fan invariant under (12) True
+fan invariant under (34) True
+cells 16438 orbits 4781
+
+===== mass_symmetry =====
+poly set invariant under sigma: F True
+poly set invariant under sigma: F+G True
+poly set invariant under sigma: F+G+H True
+fan invariant under sigma: True
+wrote sigma.json, cells 16438
+
+===== fan =====
+rays: stored 1603 other 1603 common 1603
+cones: stored 16438 other 16438 common 16438
+IDENTICAL
+
+===== fan_soundness =====
+PASS support 1
+PASS support 2
+PASS support 3
+PASS support 4
+PASS support 5
+PASS support 6
+PASS support 7
+PASS support 8
+PASS support 9
+PASS support 10
+PASS support 11
+PASS support 12
+PASS support 13
+PASS support 14
+PASS support 15
+PASS support 16
+PASS support 17
+PASS support 18
+PASS support 19
+PASS support 20
+PASS support 21
+PASS support 22
+PASS support 23
+PASS support 24
+PASS support 25
+PASS support 26
+PASS support 27
+PASS support 28
+PASS support 29
+PASS support 30
+PASS support 31
+PASS support 32
+PASS support 33
+PASS support 34
+PASS support 35
+PASS soundness: 3120 maximal cones in all 35 hypersurfaces
+
+===== fan_structure =====
+Checked 0 cones
+Checked 1000 cones
+Checked 2000 cones
+Checked 3000 cones
+Checked 4000 cones
+Checked 5000 cones
+Checked 6000 cones
+Checked 7000 cones
+Checked 8000 cones
+Checked 9000 cones
+Checked 10000 cones
+Checked 11000 cones
+Checked 12000 cones
+Checked 13000 cones
+Checked 14000 cones
+Checked 15000 cones
+Checked 16000 cones
+PASS {'complete': True, 'nonzero_cones': 16438, 'dimensions': {1: 1603, 2: 6110, 3: 6525, 4: 2200}, 'facets_checked': 44998, 'normal_regions_equal': True, 'closed_under_faces': True, 'rays_extreme_and_primitive': True, 'full_fan_symmetry_checked': True, 'fan_sha256': '8e6c56201e6b77787c6152c929466f5058651678ca34e7ba405ef6a28a71ce5c', 'system_sha256': '9fe6b7f56d1a1c70510b2076122c528ad6ee5d9423a7550c39f79927db6eb6a4'}
+
+===== fan_completeness =====
+PASS control: complete toy fan UNSAT, missing-ray fan SAT
+Converted 0 of 3120 cones
+Converted 250 of 3120 cones
+Converted 500 of 3120 cones
+Converted 750 of 3120 cones
+Converted 1000 of 3120 cones
+Converted 1250 of 3120 cones
+Converted 1500 of 3120 cones
+Converted 1750 of 3120 cones
+Converted 2000 of 3120 cones
+Converted 2250 of 3120 cones
+Converted 2500 of 3120 cones
+Converted 2750 of 3120 cones
+Converted 3000 of 3120 cones
+{'case': 0, 'coordinate': 0, 'sign': -1, 'result': 'unsat', 'seconds': 9.903999250003835}
+{'case': 1, 'coordinate': 0, 'sign': 1, 'result': 'unsat', 'seconds': 19.005582833997323}
+{'case': 2, 'coordinate': 1, 'sign': -1, 'result': 'unsat', 'seconds': 13.963465416993131}
+{'case': 3, 'coordinate': 1, 'sign': 1, 'result': 'unsat', 'seconds': 24.478849333012477}
+{'case': 4, 'coordinate': 3, 'sign': -1, 'result': 'unsat', 'seconds': 13.391165582987014}
+{'case': 5, 'coordinate': 3, 'sign': 1, 'result': 'unsat', 'seconds': 28.452677791996393}
+PASS independent completeness: no rational weight outside the stored fan
+
+===== fan_second_solver =====
+PASS Yices complete/incomplete tropical-line controls
+Converted 0 of 3120 cones
+Converted 250 of 3120 cones
+Converted 500 of 3120 cones
+Converted 750 of 3120 cones
+Converted 1000 of 3120 cones
+Converted 1250 of 3120 cones
+Converted 1500 of 3120 cones
+Converted 1750 of 3120 cones
+Converted 2000 of 3120 cones
+Converted 2250 of 3120 cones
+Converted 2500 of 3120 cones
+Converted 2750 of 3120 cones
+Converted 3000 of 3120 cones
+Built standard SMT-LIB constraints
+{'case': 0, 'coordinate': 0, 'sign': -1, 'result': 'unsat', 'seconds': 67.28419745899737, 'query_sha256': '6f64c6661ed43640e59652ade3e1121415e5820b827259fd68bde627a2e28066'}
+{'case': 1, 'coordinate': 0, 'sign': 1, 'result': 'unsat', 'seconds': 121.03917862499657, 'query_sha256': 'cd7883f1cc946efd64b82a1a1a5a35411a569a76e5a92e52d80f4aae9f7c1dd3'}
+{'case': 2, 'coordinate': 1, 'sign': -1, 'result': 'unsat', 'seconds': 107.23709000000963, 'query_sha256': 'd0fdfe9e6174875d8bc0cd90e7a30a59a65af588ef205fcf74962a186a37a7ed'}
+{'case': 3, 'coordinate': 1, 'sign': 1, 'result': 'unsat', 'seconds': 83.05122425001173, 'query_sha256': '78abf534b670d6f014a80a0bf944a461f83d5219e5e6b6e0babf6243fd004995'}
+{'case': 4, 'coordinate': 3, 'sign': -1, 'result': 'unsat', 'seconds': 55.270786666995264, 'query_sha256': '9b9fae3a9ec843a87a12a2605064c536d0011bc02f09e6726cee0a8c8314a7d2'}
+{'case': 5, 'coordinate': 3, 'sign': 1, 'result': 'unsat', 'seconds': 131.06890754200867, 'query_sha256': '36248a86386f823952ca4d6c49f440aeea4b777c02eedb2b559b4413caf47a3c'}
+PASS independent Yices completeness: all six cases UNSAT
+
+===== companion =====
+PASS mass homogeneity: c=1 reduction is valid
+PASS Laurent batch cell_binomial 7488
+PASS Laurent batch equality 1961
+PASS Laurent batch shifted 24
+PASS Laurent batch reduction 7
+PASS Laurent batch target16 11
+PASS Laurent batch target301 11
+PASS Laurent batch pair 3
+PASS Laurent batch transfer 13
+PASS Laurent batch pair2 5
+PASS Laurent batch transfer2 23
+PASS Laurent batch target247 8
+PASS Laurent batch target279 8
+PASS Laurent batch target897 1
+PASS Laurent batch transfer897 3
+RUN verify_structural.py
+ut branch derivation audit and remaining equation solvability still required.'}
+{'cell': 346, 'original_input_initials_recomputed': True, 'subsystem_consequences_verified': True, 'CM_and_AC_remainders_verified': True, 'ratio_resultant_verified': True, 'independent_specialized_sylvester_determinant': '50625', 'necessary_mass_polynomial': '(-a + 4*c)*(a + 4*c)*(a**2 + 4*c**2)**2*(a**4 + 4*a**3*c + 6*a**2*c**2 + 3*a*c**3 + c**4)*(a**8 - a**7*c + a**6*c**2 - a**4*c**4 + 8*a**3*c**5 + 3*a**2*c**6 - 3*a*c**7 + c**8)', 'nonvanishing_assumptions': ['a', 'c', 'all ten distances'], 'derived_nonvanishing': ['1+t^3 (from H and nonzero c,h)', '1+t (divides 1+t^3)'], 'conclusion': 'The original initial-generator system at cell 346 has no torus solution over Q(a,b,c); for fixed masses the nonzero resultant is a sufficient exclusion condition with a*c != 0.'}
+{'cell': 346, 'original_initial_branch_reductions_verified': True, 'positive_mass_exceptional_ratios': {'a/c': 4, 'b/c': 16}, 'forced_distance_ratios': {'r14/r13': 1, 'r34/r13': -2}, 'final_generator_8': '-72*c*r13**4*r35**2', 'conclusion': 'Combined with audited ratio resultant and Sturm argument, cell 346 is excluded for ALL positive a,b,c. No torus solution of its initial-generator system exists for those masses.', 'scope': 'One cell only; uses exact elimination and branch reasoning, not yet a single exported Laurent identity.'}
+Verified symmetries: 8 orbit cells: [346, 399, 682, 1554]
+STRUCTURAL PROOF VERIFIED [346, 399, 682, 1554]
+
+RUN verify_ratio325_transfer.py
+{'cell': 325, 'used_generators': [1, 2, 8], 'ratio_variables': {'T': 'r14/r13', 'U': 'r34/r13', 'A': 'a/b'}, 'necessary_mass_polynomial': '(16*a**2-b**2)*(4*a**2+b**2)', 'positive_mass_necessary_condition': 'b=4*a', 'positive_mass_forced_distance_ratios': {'r14/r13': 1, 'r34/r13': -2}, 'scope': 'Necessary conditions only; exceptional b=4a not resolved by this subsystem. No full torus solution claimed.', 'input_sha256': {'sys.json': '9fe6b7f56d1a1c70510b2076122c528ad6ee5d9423a7550c39f79927db6eb6a4', 'fan.out': '8e6c56201e6b77787c6152c929466f5058651678ca34e7ba405ef6a28a71ce5c'}}
+Verified coefficient-level matches: 2944 cells: 1528
+
+RUN audit_symmetry_closure.py
+{'verified_records': 443, 'closure_sha256': '9df1d18200af58d71a3b6493ad550c9881427173632010e1f7f0a219ef657682', 'auditor_sha256': 'f5678119d454ac4126101a13383f157e4f8f412b6af94437103786bfbb401762', 'scope': 'Checks content provenance, positive proportionality and noncircular source types; polynomial-system symmetry itself is verified by symmetry_closure.py.'}
+
+RUN verify_equations.py
+{'matched': 35, 'failures': [], 'unmatched_formulas': [], 'elapsed_seconds': 0.7994387919898145, 'normalization': 'Distance monomial unit and nonzero rational scalar only; mass factors not removed.'}
+
+RUN audit_cells.py
+{
+  "ray_count": 1603,
+  "nonzero_cells": 16438,
+  "polynomials": 35,
+  "ray_support_failures": 0,
+  "cell_support_failures": 0,
+  "certificate_weights_match_cell_sums": true,
+  "lineality_dimension_recorded": [
+    "0"
+  ],
+  "scope": "Exact max-normal support compatibility, not completeness or irredundancy of fan."
+}
+
+ALL PASS companion generic exclusions: 10965
+
+===== modular_stars =====
+cell 81 all 37 coefficient supports survive: PASS
+replay verify_lemS_rep.py 81 PASS
+replay cluster_mod.py 2174 PASS
+star(81): 60 cones; Lemma S hypotheses: ALL PASS
+cell 121 all 37 coefficient supports survive: PASS
+replay verify_lemS_rep.py 121 PASS
+replay cluster_mod.py 2885 PASS
+star(121): 60 cones; Lemma S hypotheses: ALL PASS
+cell 206 all 37 coefficient supports survive: PASS
+replay verify_lemS_rep.py 206 PASS
+replay cluster_mod.py 3494 PASS
+star(206): 60 cones; Lemma S hypotheses: ALL PASS
+
+===== coverage =====
+coverage progress 0 / 16438
+transported cell 353 -> 618 swap True lam ['1']
+verifying Lemma S cell 121
+verifying Lemma S cell 81
+verifying Lemma S cell 206
+coverage progress 1000 / 16438
+transported cell 3097 -> 5240 swap True lam ['1']
+coverage progress 2000 / 16438
+coverage progress 3000 / 16438
+coverage progress 4000 / 16438
+coverage progress 5000 / 16438
+coverage progress 6000 / 16438
+coverage progress 7000 / 16438
+coverage progress 8000 / 16438
+coverage progress 9000 / 16438
+coverage progress 10000 / 16438
+coverage progress 11000 / 16438
+coverage progress 12000 / 16438
+coverage progress 13000 / 16438
+coverage progress 14000 / 16438
+coverage progress 15000 / 16438
+coverage progress 16000 / 16438
+covered: {'companion': 10965, 'cert': 3589, 'dcert': 1272, 'gcert': 457, 'hcert': 6, 'ecert': 6, 'elim': 25, 'sigma': 4, 'lemS': 16}  uncovered: 98
+residual pointed: c=[-23, 1, 1, 51, 1, 1, 51, 24, 13, 13] (from pointc.json[slackc]); exact check <c,v> > 0 on all 77 residual rays: PASS
+
+===== cone_accounting =====
+PASS disjoint accounting: {'Laurent identities': 5258, 'Laurent/structural companion': 10965, 'Additional symmetry transport': 4, 'Elimination': 25, 'Modular stars': 16, 'Scaling ray': 1, 'Resultant specialization': 8, 'Single-term virial': 57, 'Split trees': 6}
+Laurent identities 1562 representatives; see JSON
+Additional symmetry transport 2 representatives; 353:2, 3097:2
+Elimination 11 representatives; 49:2, 218:2, 334:1, 1767:2, 2171:4, 2174:2, 2175:2, 2345:2, 2885:4, 3494:2, 3545:2
+Modular stars 6 representatives; 50:4, 81:2, 121:4, 206:2, 220:2, 316:2
+Scaling ray 1 representatives; 79:1
+Resultant specialization 2 representatives; 227:4, 2440:4
+Single-term virial 23 representatives; 280:4, 1046:1, 1095:1, 2173:2, 2178:4, 2181:2, 2518:1, 2519:2, 2520:4, 2526:1, 2555:1, 3425:1, 3544:4, 3551:2, 3645:4, 6732:1, 8584:4, 8587:2, 8600:4, 9100:2, 9105:4, 10181:2, 10381:4
+Split trees 2 representatives; 378:2, 427:4
+
+===== mass_denominators =====
+PASS denominator scan: {'mass_pair': [3, 7], 'files_scanned': 1662, 'cofactor_terms': 732457, 'distinct_denominators': 55810, 'zero_denominators': 506, 'scope': 'Explicit cofactor and split-tree files only; not an explicit instance of the theorem.'}
+Vanishing files: ['data/exact/cert/10170.cof', 'data/exact/cert/10435.cof', 'data/exact/cert/10508.cof', 'data/exact/cert/10550.cof', 'data/exact/cert/10554.cof', 'data/exact/cert/10556.cof', 'data/exact/cert/10626.cof', 'data/exact/cert/13184.cof', 'data/exact/cert/9873.cof', 'data/exact/dcert/10511.cof']
+
+===== mass_factor_inventory =====
+Factored 0 of 55810
+Factored 5000 of 55810
+Factored 10000 of 55810
+Factored 15000 of 55810
+Factored 20000 of 55810
+Factored 25000 of 55810
+Factored 30000 of 55810
+Factored 35000 of 55810
+Factored 40000 of 55810
+Factored 45000 of 55810
+Factored 50000 of 55810
+Factored 55000 of 55810
+PASS factor reconstruction and exact positive witnesses: {'positive_zero_by_continuity': 393, 'nonvanishing_same_sign_coefficients': 295, 'undetermined': 82, 'positive_zero': 28}
+Companion irreducible factors: 22
+Conditional-transfer irreducible factors: 6
