@@ -1,0 +1,22 @@
+{
+  "title": "Finiteness of planar five-body central configurations for generic equal-pair masses",
+  "upload_type": "publication",
+  "publication_type": "preprint",
+  "publication_date": "2026-10-07",
+  "description": "<p>Manuscript, exact verification code, and certificates for finiteness of planar five-body central configurations with generic positive equal-pair masses (a,a,b,b,c). The theorem concerns masses outside a proper algebraic hypersurface; it does not determine the complete exceptional polynomial or count configurations.</p><p>The verification package and commands are documented in the README. Code is MIT-licensed; the manuscript is CC BY 4.0.</p>",
+  "creators": [
+    {
+      "name": "Li, Brandon"
+    }
+  ],
+  "license": "cc-by-4.0",
+  "keywords": [
+    "central configurations",
+    "five-body problem",
+    "Smale's sixth problem",
+    "tropical geometry",
+    "finiteness",
+    "computer-assisted proof"
+  ],
+  "access_right": "open"
+}
