@@ -1,0 +1,149 @@
+{
+  "matched": 35,
+  "failures": [],
+  "unmatched_formulas": [],
+  "matches": [
+    {
+      "stored_generator": 0,
+      "formula": "AC(1,2)"
+    },
+    {
+      "stored_generator": 1,
+      "formula": "AC(1,3)"
+    },
+    {
+      "stored_generator": 2,
+      "formula": "AC(1,4)"
+    },
+    {
+      "stored_generator": 3,
+      "formula": "AC(1,5)"
+    },
+    {
+      "stored_generator": 4,
+      "formula": "AC(2,1)"
+    },
+    {
+      "stored_generator": 5,
+      "formula": "AC(2,3)"
+    },
+    {
+      "stored_generator": 6,
+      "formula": "AC(2,4)"
+    },
+    {
+      "stored_generator": 7,
+      "formula": "AC(2,5)"
+    },
+    {
+      "stored_generator": 8,
+      "formula": "AC(3,1)"
+    },
+    {
+      "stored_generator": 9,
+      "formula": "AC(3,2)"
+    },
+    {
+      "stored_generator": 10,
+      "formula": "AC(3,4)"
+    },
+    {
+      "stored_generator": 11,
+      "formula": "AC(3,5)"
+    },
+    {
+      "stored_generator": 12,
+      "formula": "AC(4,1)"
+    },
+    {
+      "stored_generator": 13,
+      "formula": "AC(4,2)"
+    },
+    {
+      "stored_generator": 14,
+      "formula": "AC(4,3)"
+    },
+    {
+      "stored_generator": 15,
+      "formula": "AC(4,5)"
+    },
+    {
+      "stored_generator": 16,
+      "formula": "AC(5,1)"
+    },
+    {
+      "stored_generator": 17,
+      "formula": "AC(5,2)"
+    },
+    {
+      "stored_generator": 18,
+      "formula": "AC(5,3)"
+    },
+    {
+      "stored_generator": 19,
+      "formula": "AC(5,4)"
+    },
+    {
+      "stored_generator": 20,
+      "formula": "symmetric_AC(1,2)"
+    },
+    {
+      "stored_generator": 21,
+      "formula": "symmetric_AC(1,3)"
+    },
+    {
+      "stored_generator": 22,
+      "formula": "symmetric_AC(1,4)"
+    },
+    {
+      "stored_generator": 23,
+      "formula": "symmetric_AC(1,5)"
+    },
+    {
+      "stored_generator": 24,
+      "formula": "symmetric_AC(2,3)"
+    },
+    {
+      "stored_generator": 25,
+      "formula": "symmetric_AC(2,4)"
+    },
+    {
+      "stored_generator": 26,
+      "formula": "symmetric_AC(2,5)"
+    },
+    {
+      "stored_generator": 27,
+      "formula": "symmetric_AC(3,4)"
+    },
+    {
+      "stored_generator": 28,
+      "formula": "symmetric_AC(3,5)"
+    },
+    {
+      "stored_generator": 29,
+      "formula": "symmetric_AC(4,5)"
+    },
+    {
+      "stored_generator": 30,
+      "formula": "CM(2, 3, 4, 5)"
+    },
+    {
+      "stored_generator": 31,
+      "formula": "CM(1, 3, 4, 5)"
+    },
+    {
+      "stored_generator": 32,
+      "formula": "CM(1, 2, 4, 5)"
+    },
+    {
+      "stored_generator": 33,
+      "formula": "CM(1, 2, 3, 5)"
+    },
+    {
+      "stored_generator": 34,
+      "formula": "CM(1, 2, 3, 4)"
+    }
+  ],
+  "elapsed_seconds": 6.0744398339993495,
+  "normalization": "Distance monomial unit and nonzero rational scalar only; mass factors not removed."
+}
