@@ -1,0 +1,33 @@
+PASS 0a forms of cells 49, 2171, 2174, 2175 (F+G+H, subset 2,3,8,10,11,18) coincide
+PASS 1a g3,g4,g5 affine-linear in r13^2,r14^2,r34^2
+PASS 1b D*r^2 - num = sum adj*g (Cramer identities)
+PASS 1c D is a nonzero monomial (unit on the torus)
+PASS 2a R1=r13(A1 r14+B1)+C1 r14, R2=r14(A2 r13+C2)+B2 r13, R6=r34(A6 r14+B6)+C6 r14 (coefficients free of r13,r14,r34)
+PASS 2b L1=al r14+be, L2=ga r13+de, L6=al6 r14+be6 with coefficients in Z[a,b][r23,r24]
+PASS 2c M1=mu r14+nu, M2=m2 r13+n2 (coefficients in Z[a,b][r23,r24])
+PASS 2d E1..E14 nonzero, in Z[a,b][r23,r24] (0s)
+PASS 3a Xn=-2x^3 Xq, Yn=-2b y^3 Yq, Sn=2a x^3y^3 Sq (so Xq,Yq,Sq are nonzero at z: D r^2 = Xn etc, r != 0)
+PASS 3b phi=(ay+1)^3-b^2(ay^3+1) irreducible in Z[a,b,y] and primitive in y (=> irreducible over Q(a,b))
+PASS group 49 branch 0 nonzero gcd; degrees (18, 34, 0, 104)
+PASS group 49 branch 1 nonzero gcd; degrees (18, 34, 0, 104)
+PASS group 49 branch 2 nonzero gcd; degrees (18, 34, 0, 104)
+PASS group 49 branch 3 nonzero gcd; degrees (18, 34, 0, 104)
+PASS group 49 branch 4 nonzero gcd; degrees (15, 50, 0, 135)
+PASS 0a forms of 334 (F+G+H) and 1767 (F) on subset 1,2,4,5,6,13 coincide
+PASS 0b mass torus: a quasi-homogeneity weight with w_b != 0 exists (b=1 WLOG)
+PASS 1a g3,g4,g5 affine-linear in r13^2,r14^2,r34^2
+PASS 1b D*r^2 - num = sum adj*g (Cramer identities)
+PASS 1c D is a nonzero monomial (unit on the torus)
+PASS 2a R1=r13(A1 r14+B1)+C1 r14, R2=r14(A2 r13+C2)+B2 r13, R6=r34(A6 r14+B6)+C6 r14 (coefficients free of r13,r14,r34)
+PASS 2b L1=al r14+be, L2=ga r13+de, L6=al6 r14+be6 with coefficients in Z[a][r23,r24]
+PASS 2c M1=mu r14+nu, M2=m2 r13+n2 (coefficients in Z[a][r23,r24])
+PASS 2d E1..E14 nonzero, in Z[a][r23,r24] (0s)
+PASS 4a sigma=(r13 r14)(r23 r24) permutes {+-g1..g5} => sigma(z) is a common zero of g1..g5 (NOT of g6)
+PASS 4b E_i+sw(E_i) and (E_i-sw(E_i))/(r23-r24) vanish at z; rewritten exactly in (s,p) (back-substitution checked); norms N3,N12 of the g6-derived E3,E12
+PASS 4c Xn,Yn,Sn in Z[a][r23,r24] and Xn*Yn*Sn symmetric
+PASS 4c2 T(s,p) back-substitutes to Xn*Yn*Sn
+PASS group 334 branch F1 nonzero gcd; degrees (14, 0, 58)
+PASS group 334 branch F2 nonzero gcd; degrees (14, 0, 58)
+PASS group 334 branch F3 nonzero gcd; degrees (24, 0, 87)
+PASS group 334 branch F4 nonzero gcd; degrees (32, 0, 116)
+ALL PASS: all nine elimination-branch gcds are nonzero.

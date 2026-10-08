@@ -1,0 +1,32 @@
+cff-version: 1.2.0
+message: "If you use this result or code, please cite the paper."
+title: "Finiteness of planar five-body central configurations for generic equal-pair masses"
+type: software
+authors:
+  - family-names: Li
+    given-names: Brandon
+    email: brandon.li.gn@gmail.com
+  - family-names: Yeroushalmi
+    given-names: Ethan
+    email: eyeroushalmi1@gmail.com
+repository-code: "https://github.com/brandonlign/tropcc"
+license: MIT
+doi: "10.5281/zenodo.23197573"
+version: 1.3.9
+date-released: 2026-10-08
+keywords:
+  - central configurations
+  - five-body problem
+  - Smale's sixth problem
+  - tropical geometry
+  - computer-assisted proof
+preferred-citation:
+  type: article
+  authors:
+    - family-names: Li
+      given-names: Brandon
+    - family-names: Yeroushalmi
+      given-names: Ethan
+  title: "Finiteness of planar five-body central configurations for generic equal-pair masses"
+  year: 2026
+  doi: "10.5281/zenodo.23197573"

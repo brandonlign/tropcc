@@ -1,0 +1,285 @@
+{
+  "input_sha256": {
+    "sys.json": "9fe6b7f56d1a1c70510b2076122c528ad6ee5d9423a7550c39f79927db6eb6a4",
+    "fan.out": "8e6c56201e6b77787c6152c929466f5058651678ca34e7ba405ef6a28a71ce5c"
+  },
+  "source_sha256": "eeb4b5381f1b4c878257ba7dd978636380ae86b2d9e853422058534298a1d0cd",
+  "certificates": [
+    {
+      "ray_index": 895,
+      "weight": [
+        4,
+        0,
+        0,
+        4,
+        0,
+        0,
+        -2,
+        4,
+        1,
+        1
+      ],
+      "generators": [
+        13,
+        1,
+        4,
+        34
+      ],
+      "shifts": [
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          3,
+          0,
+          3
+        ],
+        [
+          3,
+          1,
+          0,
+          3,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          1,
+          0,
+          0,
+          0,
+          3,
+          3,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          2,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          2,
+          0,
+          0
+        ]
+      ],
+      "multipliers": [
+        "2*a + 2*b + 2*c",
+        "2*a + 2*b",
+        "r14**3*(-2*a - 2*b)",
+        "b*(r14**3*(a + b + c) - (a + b)*(r14**3 - 1))"
+      ],
+      "target_exponent": [
+        2,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "parameter_factor": "2*a**2 + 2*a*c - 2*b**2",
+      "transferred_from_cell": 897
+    },
+    {
+      "ray_index": 900,
+      "weight": [
+        4,
+        0,
+        0,
+        4,
+        1,
+        1,
+        -2,
+        4,
+        0,
+        0
+      ],
+      "generators": [
+        13,
+        1,
+        4,
+        34
+      ],
+      "shifts": [
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          3,
+          0,
+          3
+        ],
+        [
+          3,
+          1,
+          0,
+          3,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          1,
+          0,
+          0,
+          0,
+          3,
+          3,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          2,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          2,
+          0,
+          0
+        ]
+      ],
+      "multipliers": [
+        "2*a + 2*b + 2*c",
+        "2*a + 2*b",
+        "r14**3*(-2*a - 2*b)",
+        "b*(r14**3*(a + b + c) - (a + b)*(r14**3 - 1))"
+      ],
+      "target_exponent": [
+        2,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "parameter_factor": "2*a**2 + 2*a*c - 2*b**2",
+      "transferred_from_cell": 897
+    },
+    {
+      "ray_index": 901,
+      "weight": [
+        4,
+        0,
+        0,
+        4,
+        1,
+        0,
+        -2,
+        4,
+        0,
+        1
+      ],
+      "generators": [
+        13,
+        1,
+        4,
+        34
+      ],
+      "shifts": [
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          3,
+          0,
+          3
+        ],
+        [
+          3,
+          1,
+          0,
+          3,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          1,
+          0,
+          0,
+          0,
+          3,
+          3,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          2,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          2,
+          0,
+          0
+        ]
+      ],
+      "multipliers": [
+        "2*a + 2*b + 2*c",
+        "2*a + 2*b",
+        "r14**3*(-2*a - 2*b)",
+        "b*(r14**3*(a + b + c) - (a + b)*(r14**3 - 1))"
+      ],
+      "target_exponent": [
+        2,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "parameter_factor": "2*a**2 + 2*a*c - 2*b**2",
+      "transferred_from_cell": 897
+    }
+  ],
+  "elapsed_seconds": 5.515559625,
+  "method": "Exact equality of every used normalized initial polynomial; multipliers unchanged.",
+  "postfilter": "Removed seed cell and all current conditional/symmetry and pending uniform exclusions"
+}

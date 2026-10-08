@@ -1,0 +1,49 @@
+Checking review_controls ...
+PASS review_controls
+Checking supports ...
+PASS supports
+Checking pair_symmetry ...
+PASS pair_symmetry
+Checking mass_symmetry ...
+PASS mass_symmetry
+Checking fan ...
+PASS fan
+Checking fan_soundness ...
+PASS fan_soundness
+Checking fan_structure ...
+PASS fan_structure
+Checking fan_completeness ...
+PASS fan_completeness
+Checking fan_second_solver ...
+PASS fan_second_solver
+Checking companion ...
+PASS companion
+Checking modular_stars ...
+PASS modular_stars
+Checking coverage ...
+PASS coverage
+Checking cone_accounting ...
+PASS cone_accounting
+Checking mass_denominators ...
+PASS mass_denominators
+Checking mass_factor_inventory ...
+PASS mass_factor_inventory
+ALL PASS: 16,340 excluded cones; 98 residual cones; 77 rays; exact positive pairings.
+     1696.70 real      1649.49 user        30.07 sys
+          3799564288  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+             6125387  page reclaims
+                7847  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                   0  messages sent
+                   0  messages received
+                   0  signals received
+               13717  voluntary context switches
+              968899  involuntary context switches
+           416790378  instructions retired
+           193688402  cycles elapsed
+            11010456  peak memory footprint

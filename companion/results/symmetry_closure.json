@@ -1,0 +1,4198 @@
+{
+  "symmetries": [
+    {
+      "permutation": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "exchange_a_b": false,
+      "distance_permutation": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ]
+    },
+    {
+      "permutation": [
+        0,
+        1,
+        3,
+        2,
+        4
+      ],
+      "exchange_a_b": false,
+      "distance_permutation": [
+        0,
+        2,
+        1,
+        3,
+        5,
+        4,
+        6,
+        7,
+        9,
+        8
+      ]
+    },
+    {
+      "permutation": [
+        1,
+        0,
+        2,
+        3,
+        4
+      ],
+      "exchange_a_b": false,
+      "distance_permutation": [
+        0,
+        4,
+        5,
+        6,
+        1,
+        2,
+        3,
+        7,
+        8,
+        9
+      ]
+    },
+    {
+      "permutation": [
+        1,
+        0,
+        3,
+        2,
+        4
+      ],
+      "exchange_a_b": false,
+      "distance_permutation": [
+        0,
+        5,
+        4,
+        6,
+        2,
+        1,
+        3,
+        7,
+        9,
+        8
+      ]
+    },
+    {
+      "permutation": [
+        2,
+        3,
+        0,
+        1,
+        4
+      ],
+      "exchange_a_b": true,
+      "distance_permutation": [
+        7,
+        1,
+        4,
+        8,
+        2,
+        5,
+        9,
+        0,
+        3,
+        6
+      ]
+    },
+    {
+      "permutation": [
+        2,
+        3,
+        1,
+        0,
+        4
+      ],
+      "exchange_a_b": true,
+      "distance_permutation": [
+        7,
+        4,
+        1,
+        8,
+        5,
+        2,
+        9,
+        0,
+        6,
+        3
+      ]
+    },
+    {
+      "permutation": [
+        3,
+        2,
+        0,
+        1,
+        4
+      ],
+      "exchange_a_b": true,
+      "distance_permutation": [
+        7,
+        2,
+        5,
+        9,
+        1,
+        4,
+        8,
+        0,
+        3,
+        6
+      ]
+    },
+    {
+      "permutation": [
+        3,
+        2,
+        1,
+        0,
+        4
+      ],
+      "exchange_a_b": true,
+      "distance_permutation": [
+        7,
+        5,
+        2,
+        9,
+        4,
+        1,
+        8,
+        0,
+        6,
+        3
+      ]
+    }
+  ],
+  "additional_generic_cells": {
+    "362": {
+      "source_cell": 1164,
+      "symmetry": 1,
+      "source_proof": {
+        "kind": "direct",
+        "factor": "-2*a",
+        "batch": "results/shifted_certificates.json"
+      }
+    },
+    "708": {
+      "source_cell": 1164,
+      "symmetry": 3,
+      "source_proof": {
+        "kind": "direct",
+        "factor": "-2*a",
+        "batch": "results/shifted_certificates.json"
+      }
+    },
+    "1435": {
+      "source_cell": 1164,
+      "symmetry": 4,
+      "source_proof": {
+        "kind": "direct",
+        "factor": "-2*a",
+        "batch": "results/shifted_certificates.json"
+      }
+    },
+    "1416": {
+      "source_cell": 1164,
+      "symmetry": 5,
+      "source_proof": {
+        "kind": "direct",
+        "factor": "-2*a",
+        "batch": "results/shifted_certificates.json"
+      }
+    },
+    "202": {
+      "source_cell": 1164,
+      "symmetry": 6,
+      "source_proof": {
+        "kind": "direct",
+        "factor": "-2*a",
+        "batch": "results/shifted_certificates.json"
+      }
+    },
+    "715": {
+      "source_cell": 1164,
+      "symmetry": 7,
+      "source_proof": {
+        "kind": "direct",
+        "factor": "-2*a",
+        "batch": "results/shifted_certificates.json"
+      }
+    },
+    "484": {
+      "source_cell": 1171,
+      "symmetry": 1,
+      "source_proof": {
+        "kind": "direct",
+        "factor": "2*a",
+        "batch": "results/shifted_certificates.json"
+      }
+    },
+    "90": {
+      "source_cell": 1171,
+      "symmetry": 3,
+      "source_proof": {
+        "kind": "direct",
+        "factor": "2*a",
+        "batch": "results/shifted_certificates.json"
+      }
+    },
+    "194": {
+      "source_cell": 1171,
+      "symmetry": 4,
+      "source_proof": {
+        "kind": "direct",
+        "factor": "2*a",
+        "batch": "results/shifted_certificates.json"
+      }
+    },
+    "655": {
+      "source_cell": 1171,
+      "symmetry": 5,
+      "source_proof": {
+        "kind": "direct",
+        "factor": "2*a",
+        "batch": "results/shifted_certificates.json"
+      }
+    },
+    "1451": {
+      "source_cell": 1171,
+      "symmetry": 6,
+      "source_proof": {
+        "kind": "direct",
+        "factor": "2*a",
+        "batch": "results/shifted_certificates.json"
+      }
+    },
+    "1418": {
+      "source_cell": 1171,
+      "symmetry": 7,
+      "source_proof": {
+        "kind": "direct",
+        "factor": "2*a",
+        "batch": "results/shifted_certificates.json"
+      }
+    },
+    "500": {
+      "source_cell": 1458,
+      "symmetry": 1,
+      "source_proof": {
+        "kind": "direct",
+        "factor": "-2*a",
+        "batch": "results/shifted_certificates.json"
+      }
+    },
+    "822": {
+      "source_cell": 1458,
+      "symmetry": 3,
+      "source_proof": {
+        "kind": "direct",
+        "factor": "-2*a",
+        "batch": "results/shifted_certificates.json"
+      }
+    },
+    "1415": {
+      "source_cell": 1458,
+      "symmetry": 5,
+      "source_proof": {
+        "kind": "direct",
+        "factor": "-2*a",
+        "batch": "results/shifted_certificates.json"
+      }
+    },
+    "533": {
+      "source_cell": 1458,
+      "symmetry": 7,
+      "source_proof": {
+        "kind": "direct",
+        "factor": "-2*a",
+        "batch": "results/shifted_certificates.json"
+      }
+    },
+    "1891": {
+      "source_cell": 1920,
+      "symmetry": 1,
+      "source_proof": {
+        "kind": "direct",
+        "factor": "2*a",
+        "batch": "results/shifted_certificates.json"
+      }
+    },
+    "1851": {
+      "source_cell": 1920,
+      "symmetry": 3,
+      "source_proof": {
+        "kind": "direct",
+        "factor": "2*a",
+        "batch": "results/shifted_certificates.json"
+      }
+    },
+    "3302": {
+      "source_cell": 5750,
+      "symmetry": 1,
+      "source_proof": {
+        "kind": "direct",
+        "factor": "-2*a",
+        "batch": "results/shifted_certificates.json"
+      }
+    },
+    "3306": {
+      "source_cell": 5750,
+      "symmetry": 3,
+      "source_proof": {
+        "kind": "direct",
+        "factor": "-2*a",
+        "batch": "results/shifted_certificates.json"
+      }
+    },
+    "2248": {
+      "source_cell": 5750,
+      "symmetry": 4,
+      "source_proof": {
+        "kind": "direct",
+        "factor": "-2*a",
+        "batch": "results/shifted_certificates.json"
+      }
+    },
+    "4607": {
+      "source_cell": 5750,
+      "symmetry": 5,
+      "source_proof": {
+        "kind": "direct",
+        "factor": "-2*a",
+        "batch": "results/shifted_certificates.json"
+      }
+    },
+    "2212": {
+      "source_cell": 5750,
+      "symmetry": 6,
+      "source_proof": {
+        "kind": "direct",
+        "factor": "-2*a",
+        "batch": "results/shifted_certificates.json"
+      }
+    },
+    "4581": {
+      "source_cell": 5750,
+      "symmetry": 7,
+      "source_proof": {
+        "kind": "direct",
+        "factor": "-2*a",
+        "batch": "results/shifted_certificates.json"
+      }
+    },
+    "2640": {
+      "source_cell": 6783,
+      "symmetry": 1,
+      "source_proof": {
+        "kind": "direct",
+        "factor": "2*a",
+        "batch": "results/shifted_certificates.json"
+      }
+    },
+    "2638": {
+      "source_cell": 6783,
+      "symmetry": 3,
+      "source_proof": {
+        "kind": "direct",
+        "factor": "2*a",
+        "batch": "results/shifted_certificates.json"
+      }
+    },
+    "3365": {
+      "source_cell": 6783,
+      "symmetry": 4,
+      "source_proof": {
+        "kind": "direct",
+        "factor": "2*a",
+        "batch": "results/shifted_certificates.json"
+      }
+    },
+    "4856": {
+      "source_cell": 6783,
+      "symmetry": 5,
+      "source_proof": {
+        "kind": "direct",
+        "factor": "2*a",
+        "batch": "results/shifted_certificates.json"
+      }
+    },
+    "3374": {
+      "source_cell": 6783,
+      "symmetry": 6,
+      "source_proof": {
+        "kind": "direct",
+        "factor": "2*a",
+        "batch": "results/shifted_certificates.json"
+      }
+    },
+    "4858": {
+      "source_cell": 6783,
+      "symmetry": 7,
+      "source_proof": {
+        "kind": "direct",
+        "factor": "2*a",
+        "batch": "results/shifted_certificates.json"
+      }
+    },
+    "2642": {
+      "source_cell": 6850,
+      "symmetry": 1,
+      "source_proof": {
+        "kind": "direct",
+        "factor": "-2*a",
+        "batch": "results/shifted_certificates.json"
+      }
+    },
+    "4345": {
+      "source_cell": 6850,
+      "symmetry": 3,
+      "source_proof": {
+        "kind": "direct",
+        "factor": "-2*a",
+        "batch": "results/shifted_certificates.json"
+      }
+    },
+    "6362": {
+      "source_cell": 6850,
+      "symmetry": 4,
+      "source_proof": {
+        "kind": "direct",
+        "factor": "-2*a",
+        "batch": "results/shifted_certificates.json"
+      }
+    },
+    "6406": {
+      "source_cell": 6850,
+      "symmetry": 5,
+      "source_proof": {
+        "kind": "direct",
+        "factor": "-2*a",
+        "batch": "results/shifted_certificates.json"
+      }
+    },
+    "3364": {
+      "source_cell": 6850,
+      "symmetry": 6,
+      "source_proof": {
+        "kind": "direct",
+        "factor": "-2*a",
+        "batch": "results/shifted_certificates.json"
+      }
+    },
+    "5387": {
+      "source_cell": 6850,
+      "symmetry": 7,
+      "source_proof": {
+        "kind": "direct",
+        "factor": "-2*a",
+        "batch": "results/shifted_certificates.json"
+      }
+    },
+    "9247": {
+      "source_cell": 13454,
+      "symmetry": 1,
+      "source_proof": {
+        "kind": "direct",
+        "factor": "-2*a",
+        "batch": "results/shifted_certificates.json"
+      }
+    },
+    "9248": {
+      "source_cell": 13454,
+      "symmetry": 3,
+      "source_proof": {
+        "kind": "direct",
+        "factor": "-2*a",
+        "batch": "results/shifted_certificates.json"
+      }
+    },
+    "10169": {
+      "source_cell": 13454,
+      "symmetry": 4,
+      "source_proof": {
+        "kind": "direct",
+        "factor": "-2*a",
+        "batch": "results/shifted_certificates.json"
+      }
+    },
+    "10221": {
+      "source_cell": 13454,
+      "symmetry": 5,
+      "source_proof": {
+        "kind": "direct",
+        "factor": "-2*a",
+        "batch": "results/shifted_certificates.json"
+      }
+    },
+    "10159": {
+      "source_cell": 13454,
+      "symmetry": 6,
+      "source_proof": {
+        "kind": "direct",
+        "factor": "-2*a",
+        "batch": "results/shifted_certificates.json"
+      }
+    },
+    "10220": {
+      "source_cell": 13454,
+      "symmetry": 7,
+      "source_proof": {
+        "kind": "direct",
+        "factor": "-2*a",
+        "batch": "results/shifted_certificates.json"
+      }
+    },
+    "450": {
+      "source_cell": 14,
+      "symmetry": 1,
+      "source_proof": {
+        "kind": "direct",
+        "factor": "-c*(a + c)",
+        "batch": "results/target16_certificates.json"
+      }
+    },
+    "596": {
+      "source_cell": 14,
+      "symmetry": 2,
+      "source_proof": {
+        "kind": "direct",
+        "factor": "-c*(a + c)",
+        "batch": "results/target16_certificates.json"
+      }
+    },
+    "787": {
+      "source_cell": 14,
+      "symmetry": 3,
+      "source_proof": {
+        "kind": "direct",
+        "factor": "-c*(a + c)",
+        "batch": "results/target16_certificates.json"
+      }
+    },
+    "1581": {
+      "source_cell": 14,
+      "symmetry": 4,
+      "source_proof": {
+        "kind": "direct",
+        "factor": "-c*(a + c)",
+        "batch": "results/target16_certificates.json"
+      }
+    },
+    "1598": {
+      "source_cell": 14,
+      "symmetry": 5,
+      "source_proof": {
+        "kind": "direct",
+        "factor": "-c*(a + c)",
+        "batch": "results/target16_certificates.json"
+      }
+    },
+    "537": {
+      "source_cell": 14,
+      "symmetry": 7,
+      "source_proof": {
+        "kind": "direct",
+        "factor": "-c*(a + c)",
+        "batch": "results/target16_certificates.json"
+      }
+    },
+    "453": {
+      "source_cell": 16,
+      "symmetry": 1,
+      "source_proof": {
+        "kind": "direct",
+        "factor": "c*(a + c)",
+        "batch": "results/target16_certificates.json"
+      }
+    },
+    "798": {
+      "source_cell": 16,
+      "symmetry": 3,
+      "source_proof": {
+        "kind": "direct",
+        "factor": "c*(a + c)",
+        "batch": "results/target16_certificates.json"
+      }
+    },
+    "1596": {
+      "source_cell": 16,
+      "symmetry": 5,
+      "source_proof": {
+        "kind": "direct",
+        "factor": "c*(a + c)",
+        "batch": "results/target16_certificates.json"
+      }
+    },
+    "426": {
+      "source_cell": 16,
+      "symmetry": 7,
+      "source_proof": {
+        "kind": "direct",
+        "factor": "c*(a + c)",
+        "batch": "results/target16_certificates.json"
+      }
+    },
+    "246": {
+      "source_cell": 805,
+      "symmetry": 1,
+      "source_proof": {
+        "kind": "direct",
+        "factor": "c*(a + c)",
+        "batch": "results/target16_certificates.json"
+      }
+    },
+    "957": {
+      "source_cell": 805,
+      "symmetry": 3,
+      "source_proof": {
+        "kind": "direct",
+        "factor": "c*(a + c)",
+        "batch": "results/target16_certificates.json"
+      }
+    },
+    "1306": {
+      "source_cell": 1307,
+      "symmetry": 1,
+      "source_proof": {
+        "kind": "direct",
+        "factor": "-c*(a + c)",
+        "batch": "results/target16_certificates.json"
+      }
+    },
+    "1294": {
+      "source_cell": 1307,
+      "symmetry": 2,
+      "source_proof": {
+        "kind": "direct",
+        "factor": "-c*(a + c)",
+        "batch": "results/target16_certificates.json"
+      }
+    },
+    "1333": {
+      "source_cell": 1307,
+      "symmetry": 3,
+      "source_proof": {
+        "kind": "direct",
+        "factor": "-c*(a + c)",
+        "batch": "results/target16_certificates.json"
+      }
+    },
+    "1086": {
+      "source_cell": 1307,
+      "symmetry": 4,
+      "source_proof": {
+        "kind": "direct",
+        "factor": "-c*(a + c)",
+        "batch": "results/target16_certificates.json"
+      }
+    },
+    "762": {
+      "source_cell": 1307,
+      "symmetry": 7,
+      "source_proof": {
+        "kind": "direct",
+        "factor": "-c*(a + c)",
+        "batch": "results/target16_certificates.json"
+      }
+    },
+    "249": {
+      "source_cell": 1349,
+      "symmetry": 1,
+      "source_proof": {
+        "kind": "direct",
+        "factor": "-c*(a + c)",
+        "batch": "results/target16_certificates.json"
+      }
+    },
+    "1368": {
+      "source_cell": 1349,
+      "symmetry": 2,
+      "source_proof": {
+        "kind": "direct",
+        "factor": "-c*(a + c)",
+        "batch": "results/target16_certificates.json"
+      }
+    },
+    "744": {
+      "source_cell": 1349,
+      "symmetry": 3,
+      "source_proof": {
+        "kind": "direct",
+        "factor": "-c*(a + c)",
+        "batch": "results/target16_certificates.json"
+      }
+    },
+    "1423": {
+      "source_cell": 1349,
+      "symmetry": 4,
+      "source_proof": {
+        "kind": "direct",
+        "factor": "-c*(a + c)",
+        "batch": "results/target16_certificates.json"
+      }
+    },
+    "4206": {
+      "source_cell": 1608,
+      "symmetry": 1,
+      "source_proof": {
+        "kind": "direct",
+        "factor": "c*(a + c)",
+        "batch": "results/target16_certificates.json"
+      }
+    },
+    "5569": {
+      "source_cell": 1608,
+      "symmetry": 3,
+      "source_proof": {
+        "kind": "direct",
+        "factor": "c*(a + c)",
+        "batch": "results/target16_certificates.json"
+      }
+    },
+    "7677": {
+      "source_cell": 1608,
+      "symmetry": 5,
+      "source_proof": {
+        "kind": "direct",
+        "factor": "c*(a + c)",
+        "batch": "results/target16_certificates.json"
+      }
+    },
+    "4195": {
+      "source_cell": 1608,
+      "symmetry": 7,
+      "source_proof": {
+        "kind": "direct",
+        "factor": "c*(a + c)",
+        "batch": "results/target16_certificates.json"
+      }
+    },
+    "1666": {
+      "source_cell": 1741,
+      "symmetry": 1,
+      "source_proof": {
+        "kind": "direct",
+        "factor": "-c*(a + c)",
+        "batch": "results/target16_certificates.json"
+      }
+    },
+    "5154": {
+      "source_cell": 1741,
+      "symmetry": 2,
+      "source_proof": {
+        "kind": "direct",
+        "factor": "-c*(a + c)",
+        "batch": "results/target16_certificates.json"
+      }
+    },
+    "5238": {
+      "source_cell": 1741,
+      "symmetry": 3,
+      "source_proof": {
+        "kind": "direct",
+        "factor": "-c*(a + c)",
+        "batch": "results/target16_certificates.json"
+      }
+    },
+    "7620": {
+      "source_cell": 1741,
+      "symmetry": 4,
+      "source_proof": {
+        "kind": "direct",
+        "factor": "-c*(a + c)",
+        "batch": "results/target16_certificates.json"
+      }
+    },
+    "7689": {
+      "source_cell": 1741,
+      "symmetry": 5,
+      "source_proof": {
+        "kind": "direct",
+        "factor": "-c*(a + c)",
+        "batch": "results/target16_certificates.json"
+      }
+    },
+    "4062": {
+      "source_cell": 1741,
+      "symmetry": 7,
+      "source_proof": {
+        "kind": "direct",
+        "factor": "-c*(a + c)",
+        "batch": "results/target16_certificates.json"
+      }
+    },
+    "733": {
+      "source_cell": 338,
+      "symmetry": 2,
+      "source_proof": {
+        "kind": "direct",
+        "factor": "2*b*c**2*(a + c)",
+        "batch": "results/transfer_certificates.json"
+      }
+    },
+    "1563": {
+      "source_cell": 338,
+      "symmetry": 4,
+      "source_proof": {
+        "kind": "direct",
+        "factor": "2*b*c**2*(a + c)",
+        "batch": "results/transfer_certificates.json"
+      }
+    },
+    "414": {
+      "source_cell": 338,
+      "symmetry": 6,
+      "source_proof": {
+        "kind": "direct",
+        "factor": "2*b*c**2*(a + c)",
+        "batch": "results/transfer_certificates.json"
+      }
+    },
+    "1476": {
+      "source_cell": 1038,
+      "symmetry": 1,
+      "source_proof": {
+        "kind": "direct",
+        "factor": "-b*(a + b)*(b + c)",
+        "batch": "results/transfer_certificates.json"
+      }
+    },
+    "1084": {
+      "source_cell": 1038,
+      "symmetry": 2,
+      "source_proof": {
+        "kind": "direct",
+        "factor": "-b*(a + b)*(b + c)",
+        "batch": "results/transfer_certificates.json"
+      }
+    },
+    "1246": {
+      "source_cell": 1038,
+      "symmetry": 3,
+      "source_proof": {
+        "kind": "direct",
+        "factor": "-b*(a + b)*(b + c)",
+        "batch": "results/transfer_certificates.json"
+      }
+    },
+    "1369": {
+      "source_cell": 1038,
+      "symmetry": 4,
+      "source_proof": {
+        "kind": "direct",
+        "factor": "-b*(a + b)*(b + c)",
+        "batch": "results/transfer_certificates.json"
+      }
+    },
+    "1446": {
+      "source_cell": 1038,
+      "symmetry": 5,
+      "source_proof": {
+        "kind": "direct",
+        "factor": "-b*(a + b)*(b + c)",
+        "batch": "results/transfer_certificates.json"
+      }
+    },
+    "745": {
+      "source_cell": 1038,
+      "symmetry": 6,
+      "source_proof": {
+        "kind": "direct",
+        "factor": "-b*(a + b)*(b + c)",
+        "batch": "results/transfer_certificates.json"
+      }
+    },
+    "491": {
+      "source_cell": 1038,
+      "symmetry": 7,
+      "source_proof": {
+        "kind": "direct",
+        "factor": "-b*(a + b)*(b + c)",
+        "batch": "results/transfer_certificates.json"
+      }
+    },
+    "5461": {
+      "source_cell": 3798,
+      "symmetry": 2,
+      "source_proof": {
+        "kind": "direct",
+        "factor": "2*b*c**2*(a + c)",
+        "batch": "results/transfer_certificates.json"
+      }
+    },
+    "7679": {
+      "source_cell": 3798,
+      "symmetry": 4,
+      "source_proof": {
+        "kind": "direct",
+        "factor": "2*b*c**2*(a + c)",
+        "batch": "results/transfer_certificates.json"
+      }
+    },
+    "4118": {
+      "source_cell": 3798,
+      "symmetry": 6,
+      "source_proof": {
+        "kind": "direct",
+        "factor": "2*b*c**2*(a + c)",
+        "batch": "results/transfer_certificates.json"
+      }
+    },
+    "5501": {
+      "source_cell": 3919,
+      "symmetry": 2,
+      "source_proof": {
+        "kind": "direct",
+        "factor": "2*b*c**2*(a + c)",
+        "batch": "results/transfer_certificates.json"
+      }
+    },
+    "7674": {
+      "source_cell": 3919,
+      "symmetry": 4,
+      "source_proof": {
+        "kind": "direct",
+        "factor": "2*b*c**2*(a + c)",
+        "batch": "results/transfer_certificates.json"
+      }
+    },
+    "4114": {
+      "source_cell": 3919,
+      "symmetry": 6,
+      "source_proof": {
+        "kind": "direct",
+        "factor": "2*b*c**2*(a + c)",
+        "batch": "results/transfer_certificates.json"
+      }
+    },
+    "7097": {
+      "source_cell": 6656,
+      "symmetry": 1,
+      "source_proof": {
+        "kind": "direct",
+        "factor": "-b*(a + b)*(b + c)",
+        "batch": "results/transfer_certificates.json"
+      }
+    },
+    "6693": {
+      "source_cell": 6656,
+      "symmetry": 2,
+      "source_proof": {
+        "kind": "direct",
+        "factor": "-b*(a + b)*(b + c)",
+        "batch": "results/transfer_certificates.json"
+      }
+    },
+    "6971": {
+      "source_cell": 6656,
+      "symmetry": 3,
+      "source_proof": {
+        "kind": "direct",
+        "factor": "-b*(a + b)*(b + c)",
+        "batch": "results/transfer_certificates.json"
+      }
+    },
+    "6955": {
+      "source_cell": 6656,
+      "symmetry": 4,
+      "source_proof": {
+        "kind": "direct",
+        "factor": "-b*(a + b)*(b + c)",
+        "batch": "results/transfer_certificates.json"
+      }
+    },
+    "7167": {
+      "source_cell": 6656,
+      "symmetry": 5,
+      "source_proof": {
+        "kind": "direct",
+        "factor": "-b*(a + b)*(b + c)",
+        "batch": "results/transfer_certificates.json"
+      }
+    },
+    "4721": {
+      "source_cell": 6656,
+      "symmetry": 6,
+      "source_proof": {
+        "kind": "direct",
+        "factor": "-b*(a + b)*(b + c)",
+        "batch": "results/transfer_certificates.json"
+      }
+    },
+    "3588": {
+      "source_cell": 6656,
+      "symmetry": 7,
+      "source_proof": {
+        "kind": "direct",
+        "factor": "-b*(a + b)*(b + c)",
+        "batch": "results/transfer_certificates.json"
+      }
+    },
+    "7477": {
+      "source_cell": 6659,
+      "symmetry": 1,
+      "source_proof": {
+        "kind": "direct",
+        "factor": "-b*(a + b)*(b + c)",
+        "batch": "results/transfer_certificates.json"
+      }
+    },
+    "6769": {
+      "source_cell": 6659,
+      "symmetry": 2,
+      "source_proof": {
+        "kind": "direct",
+        "factor": "-b*(a + b)*(b + c)",
+        "batch": "results/transfer_certificates.json"
+      }
+    },
+    "7247": {
+      "source_cell": 6659,
+      "symmetry": 3,
+      "source_proof": {
+        "kind": "direct",
+        "factor": "-b*(a + b)*(b + c)",
+        "batch": "results/transfer_certificates.json"
+      }
+    },
+    "7408": {
+      "source_cell": 6659,
+      "symmetry": 4,
+      "source_proof": {
+        "kind": "direct",
+        "factor": "-b*(a + b)*(b + c)",
+        "batch": "results/transfer_certificates.json"
+      }
+    },
+    "7460": {
+      "source_cell": 6659,
+      "symmetry": 5,
+      "source_proof": {
+        "kind": "direct",
+        "factor": "-b*(a + b)*(b + c)",
+        "batch": "results/transfer_certificates.json"
+      }
+    },
+    "5521": {
+      "source_cell": 6659,
+      "symmetry": 6,
+      "source_proof": {
+        "kind": "direct",
+        "factor": "-b*(a + b)*(b + c)",
+        "batch": "results/transfer_certificates.json"
+      }
+    },
+    "4359": {
+      "source_cell": 6659,
+      "symmetry": 7,
+      "source_proof": {
+        "kind": "direct",
+        "factor": "-b*(a + b)*(b + c)",
+        "batch": "results/transfer_certificates.json"
+      }
+    },
+    "13798": {
+      "source_cell": 10559,
+      "symmetry": 1,
+      "source_proof": {
+        "kind": "direct",
+        "factor": "-b*(a + b)*(b + c)",
+        "batch": "results/transfer_certificates.json"
+      }
+    },
+    "11312": {
+      "source_cell": 10559,
+      "symmetry": 2,
+      "source_proof": {
+        "kind": "direct",
+        "factor": "-b*(a + b)*(b + c)",
+        "batch": "results/transfer_certificates.json"
+      }
+    },
+    "13599": {
+      "source_cell": 10559,
+      "symmetry": 3,
+      "source_proof": {
+        "kind": "direct",
+        "factor": "-b*(a + b)*(b + c)",
+        "batch": "results/transfer_certificates.json"
+      }
+    },
+    "13583": {
+      "source_cell": 10559,
+      "symmetry": 4,
+      "source_proof": {
+        "kind": "direct",
+        "factor": "-b*(a + b)*(b + c)",
+        "batch": "results/transfer_certificates.json"
+      }
+    },
+    "13840": {
+      "source_cell": 10559,
+      "symmetry": 5,
+      "source_proof": {
+        "kind": "direct",
+        "factor": "-b*(a + b)*(b + c)",
+        "batch": "results/transfer_certificates.json"
+      }
+    },
+    "11232": {
+      "source_cell": 10559,
+      "symmetry": 6,
+      "source_proof": {
+        "kind": "direct",
+        "factor": "-b*(a + b)*(b + c)",
+        "batch": "results/transfer_certificates.json"
+      }
+    },
+    "10415": {
+      "source_cell": 10559,
+      "symmetry": 7,
+      "source_proof": {
+        "kind": "direct",
+        "factor": "-b*(a + b)*(b + c)",
+        "batch": "results/transfer_certificates.json"
+      }
+    },
+    "1091": {
+      "source_cell": 1039,
+      "symmetry": 2,
+      "source_proof": {
+        "kind": "direct",
+        "factor": "b*c*(a + b)",
+        "batch": "results/pair2_certificates.json"
+      }
+    },
+    "1371": {
+      "source_cell": 1039,
+      "symmetry": 4,
+      "source_proof": {
+        "kind": "direct",
+        "factor": "b*c*(a + b)",
+        "batch": "results/pair2_certificates.json"
+      }
+    },
+    "1447": {
+      "source_cell": 1039,
+      "symmetry": 5,
+      "source_proof": {
+        "kind": "direct",
+        "factor": "b*c*(a + b)",
+        "batch": "results/pair2_certificates.json"
+      }
+    },
+    "742": {
+      "source_cell": 1039,
+      "symmetry": 6,
+      "source_proof": {
+        "kind": "direct",
+        "factor": "b*c*(a + b)",
+        "batch": "results/pair2_certificates.json"
+      }
+    },
+    "490": {
+      "source_cell": 1039,
+      "symmetry": 7,
+      "source_proof": {
+        "kind": "direct",
+        "factor": "b*c*(a + b)",
+        "batch": "results/pair2_certificates.json"
+      }
+    },
+    "1396": {
+      "source_cell": 1377,
+      "symmetry": 2,
+      "source_proof": {
+        "kind": "direct",
+        "factor": "-4*a**3*b",
+        "batch": "results/pair2_certificates.json"
+      }
+    },
+    "1352": {
+      "source_cell": 1377,
+      "symmetry": 3,
+      "source_proof": {
+        "kind": "direct",
+        "factor": "-4*a**3*b",
+        "batch": "results/pair2_certificates.json"
+      }
+    },
+    "1395": {
+      "source_cell": 1362,
+      "symmetry": 2,
+      "source_proof": {
+        "kind": "direct",
+        "factor": "-4*a**3*b",
+        "batch": "results/transfer2_certificates.json"
+      }
+    },
+    "1315": {
+      "source_cell": 1362,
+      "symmetry": 4,
+      "source_proof": {
+        "kind": "direct",
+        "factor": "-4*a**3*b",
+        "batch": "results/transfer2_certificates.json"
+      }
+    },
+    "1363": {
+      "source_cell": 1362,
+      "symmetry": 6,
+      "source_proof": {
+        "kind": "direct",
+        "factor": "-4*a**3*b",
+        "batch": "results/transfer2_certificates.json"
+      }
+    },
+    "5433": {
+      "source_cell": 3865,
+      "symmetry": 2,
+      "source_proof": {
+        "kind": "direct",
+        "factor": "b*c*(a + b)",
+        "batch": "results/transfer2_certificates.json"
+      }
+    },
+    "7410": {
+      "source_cell": 3865,
+      "symmetry": 4,
+      "source_proof": {
+        "kind": "direct",
+        "factor": "b*c*(a + b)",
+        "batch": "results/transfer2_certificates.json"
+      }
+    },
+    "7447": {
+      "source_cell": 3865,
+      "symmetry": 5,
+      "source_proof": {
+        "kind": "direct",
+        "factor": "b*c*(a + b)",
+        "batch": "results/transfer2_certificates.json"
+      }
+    },
+    "5515": {
+      "source_cell": 3865,
+      "symmetry": 6,
+      "source_proof": {
+        "kind": "direct",
+        "factor": "b*c*(a + b)",
+        "batch": "results/transfer2_certificates.json"
+      }
+    },
+    "4348": {
+      "source_cell": 3865,
+      "symmetry": 7,
+      "source_proof": {
+        "kind": "direct",
+        "factor": "b*c*(a + b)",
+        "batch": "results/transfer2_certificates.json"
+      }
+    },
+    "6770": {
+      "source_cell": 6660,
+      "symmetry": 2,
+      "source_proof": {
+        "kind": "direct",
+        "factor": "b*c*(a + b)",
+        "batch": "results/transfer2_certificates.json"
+      }
+    },
+    "7409": {
+      "source_cell": 6660,
+      "symmetry": 4,
+      "source_proof": {
+        "kind": "direct",
+        "factor": "b*c*(a + b)",
+        "batch": "results/transfer2_certificates.json"
+      }
+    },
+    "7461": {
+      "source_cell": 6660,
+      "symmetry": 5,
+      "source_proof": {
+        "kind": "direct",
+        "factor": "b*c*(a + b)",
+        "batch": "results/transfer2_certificates.json"
+      }
+    },
+    "5520": {
+      "source_cell": 6660,
+      "symmetry": 6,
+      "source_proof": {
+        "kind": "direct",
+        "factor": "b*c*(a + b)",
+        "batch": "results/transfer2_certificates.json"
+      }
+    },
+    "4358": {
+      "source_cell": 6660,
+      "symmetry": 7,
+      "source_proof": {
+        "kind": "direct",
+        "factor": "b*c*(a + b)",
+        "batch": "results/transfer2_certificates.json"
+      }
+    },
+    "6820": {
+      "source_cell": 6845,
+      "symmetry": 2,
+      "source_proof": {
+        "kind": "direct",
+        "factor": "-4*a**3*b",
+        "batch": "results/transfer2_certificates.json"
+      }
+    },
+    "6377": {
+      "source_cell": 6845,
+      "symmetry": 4,
+      "source_proof": {
+        "kind": "direct",
+        "factor": "-4*a**3*b",
+        "batch": "results/transfer2_certificates.json"
+      }
+    },
+    "6439": {
+      "source_cell": 6845,
+      "symmetry": 6,
+      "source_proof": {
+        "kind": "direct",
+        "factor": "-4*a**3*b",
+        "batch": "results/transfer2_certificates.json"
+      }
+    },
+    "7271": {
+      "source_cell": 7270,
+      "symmetry": 2,
+      "source_proof": {
+        "kind": "direct",
+        "factor": "-4*a**3*b",
+        "batch": "results/transfer2_certificates.json"
+      }
+    },
+    "7272": {
+      "source_cell": 7270,
+      "symmetry": 4,
+      "source_proof": {
+        "kind": "direct",
+        "factor": "-4*a**3*b",
+        "batch": "results/transfer2_certificates.json"
+      }
+    },
+    "7273": {
+      "source_cell": 7270,
+      "symmetry": 6,
+      "source_proof": {
+        "kind": "direct",
+        "factor": "-4*a**3*b",
+        "batch": "results/transfer2_certificates.json"
+      }
+    },
+    "11271": {
+      "source_cell": 10509,
+      "symmetry": 2,
+      "source_proof": {
+        "kind": "direct",
+        "factor": "b*c*(a + b)",
+        "batch": "results/transfer2_certificates.json"
+      }
+    },
+    "13681": {
+      "source_cell": 10509,
+      "symmetry": 4,
+      "source_proof": {
+        "kind": "direct",
+        "factor": "b*c*(a + b)",
+        "batch": "results/transfer2_certificates.json"
+      }
+    },
+    "13879": {
+      "source_cell": 10509,
+      "symmetry": 5,
+      "source_proof": {
+        "kind": "direct",
+        "factor": "b*c*(a + b)",
+        "batch": "results/transfer2_certificates.json"
+      }
+    },
+    "11290": {
+      "source_cell": 10509,
+      "symmetry": 6,
+      "source_proof": {
+        "kind": "direct",
+        "factor": "b*c*(a + b)",
+        "batch": "results/transfer2_certificates.json"
+      }
+    },
+    "10537": {
+      "source_cell": 10509,
+      "symmetry": 7,
+      "source_proof": {
+        "kind": "direct",
+        "factor": "b*c*(a + b)",
+        "batch": "results/transfer2_certificates.json"
+      }
+    },
+    "13475": {
+      "source_cell": 13496,
+      "symmetry": 2,
+      "source_proof": {
+        "kind": "direct",
+        "factor": "-4*a**3*b",
+        "batch": "results/transfer2_certificates.json"
+      }
+    },
+    "10284": {
+      "source_cell": 13496,
+      "symmetry": 4,
+      "source_proof": {
+        "kind": "direct",
+        "factor": "-4*a**3*b",
+        "batch": "results/transfer2_certificates.json"
+      }
+    },
+    "10297": {
+      "source_cell": 13496,
+      "symmetry": 6,
+      "source_proof": {
+        "kind": "direct",
+        "factor": "-4*a**3*b",
+        "batch": "results/transfer2_certificates.json"
+      }
+    },
+    "809": {
+      "source_cell": 61,
+      "symmetry": 1,
+      "source_proof": {
+        "kind": "direct",
+        "factor": "2*b*c",
+        "batch": "results/target247_certificates.json"
+      }
+    },
+    "795": {
+      "source_cell": 61,
+      "symmetry": 2,
+      "source_proof": {
+        "kind": "direct",
+        "factor": "2*b*c",
+        "batch": "results/target247_certificates.json"
+      }
+    },
+    "135": {
+      "source_cell": 61,
+      "symmetry": 3,
+      "source_proof": {
+        "kind": "direct",
+        "factor": "2*b*c",
+        "batch": "results/target247_certificates.json"
+      }
+    },
+    "56": {
+      "source_cell": 61,
+      "symmetry": 4,
+      "source_proof": {
+        "kind": "direct",
+        "factor": "2*b*c",
+        "batch": "results/target247_certificates.json"
+      }
+    },
+    "571": {
+      "source_cell": 61,
+      "symmetry": 5,
+      "source_proof": {
+        "kind": "direct",
+        "factor": "2*b*c",
+        "batch": "results/target247_certificates.json"
+      }
+    },
+    "902": {
+      "source_cell": 61,
+      "symmetry": 6,
+      "source_proof": {
+        "kind": "direct",
+        "factor": "2*b*c",
+        "batch": "results/target247_certificates.json"
+      }
+    },
+    "886": {
+      "source_cell": 73,
+      "symmetry": 1,
+      "source_proof": {
+        "kind": "direct",
+        "factor": "2*b*c",
+        "batch": "results/target247_certificates.json"
+      }
+    },
+    "850": {
+      "source_cell": 73,
+      "symmetry": 2,
+      "source_proof": {
+        "kind": "direct",
+        "factor": "2*b*c",
+        "batch": "results/target247_certificates.json"
+      }
+    },
+    "136": {
+      "source_cell": 73,
+      "symmetry": 3,
+      "source_proof": {
+        "kind": "direct",
+        "factor": "2*b*c",
+        "batch": "results/target247_certificates.json"
+      }
+    },
+    "93": {
+      "source_cell": 73,
+      "symmetry": 4,
+      "source_proof": {
+        "kind": "direct",
+        "factor": "2*b*c",
+        "batch": "results/target247_certificates.json"
+      }
+    },
+    "680": {
+      "source_cell": 73,
+      "symmetry": 5,
+      "source_proof": {
+        "kind": "direct",
+        "factor": "2*b*c",
+        "batch": "results/target247_certificates.json"
+      }
+    },
+    "714": {
+      "source_cell": 73,
+      "symmetry": 6,
+      "source_proof": {
+        "kind": "direct",
+        "factor": "2*b*c",
+        "batch": "results/target247_certificates.json"
+      }
+    },
+    "1350": {
+      "source_cell": 247,
+      "symmetry": 1,
+      "source_proof": {
+        "kind": "direct",
+        "factor": "2*b*c",
+        "batch": "results/target247_certificates.json"
+      }
+    },
+    "791": {
+      "source_cell": 247,
+      "symmetry": 2,
+      "source_proof": {
+        "kind": "direct",
+        "factor": "2*b*c",
+        "batch": "results/target247_certificates.json"
+      }
+    },
+    "1456": {
+      "source_cell": 247,
+      "symmetry": 3,
+      "source_proof": {
+        "kind": "direct",
+        "factor": "2*b*c",
+        "batch": "results/target247_certificates.json"
+      }
+    },
+    "1190": {
+      "source_cell": 247,
+      "symmetry": 4,
+      "source_proof": {
+        "kind": "direct",
+        "factor": "2*b*c",
+        "batch": "results/target247_certificates.json"
+      }
+    },
+    "1153": {
+      "source_cell": 247,
+      "symmetry": 5,
+      "source_proof": {
+        "kind": "direct",
+        "factor": "2*b*c",
+        "batch": "results/target247_certificates.json"
+      }
+    },
+    "710": {
+      "source_cell": 247,
+      "symmetry": 6,
+      "source_proof": {
+        "kind": "direct",
+        "factor": "2*b*c",
+        "batch": "results/target247_certificates.json"
+      }
+    },
+    "1433": {
+      "source_cell": 456,
+      "symmetry": 1,
+      "source_proof": {
+        "kind": "direct",
+        "factor": "2*a*c",
+        "batch": "results/target247_certificates.json"
+      }
+    },
+    "864": {
+      "source_cell": 456,
+      "symmetry": 2,
+      "source_proof": {
+        "kind": "direct",
+        "factor": "2*a*c",
+        "batch": "results/target247_certificates.json"
+      }
+    },
+    "1478": {
+      "source_cell": 456,
+      "symmetry": 3,
+      "source_proof": {
+        "kind": "direct",
+        "factor": "2*a*c",
+        "batch": "results/target247_certificates.json"
+      }
+    },
+    "1488": {
+      "source_cell": 456,
+      "symmetry": 4,
+      "source_proof": {
+        "kind": "direct",
+        "factor": "2*a*c",
+        "batch": "results/target247_certificates.json"
+      }
+    },
+    "1448": {
+      "source_cell": 456,
+      "symmetry": 5,
+      "source_proof": {
+        "kind": "direct",
+        "factor": "2*a*c",
+        "batch": "results/target247_certificates.json"
+      }
+    },
+    "854": {
+      "source_cell": 456,
+      "symmetry": 6,
+      "source_proof": {
+        "kind": "direct",
+        "factor": "2*a*c",
+        "batch": "results/target247_certificates.json"
+      }
+    },
+    "601": {
+      "source_cell": 35,
+      "symmetry": 2,
+      "source_proof": {
+        "kind": "direct",
+        "factor": "c*(a + 2*b)",
+        "batch": "results/target279_certificates.json"
+      }
+    },
+    "1556": {
+      "source_cell": 35,
+      "symmetry": 4,
+      "source_proof": {
+        "kind": "direct",
+        "factor": "c*(a + 2*b)",
+        "batch": "results/target279_certificates.json"
+      }
+    },
+    "359": {
+      "source_cell": 35,
+      "symmetry": 6,
+      "source_proof": {
+        "kind": "direct",
+        "factor": "c*(a + 2*b)",
+        "batch": "results/target279_certificates.json"
+      }
+    },
+    "464": {
+      "source_cell": 86,
+      "symmetry": 1,
+      "source_proof": {
+        "kind": "direct",
+        "factor": "c*(a + 2*b)",
+        "batch": "results/target279_certificates.json"
+      }
+    },
+    "600": {
+      "source_cell": 86,
+      "symmetry": 2,
+      "source_proof": {
+        "kind": "direct",
+        "factor": "c*(a + 2*b)",
+        "batch": "results/target279_certificates.json"
+      }
+    },
+    "776": {
+      "source_cell": 86,
+      "symmetry": 3,
+      "source_proof": {
+        "kind": "direct",
+        "factor": "c*(a + 2*b)",
+        "batch": "results/target279_certificates.json"
+      }
+    },
+    "1584": {
+      "source_cell": 86,
+      "symmetry": 4,
+      "source_proof": {
+        "kind": "direct",
+        "factor": "c*(a + 2*b)",
+        "batch": "results/target279_certificates.json"
+      }
+    },
+    "1602": {
+      "source_cell": 86,
+      "symmetry": 5,
+      "source_proof": {
+        "kind": "direct",
+        "factor": "c*(a + 2*b)",
+        "batch": "results/target279_certificates.json"
+      }
+    },
+    "370": {
+      "source_cell": 86,
+      "symmetry": 6,
+      "source_proof": {
+        "kind": "direct",
+        "factor": "c*(a + 2*b)",
+        "batch": "results/target279_certificates.json"
+      }
+    },
+    "560": {
+      "source_cell": 86,
+      "symmetry": 7,
+      "source_proof": {
+        "kind": "direct",
+        "factor": "c*(a + 2*b)",
+        "batch": "results/target279_certificates.json"
+      }
+    },
+    "692": {
+      "source_cell": 279,
+      "symmetry": 2,
+      "source_proof": {
+        "kind": "direct",
+        "factor": "c*(a + 2*b)",
+        "batch": "results/target279_certificates.json"
+      }
+    },
+    "1585": {
+      "source_cell": 279,
+      "symmetry": 4,
+      "source_proof": {
+        "kind": "direct",
+        "factor": "c*(a + 2*b)",
+        "batch": "results/target279_certificates.json"
+      }
+    },
+    "444": {
+      "source_cell": 279,
+      "symmetry": 6,
+      "source_proof": {
+        "kind": "direct",
+        "factor": "c*(a + 2*b)",
+        "batch": "results/target279_certificates.json"
+      }
+    },
+    "4250": {
+      "source_cell": 1757,
+      "symmetry": 1,
+      "source_proof": {
+        "kind": "direct",
+        "factor": "c*(a + 2*b)",
+        "batch": "results/target279_certificates.json"
+      }
+    },
+    "3171": {
+      "source_cell": 1757,
+      "symmetry": 2,
+      "source_proof": {
+        "kind": "direct",
+        "factor": "c*(a + 2*b)",
+        "batch": "results/target279_certificates.json"
+      }
+    },
+    "5574": {
+      "source_cell": 1757,
+      "symmetry": 3,
+      "source_proof": {
+        "kind": "direct",
+        "factor": "c*(a + 2*b)",
+        "batch": "results/target279_certificates.json"
+      }
+    },
+    "7697": {
+      "source_cell": 1757,
+      "symmetry": 4,
+      "source_proof": {
+        "kind": "direct",
+        "factor": "c*(a + 2*b)",
+        "batch": "results/target279_certificates.json"
+      }
+    },
+    "7709": {
+      "source_cell": 1757,
+      "symmetry": 5,
+      "source_proof": {
+        "kind": "direct",
+        "factor": "c*(a + 2*b)",
+        "batch": "results/target279_certificates.json"
+      }
+    },
+    "3757": {
+      "source_cell": 1757,
+      "symmetry": 6,
+      "source_proof": {
+        "kind": "direct",
+        "factor": "c*(a + 2*b)",
+        "batch": "results/target279_certificates.json"
+      }
+    },
+    "4192": {
+      "source_cell": 1757,
+      "symmetry": 7,
+      "source_proof": {
+        "kind": "direct",
+        "factor": "c*(a + 2*b)",
+        "batch": "results/target279_certificates.json"
+      }
+    },
+    "2061": {
+      "source_cell": 2056,
+      "symmetry": 1,
+      "source_proof": {
+        "kind": "direct",
+        "factor": "c*(a + 2*b)",
+        "batch": "results/target279_certificates.json"
+      }
+    },
+    "5174": {
+      "source_cell": 2056,
+      "symmetry": 2,
+      "source_proof": {
+        "kind": "direct",
+        "factor": "c*(a + 2*b)",
+        "batch": "results/target279_certificates.json"
+      }
+    },
+    "5182": {
+      "source_cell": 2056,
+      "symmetry": 3,
+      "source_proof": {
+        "kind": "direct",
+        "factor": "c*(a + 2*b)",
+        "batch": "results/target279_certificates.json"
+      }
+    },
+    "7660": {
+      "source_cell": 2056,
+      "symmetry": 4,
+      "source_proof": {
+        "kind": "direct",
+        "factor": "c*(a + 2*b)",
+        "batch": "results/target279_certificates.json"
+      }
+    },
+    "7663": {
+      "source_cell": 2056,
+      "symmetry": 5,
+      "source_proof": {
+        "kind": "direct",
+        "factor": "c*(a + 2*b)",
+        "batch": "results/target279_certificates.json"
+      }
+    },
+    "4048": {
+      "source_cell": 2056,
+      "symmetry": 6,
+      "source_proof": {
+        "kind": "direct",
+        "factor": "c*(a + 2*b)",
+        "batch": "results/target279_certificates.json"
+      }
+    },
+    "4052": {
+      "source_cell": 2056,
+      "symmetry": 7,
+      "source_proof": {
+        "kind": "direct",
+        "factor": "c*(a + 2*b)",
+        "batch": "results/target279_certificates.json"
+      }
+    },
+    "5179": {
+      "source_cell": 2058,
+      "symmetry": 2,
+      "source_proof": {
+        "kind": "direct",
+        "factor": "c*(a + 2*b)",
+        "batch": "results/target279_certificates.json"
+      }
+    },
+    "7661": {
+      "source_cell": 2058,
+      "symmetry": 4,
+      "source_proof": {
+        "kind": "direct",
+        "factor": "c*(a + 2*b)",
+        "batch": "results/target279_certificates.json"
+      }
+    },
+    "4050": {
+      "source_cell": 2058,
+      "symmetry": 6,
+      "source_proof": {
+        "kind": "direct",
+        "factor": "c*(a + 2*b)",
+        "batch": "results/target279_certificates.json"
+      }
+    },
+    "5180": {
+      "source_cell": 2059,
+      "symmetry": 2,
+      "source_proof": {
+        "kind": "direct",
+        "factor": "c*(a + 2*b)",
+        "batch": "results/target279_certificates.json"
+      }
+    },
+    "7662": {
+      "source_cell": 2059,
+      "symmetry": 4,
+      "source_proof": {
+        "kind": "direct",
+        "factor": "c*(a + 2*b)",
+        "batch": "results/target279_certificates.json"
+      }
+    },
+    "4047": {
+      "source_cell": 2059,
+      "symmetry": 6,
+      "source_proof": {
+        "kind": "direct",
+        "factor": "c*(a + 2*b)",
+        "batch": "results/target279_certificates.json"
+      }
+    },
+    "5448": {
+      "source_cell": 3780,
+      "symmetry": 2,
+      "source_proof": {
+        "kind": "direct",
+        "factor": "c*(a + 2*b)",
+        "batch": "results/target279_certificates.json"
+      }
+    },
+    "7672": {
+      "source_cell": 3780,
+      "symmetry": 4,
+      "source_proof": {
+        "kind": "direct",
+        "factor": "c*(a + 2*b)",
+        "batch": "results/target279_certificates.json"
+      }
+    },
+    "4109": {
+      "source_cell": 3780,
+      "symmetry": 6,
+      "source_proof": {
+        "kind": "direct",
+        "factor": "c*(a + 2*b)",
+        "batch": "results/target279_certificates.json"
+      }
+    },
+    "963": {
+      "source_cell": 897,
+      "symmetry": 2,
+      "source_proof": {
+        "kind": "direct",
+        "factor": "2*a**2 + 2*a*c - 2*b**2",
+        "batch": "results/target897_certificates.json"
+      }
+    },
+    "922": {
+      "source_cell": 897,
+      "symmetry": 3,
+      "source_proof": {
+        "kind": "direct",
+        "factor": "2*a**2 + 2*a*c - 2*b**2",
+        "batch": "results/target897_certificates.json"
+      }
+    },
+    "1170": {
+      "source_cell": 897,
+      "symmetry": 4,
+      "source_proof": {
+        "kind": "direct",
+        "factor": "2*a**2 + 2*a*c - 2*b**2",
+        "batch": "results/target897_certificates.json"
+      }
+    },
+    "1187": {
+      "source_cell": 897,
+      "symmetry": 5,
+      "source_proof": {
+        "kind": "direct",
+        "factor": "2*a**2 + 2*a*c - 2*b**2",
+        "batch": "results/target897_certificates.json"
+      }
+    },
+    "1275": {
+      "source_cell": 897,
+      "symmetry": 6,
+      "source_proof": {
+        "kind": "direct",
+        "factor": "2*a**2 + 2*a*c - 2*b**2",
+        "batch": "results/target897_certificates.json"
+      }
+    },
+    "1280": {
+      "source_cell": 897,
+      "symmetry": 7,
+      "source_proof": {
+        "kind": "direct",
+        "factor": "2*a**2 + 2*a*c - 2*b**2",
+        "batch": "results/target897_certificates.json"
+      }
+    },
+    "916": {
+      "source_cell": 895,
+      "symmetry": 2,
+      "source_proof": {
+        "kind": "direct",
+        "factor": "2*a**2 + 2*a*c - 2*b**2",
+        "batch": "results/transfer897_certificates.json"
+      }
+    },
+    "1167": {
+      "source_cell": 895,
+      "symmetry": 4,
+      "source_proof": {
+        "kind": "direct",
+        "factor": "2*a**2 + 2*a*c - 2*b**2",
+        "batch": "results/transfer897_certificates.json"
+      }
+    },
+    "1278": {
+      "source_cell": 895,
+      "symmetry": 6,
+      "source_proof": {
+        "kind": "direct",
+        "factor": "2*a**2 + 2*a*c - 2*b**2",
+        "batch": "results/transfer897_certificates.json"
+      }
+    },
+    "958": {
+      "source_cell": 900,
+      "symmetry": 2,
+      "source_proof": {
+        "kind": "direct",
+        "factor": "2*a**2 + 2*a*c - 2*b**2",
+        "batch": "results/transfer897_certificates.json"
+      }
+    },
+    "1186": {
+      "source_cell": 900,
+      "symmetry": 4,
+      "source_proof": {
+        "kind": "direct",
+        "factor": "2*a**2 + 2*a*c - 2*b**2",
+        "batch": "results/transfer897_certificates.json"
+      }
+    },
+    "1279": {
+      "source_cell": 900,
+      "symmetry": 6,
+      "source_proof": {
+        "kind": "direct",
+        "factor": "2*a**2 + 2*a*c - 2*b**2",
+        "batch": "results/transfer897_certificates.json"
+      }
+    }
+  },
+  "additional_uniform_cells": {
+    "362": {
+      "source_cell": 1164,
+      "symmetry": 1,
+      "source_proof": {
+        "kind": "direct",
+        "factor": "-2*a",
+        "batch": "results/shifted_certificates.json"
+      }
+    },
+    "708": {
+      "source_cell": 1164,
+      "symmetry": 3,
+      "source_proof": {
+        "kind": "direct",
+        "factor": "-2*a",
+        "batch": "results/shifted_certificates.json"
+      }
+    },
+    "1435": {
+      "source_cell": 1164,
+      "symmetry": 4,
+      "source_proof": {
+        "kind": "direct",
+        "factor": "-2*a",
+        "batch": "results/shifted_certificates.json"
+      }
+    },
+    "1416": {
+      "source_cell": 1164,
+      "symmetry": 5,
+      "source_proof": {
+        "kind": "direct",
+        "factor": "-2*a",
+        "batch": "results/shifted_certificates.json"
+      }
+    },
+    "202": {
+      "source_cell": 1164,
+      "symmetry": 6,
+      "source_proof": {
+        "kind": "direct",
+        "factor": "-2*a",
+        "batch": "results/shifted_certificates.json"
+      }
+    },
+    "715": {
+      "source_cell": 1164,
+      "symmetry": 7,
+      "source_proof": {
+        "kind": "direct",
+        "factor": "-2*a",
+        "batch": "results/shifted_certificates.json"
+      }
+    },
+    "484": {
+      "source_cell": 1171,
+      "symmetry": 1,
+      "source_proof": {
+        "kind": "direct",
+        "factor": "2*a",
+        "batch": "results/shifted_certificates.json"
+      }
+    },
+    "90": {
+      "source_cell": 1171,
+      "symmetry": 3,
+      "source_proof": {
+        "kind": "direct",
+        "factor": "2*a",
+        "batch": "results/shifted_certificates.json"
+      }
+    },
+    "194": {
+      "source_cell": 1171,
+      "symmetry": 4,
+      "source_proof": {
+        "kind": "direct",
+        "factor": "2*a",
+        "batch": "results/shifted_certificates.json"
+      }
+    },
+    "655": {
+      "source_cell": 1171,
+      "symmetry": 5,
+      "source_proof": {
+        "kind": "direct",
+        "factor": "2*a",
+        "batch": "results/shifted_certificates.json"
+      }
+    },
+    "1451": {
+      "source_cell": 1171,
+      "symmetry": 6,
+      "source_proof": {
+        "kind": "direct",
+        "factor": "2*a",
+        "batch": "results/shifted_certificates.json"
+      }
+    },
+    "1418": {
+      "source_cell": 1171,
+      "symmetry": 7,
+      "source_proof": {
+        "kind": "direct",
+        "factor": "2*a",
+        "batch": "results/shifted_certificates.json"
+      }
+    },
+    "500": {
+      "source_cell": 1458,
+      "symmetry": 1,
+      "source_proof": {
+        "kind": "direct",
+        "factor": "-2*a",
+        "batch": "results/shifted_certificates.json"
+      }
+    },
+    "822": {
+      "source_cell": 1458,
+      "symmetry": 3,
+      "source_proof": {
+        "kind": "direct",
+        "factor": "-2*a",
+        "batch": "results/shifted_certificates.json"
+      }
+    },
+    "1415": {
+      "source_cell": 1458,
+      "symmetry": 5,
+      "source_proof": {
+        "kind": "direct",
+        "factor": "-2*a",
+        "batch": "results/shifted_certificates.json"
+      }
+    },
+    "533": {
+      "source_cell": 1458,
+      "symmetry": 7,
+      "source_proof": {
+        "kind": "direct",
+        "factor": "-2*a",
+        "batch": "results/shifted_certificates.json"
+      }
+    },
+    "1891": {
+      "source_cell": 1920,
+      "symmetry": 1,
+      "source_proof": {
+        "kind": "direct",
+        "factor": "2*a",
+        "batch": "results/shifted_certificates.json"
+      }
+    },
+    "1851": {
+      "source_cell": 1920,
+      "symmetry": 3,
+      "source_proof": {
+        "kind": "direct",
+        "factor": "2*a",
+        "batch": "results/shifted_certificates.json"
+      }
+    },
+    "3302": {
+      "source_cell": 5750,
+      "symmetry": 1,
+      "source_proof": {
+        "kind": "direct",
+        "factor": "-2*a",
+        "batch": "results/shifted_certificates.json"
+      }
+    },
+    "3306": {
+      "source_cell": 5750,
+      "symmetry": 3,
+      "source_proof": {
+        "kind": "direct",
+        "factor": "-2*a",
+        "batch": "results/shifted_certificates.json"
+      }
+    },
+    "2248": {
+      "source_cell": 5750,
+      "symmetry": 4,
+      "source_proof": {
+        "kind": "direct",
+        "factor": "-2*a",
+        "batch": "results/shifted_certificates.json"
+      }
+    },
+    "4607": {
+      "source_cell": 5750,
+      "symmetry": 5,
+      "source_proof": {
+        "kind": "direct",
+        "factor": "-2*a",
+        "batch": "results/shifted_certificates.json"
+      }
+    },
+    "2212": {
+      "source_cell": 5750,
+      "symmetry": 6,
+      "source_proof": {
+        "kind": "direct",
+        "factor": "-2*a",
+        "batch": "results/shifted_certificates.json"
+      }
+    },
+    "4581": {
+      "source_cell": 5750,
+      "symmetry": 7,
+      "source_proof": {
+        "kind": "direct",
+        "factor": "-2*a",
+        "batch": "results/shifted_certificates.json"
+      }
+    },
+    "2640": {
+      "source_cell": 6783,
+      "symmetry": 1,
+      "source_proof": {
+        "kind": "direct",
+        "factor": "2*a",
+        "batch": "results/shifted_certificates.json"
+      }
+    },
+    "2638": {
+      "source_cell": 6783,
+      "symmetry": 3,
+      "source_proof": {
+        "kind": "direct",
+        "factor": "2*a",
+        "batch": "results/shifted_certificates.json"
+      }
+    },
+    "3365": {
+      "source_cell": 6783,
+      "symmetry": 4,
+      "source_proof": {
+        "kind": "direct",
+        "factor": "2*a",
+        "batch": "results/shifted_certificates.json"
+      }
+    },
+    "4856": {
+      "source_cell": 6783,
+      "symmetry": 5,
+      "source_proof": {
+        "kind": "direct",
+        "factor": "2*a",
+        "batch": "results/shifted_certificates.json"
+      }
+    },
+    "3374": {
+      "source_cell": 6783,
+      "symmetry": 6,
+      "source_proof": {
+        "kind": "direct",
+        "factor": "2*a",
+        "batch": "results/shifted_certificates.json"
+      }
+    },
+    "4858": {
+      "source_cell": 6783,
+      "symmetry": 7,
+      "source_proof": {
+        "kind": "direct",
+        "factor": "2*a",
+        "batch": "results/shifted_certificates.json"
+      }
+    },
+    "2642": {
+      "source_cell": 6850,
+      "symmetry": 1,
+      "source_proof": {
+        "kind": "direct",
+        "factor": "-2*a",
+        "batch": "results/shifted_certificates.json"
+      }
+    },
+    "4345": {
+      "source_cell": 6850,
+      "symmetry": 3,
+      "source_proof": {
+        "kind": "direct",
+        "factor": "-2*a",
+        "batch": "results/shifted_certificates.json"
+      }
+    },
+    "6362": {
+      "source_cell": 6850,
+      "symmetry": 4,
+      "source_proof": {
+        "kind": "direct",
+        "factor": "-2*a",
+        "batch": "results/shifted_certificates.json"
+      }
+    },
+    "6406": {
+      "source_cell": 6850,
+      "symmetry": 5,
+      "source_proof": {
+        "kind": "direct",
+        "factor": "-2*a",
+        "batch": "results/shifted_certificates.json"
+      }
+    },
+    "3364": {
+      "source_cell": 6850,
+      "symmetry": 6,
+      "source_proof": {
+        "kind": "direct",
+        "factor": "-2*a",
+        "batch": "results/shifted_certificates.json"
+      }
+    },
+    "5387": {
+      "source_cell": 6850,
+      "symmetry": 7,
+      "source_proof": {
+        "kind": "direct",
+        "factor": "-2*a",
+        "batch": "results/shifted_certificates.json"
+      }
+    },
+    "9247": {
+      "source_cell": 13454,
+      "symmetry": 1,
+      "source_proof": {
+        "kind": "direct",
+        "factor": "-2*a",
+        "batch": "results/shifted_certificates.json"
+      }
+    },
+    "9248": {
+      "source_cell": 13454,
+      "symmetry": 3,
+      "source_proof": {
+        "kind": "direct",
+        "factor": "-2*a",
+        "batch": "results/shifted_certificates.json"
+      }
+    },
+    "10169": {
+      "source_cell": 13454,
+      "symmetry": 4,
+      "source_proof": {
+        "kind": "direct",
+        "factor": "-2*a",
+        "batch": "results/shifted_certificates.json"
+      }
+    },
+    "10221": {
+      "source_cell": 13454,
+      "symmetry": 5,
+      "source_proof": {
+        "kind": "direct",
+        "factor": "-2*a",
+        "batch": "results/shifted_certificates.json"
+      }
+    },
+    "10159": {
+      "source_cell": 13454,
+      "symmetry": 6,
+      "source_proof": {
+        "kind": "direct",
+        "factor": "-2*a",
+        "batch": "results/shifted_certificates.json"
+      }
+    },
+    "10220": {
+      "source_cell": 13454,
+      "symmetry": 7,
+      "source_proof": {
+        "kind": "direct",
+        "factor": "-2*a",
+        "batch": "results/shifted_certificates.json"
+      }
+    },
+    "450": {
+      "source_cell": 14,
+      "symmetry": 1,
+      "source_proof": {
+        "kind": "direct",
+        "factor": "-c*(a + c)",
+        "batch": "results/target16_certificates.json"
+      }
+    },
+    "596": {
+      "source_cell": 14,
+      "symmetry": 2,
+      "source_proof": {
+        "kind": "direct",
+        "factor": "-c*(a + c)",
+        "batch": "results/target16_certificates.json"
+      }
+    },
+    "787": {
+      "source_cell": 14,
+      "symmetry": 3,
+      "source_proof": {
+        "kind": "direct",
+        "factor": "-c*(a + c)",
+        "batch": "results/target16_certificates.json"
+      }
+    },
+    "1581": {
+      "source_cell": 14,
+      "symmetry": 4,
+      "source_proof": {
+        "kind": "direct",
+        "factor": "-c*(a + c)",
+        "batch": "results/target16_certificates.json"
+      }
+    },
+    "1598": {
+      "source_cell": 14,
+      "symmetry": 5,
+      "source_proof": {
+        "kind": "direct",
+        "factor": "-c*(a + c)",
+        "batch": "results/target16_certificates.json"
+      }
+    },
+    "537": {
+      "source_cell": 14,
+      "symmetry": 7,
+      "source_proof": {
+        "kind": "direct",
+        "factor": "-c*(a + c)",
+        "batch": "results/target16_certificates.json"
+      }
+    },
+    "453": {
+      "source_cell": 16,
+      "symmetry": 1,
+      "source_proof": {
+        "kind": "direct",
+        "factor": "c*(a + c)",
+        "batch": "results/target16_certificates.json"
+      }
+    },
+    "798": {
+      "source_cell": 16,
+      "symmetry": 3,
+      "source_proof": {
+        "kind": "direct",
+        "factor": "c*(a + c)",
+        "batch": "results/target16_certificates.json"
+      }
+    },
+    "1596": {
+      "source_cell": 16,
+      "symmetry": 5,
+      "source_proof": {
+        "kind": "direct",
+        "factor": "c*(a + c)",
+        "batch": "results/target16_certificates.json"
+      }
+    },
+    "426": {
+      "source_cell": 16,
+      "symmetry": 7,
+      "source_proof": {
+        "kind": "direct",
+        "factor": "c*(a + c)",
+        "batch": "results/target16_certificates.json"
+      }
+    },
+    "246": {
+      "source_cell": 805,
+      "symmetry": 1,
+      "source_proof": {
+        "kind": "direct",
+        "factor": "c*(a + c)",
+        "batch": "results/target16_certificates.json"
+      }
+    },
+    "957": {
+      "source_cell": 805,
+      "symmetry": 3,
+      "source_proof": {
+        "kind": "direct",
+        "factor": "c*(a + c)",
+        "batch": "results/target16_certificates.json"
+      }
+    },
+    "1306": {
+      "source_cell": 1307,
+      "symmetry": 1,
+      "source_proof": {
+        "kind": "direct",
+        "factor": "-c*(a + c)",
+        "batch": "results/target16_certificates.json"
+      }
+    },
+    "1294": {
+      "source_cell": 1307,
+      "symmetry": 2,
+      "source_proof": {
+        "kind": "direct",
+        "factor": "-c*(a + c)",
+        "batch": "results/target16_certificates.json"
+      }
+    },
+    "1333": {
+      "source_cell": 1307,
+      "symmetry": 3,
+      "source_proof": {
+        "kind": "direct",
+        "factor": "-c*(a + c)",
+        "batch": "results/target16_certificates.json"
+      }
+    },
+    "1086": {
+      "source_cell": 1307,
+      "symmetry": 4,
+      "source_proof": {
+        "kind": "direct",
+        "factor": "-c*(a + c)",
+        "batch": "results/target16_certificates.json"
+      }
+    },
+    "762": {
+      "source_cell": 1307,
+      "symmetry": 7,
+      "source_proof": {
+        "kind": "direct",
+        "factor": "-c*(a + c)",
+        "batch": "results/target16_certificates.json"
+      }
+    },
+    "249": {
+      "source_cell": 1349,
+      "symmetry": 1,
+      "source_proof": {
+        "kind": "direct",
+        "factor": "-c*(a + c)",
+        "batch": "results/target16_certificates.json"
+      }
+    },
+    "1368": {
+      "source_cell": 1349,
+      "symmetry": 2,
+      "source_proof": {
+        "kind": "direct",
+        "factor": "-c*(a + c)",
+        "batch": "results/target16_certificates.json"
+      }
+    },
+    "744": {
+      "source_cell": 1349,
+      "symmetry": 3,
+      "source_proof": {
+        "kind": "direct",
+        "factor": "-c*(a + c)",
+        "batch": "results/target16_certificates.json"
+      }
+    },
+    "1423": {
+      "source_cell": 1349,
+      "symmetry": 4,
+      "source_proof": {
+        "kind": "direct",
+        "factor": "-c*(a + c)",
+        "batch": "results/target16_certificates.json"
+      }
+    },
+    "4206": {
+      "source_cell": 1608,
+      "symmetry": 1,
+      "source_proof": {
+        "kind": "direct",
+        "factor": "c*(a + c)",
+        "batch": "results/target16_certificates.json"
+      }
+    },
+    "5569": {
+      "source_cell": 1608,
+      "symmetry": 3,
+      "source_proof": {
+        "kind": "direct",
+        "factor": "c*(a + c)",
+        "batch": "results/target16_certificates.json"
+      }
+    },
+    "7677": {
+      "source_cell": 1608,
+      "symmetry": 5,
+      "source_proof": {
+        "kind": "direct",
+        "factor": "c*(a + c)",
+        "batch": "results/target16_certificates.json"
+      }
+    },
+    "4195": {
+      "source_cell": 1608,
+      "symmetry": 7,
+      "source_proof": {
+        "kind": "direct",
+        "factor": "c*(a + c)",
+        "batch": "results/target16_certificates.json"
+      }
+    },
+    "1666": {
+      "source_cell": 1741,
+      "symmetry": 1,
+      "source_proof": {
+        "kind": "direct",
+        "factor": "-c*(a + c)",
+        "batch": "results/target16_certificates.json"
+      }
+    },
+    "5154": {
+      "source_cell": 1741,
+      "symmetry": 2,
+      "source_proof": {
+        "kind": "direct",
+        "factor": "-c*(a + c)",
+        "batch": "results/target16_certificates.json"
+      }
+    },
+    "5238": {
+      "source_cell": 1741,
+      "symmetry": 3,
+      "source_proof": {
+        "kind": "direct",
+        "factor": "-c*(a + c)",
+        "batch": "results/target16_certificates.json"
+      }
+    },
+    "7620": {
+      "source_cell": 1741,
+      "symmetry": 4,
+      "source_proof": {
+        "kind": "direct",
+        "factor": "-c*(a + c)",
+        "batch": "results/target16_certificates.json"
+      }
+    },
+    "7689": {
+      "source_cell": 1741,
+      "symmetry": 5,
+      "source_proof": {
+        "kind": "direct",
+        "factor": "-c*(a + c)",
+        "batch": "results/target16_certificates.json"
+      }
+    },
+    "4062": {
+      "source_cell": 1741,
+      "symmetry": 7,
+      "source_proof": {
+        "kind": "direct",
+        "factor": "-c*(a + c)",
+        "batch": "results/target16_certificates.json"
+      }
+    },
+    "4243": {
+      "source_cell": 1749,
+      "symmetry": 1,
+      "source_proof": {
+        "kind": "direct",
+        "factor": "-c*(a + c)",
+        "batch": "results/target16_certificates.json"
+      }
+    },
+    "3205": {
+      "source_cell": 1749,
+      "symmetry": 2,
+      "source_proof": {
+        "kind": "direct",
+        "factor": "-c*(a + c)",
+        "batch": "results/target16_certificates.json"
+      }
+    },
+    "5592": {
+      "source_cell": 1749,
+      "symmetry": 3,
+      "source_proof": {
+        "kind": "direct",
+        "factor": "-c*(a + c)",
+        "batch": "results/target16_certificates.json"
+      }
+    },
+    "7699": {
+      "source_cell": 1749,
+      "symmetry": 4,
+      "source_proof": {
+        "kind": "direct",
+        "factor": "-c*(a + c)",
+        "batch": "results/target16_certificates.json"
+      }
+    },
+    "7712": {
+      "source_cell": 1749,
+      "symmetry": 5,
+      "source_proof": {
+        "kind": "direct",
+        "factor": "-c*(a + c)",
+        "batch": "results/target16_certificates.json"
+      }
+    },
+    "4201": {
+      "source_cell": 1749,
+      "symmetry": 7,
+      "source_proof": {
+        "kind": "direct",
+        "factor": "-c*(a + c)",
+        "batch": "results/target16_certificates.json"
+      }
+    },
+    "4254": {
+      "source_cell": 1761,
+      "symmetry": 1,
+      "source_proof": {
+        "kind": "direct",
+        "factor": "c*(a + c)",
+        "batch": "results/target16_certificates.json"
+      }
+    },
+    "5593": {
+      "source_cell": 1761,
+      "symmetry": 3,
+      "source_proof": {
+        "kind": "direct",
+        "factor": "c*(a + c)",
+        "batch": "results/target16_certificates.json"
+      }
+    },
+    "7711": {
+      "source_cell": 1761,
+      "symmetry": 5,
+      "source_proof": {
+        "kind": "direct",
+        "factor": "c*(a + c)",
+        "batch": "results/target16_certificates.json"
+      }
+    },
+    "4194": {
+      "source_cell": 1761,
+      "symmetry": 7,
+      "source_proof": {
+        "kind": "direct",
+        "factor": "c*(a + c)",
+        "batch": "results/target16_certificates.json"
+      }
+    },
+    "8544": {
+      "source_cell": 7732,
+      "symmetry": 1,
+      "source_proof": {
+        "kind": "direct",
+        "factor": "c*(a + c)",
+        "batch": "results/target16_certificates.json"
+      }
+    },
+    "12101": {
+      "source_cell": 7732,
+      "symmetry": 3,
+      "source_proof": {
+        "kind": "direct",
+        "factor": "c*(a + c)",
+        "batch": "results/target16_certificates.json"
+      }
+    },
+    "14141": {
+      "source_cell": 7732,
+      "symmetry": 5,
+      "source_proof": {
+        "kind": "direct",
+        "factor": "c*(a + c)",
+        "batch": "results/target16_certificates.json"
+      }
+    },
+    "10849": {
+      "source_cell": 7732,
+      "symmetry": 7,
+      "source_proof": {
+        "kind": "direct",
+        "factor": "c*(a + c)",
+        "batch": "results/target16_certificates.json"
+      }
+    },
+    "7808": {
+      "source_cell": 7940,
+      "symmetry": 1,
+      "source_proof": {
+        "kind": "direct",
+        "factor": "-c*(a + c)",
+        "batch": "results/target16_certificates.json"
+      }
+    },
+    "9845": {
+      "source_cell": 7940,
+      "symmetry": 2,
+      "source_proof": {
+        "kind": "direct",
+        "factor": "-c*(a + c)",
+        "batch": "results/target16_certificates.json"
+      }
+    },
+    "12050": {
+      "source_cell": 7940,
+      "symmetry": 3,
+      "source_proof": {
+        "kind": "direct",
+        "factor": "-c*(a + c)",
+        "batch": "results/target16_certificates.json"
+      }
+    },
+    "14096": {
+      "source_cell": 7940,
+      "symmetry": 4,
+      "source_proof": {
+        "kind": "direct",
+        "factor": "-c*(a + c)",
+        "batch": "results/target16_certificates.json"
+      }
+    },
+    "14152": {
+      "source_cell": 7940,
+      "symmetry": 5,
+      "source_proof": {
+        "kind": "direct",
+        "factor": "-c*(a + c)",
+        "batch": "results/target16_certificates.json"
+      }
+    },
+    "10812": {
+      "source_cell": 7940,
+      "symmetry": 7,
+      "source_proof": {
+        "kind": "direct",
+        "factor": "-c*(a + c)",
+        "batch": "results/target16_certificates.json"
+      }
+    },
+    "733": {
+      "source_cell": 338,
+      "symmetry": 2,
+      "source_proof": {
+        "kind": "direct",
+        "factor": "2*b*c**2*(a + c)",
+        "batch": "results/transfer_certificates.json"
+      }
+    },
+    "1563": {
+      "source_cell": 338,
+      "symmetry": 4,
+      "source_proof": {
+        "kind": "direct",
+        "factor": "2*b*c**2*(a + c)",
+        "batch": "results/transfer_certificates.json"
+      }
+    },
+    "414": {
+      "source_cell": 338,
+      "symmetry": 6,
+      "source_proof": {
+        "kind": "direct",
+        "factor": "2*b*c**2*(a + c)",
+        "batch": "results/transfer_certificates.json"
+      }
+    },
+    "1476": {
+      "source_cell": 1038,
+      "symmetry": 1,
+      "source_proof": {
+        "kind": "direct",
+        "factor": "-b*(a + b)*(b + c)",
+        "batch": "results/transfer_certificates.json"
+      }
+    },
+    "1084": {
+      "source_cell": 1038,
+      "symmetry": 2,
+      "source_proof": {
+        "kind": "direct",
+        "factor": "-b*(a + b)*(b + c)",
+        "batch": "results/transfer_certificates.json"
+      }
+    },
+    "1246": {
+      "source_cell": 1038,
+      "symmetry": 3,
+      "source_proof": {
+        "kind": "direct",
+        "factor": "-b*(a + b)*(b + c)",
+        "batch": "results/transfer_certificates.json"
+      }
+    },
+    "1369": {
+      "source_cell": 1038,
+      "symmetry": 4,
+      "source_proof": {
+        "kind": "direct",
+        "factor": "-b*(a + b)*(b + c)",
+        "batch": "results/transfer_certificates.json"
+      }
+    },
+    "1446": {
+      "source_cell": 1038,
+      "symmetry": 5,
+      "source_proof": {
+        "kind": "direct",
+        "factor": "-b*(a + b)*(b + c)",
+        "batch": "results/transfer_certificates.json"
+      }
+    },
+    "745": {
+      "source_cell": 1038,
+      "symmetry": 6,
+      "source_proof": {
+        "kind": "direct",
+        "factor": "-b*(a + b)*(b + c)",
+        "batch": "results/transfer_certificates.json"
+      }
+    },
+    "491": {
+      "source_cell": 1038,
+      "symmetry": 7,
+      "source_proof": {
+        "kind": "direct",
+        "factor": "-b*(a + b)*(b + c)",
+        "batch": "results/transfer_certificates.json"
+      }
+    },
+    "5461": {
+      "source_cell": 3798,
+      "symmetry": 2,
+      "source_proof": {
+        "kind": "direct",
+        "factor": "2*b*c**2*(a + c)",
+        "batch": "results/transfer_certificates.json"
+      }
+    },
+    "7679": {
+      "source_cell": 3798,
+      "symmetry": 4,
+      "source_proof": {
+        "kind": "direct",
+        "factor": "2*b*c**2*(a + c)",
+        "batch": "results/transfer_certificates.json"
+      }
+    },
+    "4118": {
+      "source_cell": 3798,
+      "symmetry": 6,
+      "source_proof": {
+        "kind": "direct",
+        "factor": "2*b*c**2*(a + c)",
+        "batch": "results/transfer_certificates.json"
+      }
+    },
+    "5501": {
+      "source_cell": 3919,
+      "symmetry": 2,
+      "source_proof": {
+        "kind": "direct",
+        "factor": "2*b*c**2*(a + c)",
+        "batch": "results/transfer_certificates.json"
+      }
+    },
+    "7674": {
+      "source_cell": 3919,
+      "symmetry": 4,
+      "source_proof": {
+        "kind": "direct",
+        "factor": "2*b*c**2*(a + c)",
+        "batch": "results/transfer_certificates.json"
+      }
+    },
+    "4114": {
+      "source_cell": 3919,
+      "symmetry": 6,
+      "source_proof": {
+        "kind": "direct",
+        "factor": "2*b*c**2*(a + c)",
+        "batch": "results/transfer_certificates.json"
+      }
+    },
+    "7097": {
+      "source_cell": 6656,
+      "symmetry": 1,
+      "source_proof": {
+        "kind": "direct",
+        "factor": "-b*(a + b)*(b + c)",
+        "batch": "results/transfer_certificates.json"
+      }
+    },
+    "6693": {
+      "source_cell": 6656,
+      "symmetry": 2,
+      "source_proof": {
+        "kind": "direct",
+        "factor": "-b*(a + b)*(b + c)",
+        "batch": "results/transfer_certificates.json"
+      }
+    },
+    "6971": {
+      "source_cell": 6656,
+      "symmetry": 3,
+      "source_proof": {
+        "kind": "direct",
+        "factor": "-b*(a + b)*(b + c)",
+        "batch": "results/transfer_certificates.json"
+      }
+    },
+    "6955": {
+      "source_cell": 6656,
+      "symmetry": 4,
+      "source_proof": {
+        "kind": "direct",
+        "factor": "-b*(a + b)*(b + c)",
+        "batch": "results/transfer_certificates.json"
+      }
+    },
+    "7167": {
+      "source_cell": 6656,
+      "symmetry": 5,
+      "source_proof": {
+        "kind": "direct",
+        "factor": "-b*(a + b)*(b + c)",
+        "batch": "results/transfer_certificates.json"
+      }
+    },
+    "4721": {
+      "source_cell": 6656,
+      "symmetry": 6,
+      "source_proof": {
+        "kind": "direct",
+        "factor": "-b*(a + b)*(b + c)",
+        "batch": "results/transfer_certificates.json"
+      }
+    },
+    "3588": {
+      "source_cell": 6656,
+      "symmetry": 7,
+      "source_proof": {
+        "kind": "direct",
+        "factor": "-b*(a + b)*(b + c)",
+        "batch": "results/transfer_certificates.json"
+      }
+    },
+    "7477": {
+      "source_cell": 6659,
+      "symmetry": 1,
+      "source_proof": {
+        "kind": "direct",
+        "factor": "-b*(a + b)*(b + c)",
+        "batch": "results/transfer_certificates.json"
+      }
+    },
+    "6769": {
+      "source_cell": 6659,
+      "symmetry": 2,
+      "source_proof": {
+        "kind": "direct",
+        "factor": "-b*(a + b)*(b + c)",
+        "batch": "results/transfer_certificates.json"
+      }
+    },
+    "7247": {
+      "source_cell": 6659,
+      "symmetry": 3,
+      "source_proof": {
+        "kind": "direct",
+        "factor": "-b*(a + b)*(b + c)",
+        "batch": "results/transfer_certificates.json"
+      }
+    },
+    "7408": {
+      "source_cell": 6659,
+      "symmetry": 4,
+      "source_proof": {
+        "kind": "direct",
+        "factor": "-b*(a + b)*(b + c)",
+        "batch": "results/transfer_certificates.json"
+      }
+    },
+    "7460": {
+      "source_cell": 6659,
+      "symmetry": 5,
+      "source_proof": {
+        "kind": "direct",
+        "factor": "-b*(a + b)*(b + c)",
+        "batch": "results/transfer_certificates.json"
+      }
+    },
+    "5521": {
+      "source_cell": 6659,
+      "symmetry": 6,
+      "source_proof": {
+        "kind": "direct",
+        "factor": "-b*(a + b)*(b + c)",
+        "batch": "results/transfer_certificates.json"
+      }
+    },
+    "4359": {
+      "source_cell": 6659,
+      "symmetry": 7,
+      "source_proof": {
+        "kind": "direct",
+        "factor": "-b*(a + b)*(b + c)",
+        "batch": "results/transfer_certificates.json"
+      }
+    },
+    "12082": {
+      "source_cell": 8537,
+      "symmetry": 2,
+      "source_proof": {
+        "kind": "direct",
+        "factor": "2*b*c**2*(a + c)",
+        "batch": "results/transfer_certificates.json"
+      }
+    },
+    "14139": {
+      "source_cell": 8537,
+      "symmetry": 4,
+      "source_proof": {
+        "kind": "direct",
+        "factor": "2*b*c**2*(a + c)",
+        "batch": "results/transfer_certificates.json"
+      }
+    },
+    "10820": {
+      "source_cell": 8537,
+      "symmetry": 6,
+      "source_proof": {
+        "kind": "direct",
+        "factor": "2*b*c**2*(a + c)",
+        "batch": "results/transfer_certificates.json"
+      }
+    },
+    "13798": {
+      "source_cell": 10559,
+      "symmetry": 1,
+      "source_proof": {
+        "kind": "direct",
+        "factor": "-b*(a + b)*(b + c)",
+        "batch": "results/transfer_certificates.json"
+      }
+    },
+    "11312": {
+      "source_cell": 10559,
+      "symmetry": 2,
+      "source_proof": {
+        "kind": "direct",
+        "factor": "-b*(a + b)*(b + c)",
+        "batch": "results/transfer_certificates.json"
+      }
+    },
+    "13599": {
+      "source_cell": 10559,
+      "symmetry": 3,
+      "source_proof": {
+        "kind": "direct",
+        "factor": "-b*(a + b)*(b + c)",
+        "batch": "results/transfer_certificates.json"
+      }
+    },
+    "13583": {
+      "source_cell": 10559,
+      "symmetry": 4,
+      "source_proof": {
+        "kind": "direct",
+        "factor": "-b*(a + b)*(b + c)",
+        "batch": "results/transfer_certificates.json"
+      }
+    },
+    "13840": {
+      "source_cell": 10559,
+      "symmetry": 5,
+      "source_proof": {
+        "kind": "direct",
+        "factor": "-b*(a + b)*(b + c)",
+        "batch": "results/transfer_certificates.json"
+      }
+    },
+    "11232": {
+      "source_cell": 10559,
+      "symmetry": 6,
+      "source_proof": {
+        "kind": "direct",
+        "factor": "-b*(a + b)*(b + c)",
+        "batch": "results/transfer_certificates.json"
+      }
+    },
+    "10415": {
+      "source_cell": 10559,
+      "symmetry": 7,
+      "source_proof": {
+        "kind": "direct",
+        "factor": "-b*(a + b)*(b + c)",
+        "batch": "results/transfer_certificates.json"
+      }
+    },
+    "1091": {
+      "source_cell": 1039,
+      "symmetry": 2,
+      "source_proof": {
+        "kind": "direct",
+        "factor": "b*c*(a + b)",
+        "batch": "results/pair2_certificates.json"
+      }
+    },
+    "1371": {
+      "source_cell": 1039,
+      "symmetry": 4,
+      "source_proof": {
+        "kind": "direct",
+        "factor": "b*c*(a + b)",
+        "batch": "results/pair2_certificates.json"
+      }
+    },
+    "1447": {
+      "source_cell": 1039,
+      "symmetry": 5,
+      "source_proof": {
+        "kind": "direct",
+        "factor": "b*c*(a + b)",
+        "batch": "results/pair2_certificates.json"
+      }
+    },
+    "742": {
+      "source_cell": 1039,
+      "symmetry": 6,
+      "source_proof": {
+        "kind": "direct",
+        "factor": "b*c*(a + b)",
+        "batch": "results/pair2_certificates.json"
+      }
+    },
+    "490": {
+      "source_cell": 1039,
+      "symmetry": 7,
+      "source_proof": {
+        "kind": "direct",
+        "factor": "b*c*(a + b)",
+        "batch": "results/pair2_certificates.json"
+      }
+    },
+    "1396": {
+      "source_cell": 1377,
+      "symmetry": 2,
+      "source_proof": {
+        "kind": "direct",
+        "factor": "-4*a**3*b",
+        "batch": "results/pair2_certificates.json"
+      }
+    },
+    "1352": {
+      "source_cell": 1377,
+      "symmetry": 3,
+      "source_proof": {
+        "kind": "direct",
+        "factor": "-4*a**3*b",
+        "batch": "results/pair2_certificates.json"
+      }
+    },
+    "1395": {
+      "source_cell": 1362,
+      "symmetry": 2,
+      "source_proof": {
+        "kind": "direct",
+        "factor": "-4*a**3*b",
+        "batch": "results/transfer2_certificates.json"
+      }
+    },
+    "1315": {
+      "source_cell": 1362,
+      "symmetry": 4,
+      "source_proof": {
+        "kind": "direct",
+        "factor": "-4*a**3*b",
+        "batch": "results/transfer2_certificates.json"
+      }
+    },
+    "1363": {
+      "source_cell": 1362,
+      "symmetry": 6,
+      "source_proof": {
+        "kind": "direct",
+        "factor": "-4*a**3*b",
+        "batch": "results/transfer2_certificates.json"
+      }
+    },
+    "5433": {
+      "source_cell": 3865,
+      "symmetry": 2,
+      "source_proof": {
+        "kind": "direct",
+        "factor": "b*c*(a + b)",
+        "batch": "results/transfer2_certificates.json"
+      }
+    },
+    "7410": {
+      "source_cell": 3865,
+      "symmetry": 4,
+      "source_proof": {
+        "kind": "direct",
+        "factor": "b*c*(a + b)",
+        "batch": "results/transfer2_certificates.json"
+      }
+    },
+    "7447": {
+      "source_cell": 3865,
+      "symmetry": 5,
+      "source_proof": {
+        "kind": "direct",
+        "factor": "b*c*(a + b)",
+        "batch": "results/transfer2_certificates.json"
+      }
+    },
+    "5515": {
+      "source_cell": 3865,
+      "symmetry": 6,
+      "source_proof": {
+        "kind": "direct",
+        "factor": "b*c*(a + b)",
+        "batch": "results/transfer2_certificates.json"
+      }
+    },
+    "4348": {
+      "source_cell": 3865,
+      "symmetry": 7,
+      "source_proof": {
+        "kind": "direct",
+        "factor": "b*c*(a + b)",
+        "batch": "results/transfer2_certificates.json"
+      }
+    },
+    "6770": {
+      "source_cell": 6660,
+      "symmetry": 2,
+      "source_proof": {
+        "kind": "direct",
+        "factor": "b*c*(a + b)",
+        "batch": "results/transfer2_certificates.json"
+      }
+    },
+    "7409": {
+      "source_cell": 6660,
+      "symmetry": 4,
+      "source_proof": {
+        "kind": "direct",
+        "factor": "b*c*(a + b)",
+        "batch": "results/transfer2_certificates.json"
+      }
+    },
+    "7461": {
+      "source_cell": 6660,
+      "symmetry": 5,
+      "source_proof": {
+        "kind": "direct",
+        "factor": "b*c*(a + b)",
+        "batch": "results/transfer2_certificates.json"
+      }
+    },
+    "5520": {
+      "source_cell": 6660,
+      "symmetry": 6,
+      "source_proof": {
+        "kind": "direct",
+        "factor": "b*c*(a + b)",
+        "batch": "results/transfer2_certificates.json"
+      }
+    },
+    "4358": {
+      "source_cell": 6660,
+      "symmetry": 7,
+      "source_proof": {
+        "kind": "direct",
+        "factor": "b*c*(a + b)",
+        "batch": "results/transfer2_certificates.json"
+      }
+    },
+    "6820": {
+      "source_cell": 6845,
+      "symmetry": 2,
+      "source_proof": {
+        "kind": "direct",
+        "factor": "-4*a**3*b",
+        "batch": "results/transfer2_certificates.json"
+      }
+    },
+    "6377": {
+      "source_cell": 6845,
+      "symmetry": 4,
+      "source_proof": {
+        "kind": "direct",
+        "factor": "-4*a**3*b",
+        "batch": "results/transfer2_certificates.json"
+      }
+    },
+    "6439": {
+      "source_cell": 6845,
+      "symmetry": 6,
+      "source_proof": {
+        "kind": "direct",
+        "factor": "-4*a**3*b",
+        "batch": "results/transfer2_certificates.json"
+      }
+    },
+    "7271": {
+      "source_cell": 7270,
+      "symmetry": 2,
+      "source_proof": {
+        "kind": "direct",
+        "factor": "-4*a**3*b",
+        "batch": "results/transfer2_certificates.json"
+      }
+    },
+    "7272": {
+      "source_cell": 7270,
+      "symmetry": 4,
+      "source_proof": {
+        "kind": "direct",
+        "factor": "-4*a**3*b",
+        "batch": "results/transfer2_certificates.json"
+      }
+    },
+    "7273": {
+      "source_cell": 7270,
+      "symmetry": 6,
+      "source_proof": {
+        "kind": "direct",
+        "factor": "-4*a**3*b",
+        "batch": "results/transfer2_certificates.json"
+      }
+    },
+    "11271": {
+      "source_cell": 10509,
+      "symmetry": 2,
+      "source_proof": {
+        "kind": "direct",
+        "factor": "b*c*(a + b)",
+        "batch": "results/transfer2_certificates.json"
+      }
+    },
+    "13681": {
+      "source_cell": 10509,
+      "symmetry": 4,
+      "source_proof": {
+        "kind": "direct",
+        "factor": "b*c*(a + b)",
+        "batch": "results/transfer2_certificates.json"
+      }
+    },
+    "13879": {
+      "source_cell": 10509,
+      "symmetry": 5,
+      "source_proof": {
+        "kind": "direct",
+        "factor": "b*c*(a + b)",
+        "batch": "results/transfer2_certificates.json"
+      }
+    },
+    "11290": {
+      "source_cell": 10509,
+      "symmetry": 6,
+      "source_proof": {
+        "kind": "direct",
+        "factor": "b*c*(a + b)",
+        "batch": "results/transfer2_certificates.json"
+      }
+    },
+    "10537": {
+      "source_cell": 10509,
+      "symmetry": 7,
+      "source_proof": {
+        "kind": "direct",
+        "factor": "b*c*(a + b)",
+        "batch": "results/transfer2_certificates.json"
+      }
+    },
+    "13475": {
+      "source_cell": 13496,
+      "symmetry": 2,
+      "source_proof": {
+        "kind": "direct",
+        "factor": "-4*a**3*b",
+        "batch": "results/transfer2_certificates.json"
+      }
+    },
+    "10284": {
+      "source_cell": 13496,
+      "symmetry": 4,
+      "source_proof": {
+        "kind": "direct",
+        "factor": "-4*a**3*b",
+        "batch": "results/transfer2_certificates.json"
+      }
+    },
+    "10297": {
+      "source_cell": 13496,
+      "symmetry": 6,
+      "source_proof": {
+        "kind": "direct",
+        "factor": "-4*a**3*b",
+        "batch": "results/transfer2_certificates.json"
+      }
+    },
+    "809": {
+      "source_cell": 61,
+      "symmetry": 1,
+      "source_proof": {
+        "kind": "direct",
+        "factor": "2*b*c",
+        "batch": "results/target247_certificates.json"
+      }
+    },
+    "795": {
+      "source_cell": 61,
+      "symmetry": 2,
+      "source_proof": {
+        "kind": "direct",
+        "factor": "2*b*c",
+        "batch": "results/target247_certificates.json"
+      }
+    },
+    "135": {
+      "source_cell": 61,
+      "symmetry": 3,
+      "source_proof": {
+        "kind": "direct",
+        "factor": "2*b*c",
+        "batch": "results/target247_certificates.json"
+      }
+    },
+    "56": {
+      "source_cell": 61,
+      "symmetry": 4,
+      "source_proof": {
+        "kind": "direct",
+        "factor": "2*b*c",
+        "batch": "results/target247_certificates.json"
+      }
+    },
+    "571": {
+      "source_cell": 61,
+      "symmetry": 5,
+      "source_proof": {
+        "kind": "direct",
+        "factor": "2*b*c",
+        "batch": "results/target247_certificates.json"
+      }
+    },
+    "902": {
+      "source_cell": 61,
+      "symmetry": 6,
+      "source_proof": {
+        "kind": "direct",
+        "factor": "2*b*c",
+        "batch": "results/target247_certificates.json"
+      }
+    },
+    "886": {
+      "source_cell": 73,
+      "symmetry": 1,
+      "source_proof": {
+        "kind": "direct",
+        "factor": "2*b*c",
+        "batch": "results/target247_certificates.json"
+      }
+    },
+    "850": {
+      "source_cell": 73,
+      "symmetry": 2,
+      "source_proof": {
+        "kind": "direct",
+        "factor": "2*b*c",
+        "batch": "results/target247_certificates.json"
+      }
+    },
+    "136": {
+      "source_cell": 73,
+      "symmetry": 3,
+      "source_proof": {
+        "kind": "direct",
+        "factor": "2*b*c",
+        "batch": "results/target247_certificates.json"
+      }
+    },
+    "93": {
+      "source_cell": 73,
+      "symmetry": 4,
+      "source_proof": {
+        "kind": "direct",
+        "factor": "2*b*c",
+        "batch": "results/target247_certificates.json"
+      }
+    },
+    "680": {
+      "source_cell": 73,
+      "symmetry": 5,
+      "source_proof": {
+        "kind": "direct",
+        "factor": "2*b*c",
+        "batch": "results/target247_certificates.json"
+      }
+    },
+    "714": {
+      "source_cell": 73,
+      "symmetry": 6,
+      "source_proof": {
+        "kind": "direct",
+        "factor": "2*b*c",
+        "batch": "results/target247_certificates.json"
+      }
+    },
+    "1350": {
+      "source_cell": 247,
+      "symmetry": 1,
+      "source_proof": {
+        "kind": "direct",
+        "factor": "2*b*c",
+        "batch": "results/target247_certificates.json"
+      }
+    },
+    "791": {
+      "source_cell": 247,
+      "symmetry": 2,
+      "source_proof": {
+        "kind": "direct",
+        "factor": "2*b*c",
+        "batch": "results/target247_certificates.json"
+      }
+    },
+    "1456": {
+      "source_cell": 247,
+      "symmetry": 3,
+      "source_proof": {
+        "kind": "direct",
+        "factor": "2*b*c",
+        "batch": "results/target247_certificates.json"
+      }
+    },
+    "1190": {
+      "source_cell": 247,
+      "symmetry": 4,
+      "source_proof": {
+        "kind": "direct",
+        "factor": "2*b*c",
+        "batch": "results/target247_certificates.json"
+      }
+    },
+    "1153": {
+      "source_cell": 247,
+      "symmetry": 5,
+      "source_proof": {
+        "kind": "direct",
+        "factor": "2*b*c",
+        "batch": "results/target247_certificates.json"
+      }
+    },
+    "710": {
+      "source_cell": 247,
+      "symmetry": 6,
+      "source_proof": {
+        "kind": "direct",
+        "factor": "2*b*c",
+        "batch": "results/target247_certificates.json"
+      }
+    },
+    "1433": {
+      "source_cell": 456,
+      "symmetry": 1,
+      "source_proof": {
+        "kind": "direct",
+        "factor": "2*a*c",
+        "batch": "results/target247_certificates.json"
+      }
+    },
+    "864": {
+      "source_cell": 456,
+      "symmetry": 2,
+      "source_proof": {
+        "kind": "direct",
+        "factor": "2*a*c",
+        "batch": "results/target247_certificates.json"
+      }
+    },
+    "1478": {
+      "source_cell": 456,
+      "symmetry": 3,
+      "source_proof": {
+        "kind": "direct",
+        "factor": "2*a*c",
+        "batch": "results/target247_certificates.json"
+      }
+    },
+    "1488": {
+      "source_cell": 456,
+      "symmetry": 4,
+      "source_proof": {
+        "kind": "direct",
+        "factor": "2*a*c",
+        "batch": "results/target247_certificates.json"
+      }
+    },
+    "1448": {
+      "source_cell": 456,
+      "symmetry": 5,
+      "source_proof": {
+        "kind": "direct",
+        "factor": "2*a*c",
+        "batch": "results/target247_certificates.json"
+      }
+    },
+    "854": {
+      "source_cell": 456,
+      "symmetry": 6,
+      "source_proof": {
+        "kind": "direct",
+        "factor": "2*a*c",
+        "batch": "results/target247_certificates.json"
+      }
+    },
+    "601": {
+      "source_cell": 35,
+      "symmetry": 2,
+      "source_proof": {
+        "kind": "direct",
+        "factor": "c*(a + 2*b)",
+        "batch": "results/target279_certificates.json"
+      }
+    },
+    "1556": {
+      "source_cell": 35,
+      "symmetry": 4,
+      "source_proof": {
+        "kind": "direct",
+        "factor": "c*(a + 2*b)",
+        "batch": "results/target279_certificates.json"
+      }
+    },
+    "359": {
+      "source_cell": 35,
+      "symmetry": 6,
+      "source_proof": {
+        "kind": "direct",
+        "factor": "c*(a + 2*b)",
+        "batch": "results/target279_certificates.json"
+      }
+    },
+    "464": {
+      "source_cell": 86,
+      "symmetry": 1,
+      "source_proof": {
+        "kind": "direct",
+        "factor": "c*(a + 2*b)",
+        "batch": "results/target279_certificates.json"
+      }
+    },
+    "600": {
+      "source_cell": 86,
+      "symmetry": 2,
+      "source_proof": {
+        "kind": "direct",
+        "factor": "c*(a + 2*b)",
+        "batch": "results/target279_certificates.json"
+      }
+    },
+    "776": {
+      "source_cell": 86,
+      "symmetry": 3,
+      "source_proof": {
+        "kind": "direct",
+        "factor": "c*(a + 2*b)",
+        "batch": "results/target279_certificates.json"
+      }
+    },
+    "1584": {
+      "source_cell": 86,
+      "symmetry": 4,
+      "source_proof": {
+        "kind": "direct",
+        "factor": "c*(a + 2*b)",
+        "batch": "results/target279_certificates.json"
+      }
+    },
+    "1602": {
+      "source_cell": 86,
+      "symmetry": 5,
+      "source_proof": {
+        "kind": "direct",
+        "factor": "c*(a + 2*b)",
+        "batch": "results/target279_certificates.json"
+      }
+    },
+    "370": {
+      "source_cell": 86,
+      "symmetry": 6,
+      "source_proof": {
+        "kind": "direct",
+        "factor": "c*(a + 2*b)",
+        "batch": "results/target279_certificates.json"
+      }
+    },
+    "560": {
+      "source_cell": 86,
+      "symmetry": 7,
+      "source_proof": {
+        "kind": "direct",
+        "factor": "c*(a + 2*b)",
+        "batch": "results/target279_certificates.json"
+      }
+    },
+    "692": {
+      "source_cell": 279,
+      "symmetry": 2,
+      "source_proof": {
+        "kind": "direct",
+        "factor": "c*(a + 2*b)",
+        "batch": "results/target279_certificates.json"
+      }
+    },
+    "1585": {
+      "source_cell": 279,
+      "symmetry": 4,
+      "source_proof": {
+        "kind": "direct",
+        "factor": "c*(a + 2*b)",
+        "batch": "results/target279_certificates.json"
+      }
+    },
+    "444": {
+      "source_cell": 279,
+      "symmetry": 6,
+      "source_proof": {
+        "kind": "direct",
+        "factor": "c*(a + 2*b)",
+        "batch": "results/target279_certificates.json"
+      }
+    },
+    "4250": {
+      "source_cell": 1757,
+      "symmetry": 1,
+      "source_proof": {
+        "kind": "direct",
+        "factor": "c*(a + 2*b)",
+        "batch": "results/target279_certificates.json"
+      }
+    },
+    "3171": {
+      "source_cell": 1757,
+      "symmetry": 2,
+      "source_proof": {
+        "kind": "direct",
+        "factor": "c*(a + 2*b)",
+        "batch": "results/target279_certificates.json"
+      }
+    },
+    "5574": {
+      "source_cell": 1757,
+      "symmetry": 3,
+      "source_proof": {
+        "kind": "direct",
+        "factor": "c*(a + 2*b)",
+        "batch": "results/target279_certificates.json"
+      }
+    },
+    "7697": {
+      "source_cell": 1757,
+      "symmetry": 4,
+      "source_proof": {
+        "kind": "direct",
+        "factor": "c*(a + 2*b)",
+        "batch": "results/target279_certificates.json"
+      }
+    },
+    "7709": {
+      "source_cell": 1757,
+      "symmetry": 5,
+      "source_proof": {
+        "kind": "direct",
+        "factor": "c*(a + 2*b)",
+        "batch": "results/target279_certificates.json"
+      }
+    },
+    "3757": {
+      "source_cell": 1757,
+      "symmetry": 6,
+      "source_proof": {
+        "kind": "direct",
+        "factor": "c*(a + 2*b)",
+        "batch": "results/target279_certificates.json"
+      }
+    },
+    "4192": {
+      "source_cell": 1757,
+      "symmetry": 7,
+      "source_proof": {
+        "kind": "direct",
+        "factor": "c*(a + 2*b)",
+        "batch": "results/target279_certificates.json"
+      }
+    },
+    "2061": {
+      "source_cell": 2056,
+      "symmetry": 1,
+      "source_proof": {
+        "kind": "direct",
+        "factor": "c*(a + 2*b)",
+        "batch": "results/target279_certificates.json"
+      }
+    },
+    "5174": {
+      "source_cell": 2056,
+      "symmetry": 2,
+      "source_proof": {
+        "kind": "direct",
+        "factor": "c*(a + 2*b)",
+        "batch": "results/target279_certificates.json"
+      }
+    },
+    "5182": {
+      "source_cell": 2056,
+      "symmetry": 3,
+      "source_proof": {
+        "kind": "direct",
+        "factor": "c*(a + 2*b)",
+        "batch": "results/target279_certificates.json"
+      }
+    },
+    "7660": {
+      "source_cell": 2056,
+      "symmetry": 4,
+      "source_proof": {
+        "kind": "direct",
+        "factor": "c*(a + 2*b)",
+        "batch": "results/target279_certificates.json"
+      }
+    },
+    "7663": {
+      "source_cell": 2056,
+      "symmetry": 5,
+      "source_proof": {
+        "kind": "direct",
+        "factor": "c*(a + 2*b)",
+        "batch": "results/target279_certificates.json"
+      }
+    },
+    "4048": {
+      "source_cell": 2056,
+      "symmetry": 6,
+      "source_proof": {
+        "kind": "direct",
+        "factor": "c*(a + 2*b)",
+        "batch": "results/target279_certificates.json"
+      }
+    },
+    "4052": {
+      "source_cell": 2056,
+      "symmetry": 7,
+      "source_proof": {
+        "kind": "direct",
+        "factor": "c*(a + 2*b)",
+        "batch": "results/target279_certificates.json"
+      }
+    },
+    "5179": {
+      "source_cell": 2058,
+      "symmetry": 2,
+      "source_proof": {
+        "kind": "direct",
+        "factor": "c*(a + 2*b)",
+        "batch": "results/target279_certificates.json"
+      }
+    },
+    "7661": {
+      "source_cell": 2058,
+      "symmetry": 4,
+      "source_proof": {
+        "kind": "direct",
+        "factor": "c*(a + 2*b)",
+        "batch": "results/target279_certificates.json"
+      }
+    },
+    "4050": {
+      "source_cell": 2058,
+      "symmetry": 6,
+      "source_proof": {
+        "kind": "direct",
+        "factor": "c*(a + 2*b)",
+        "batch": "results/target279_certificates.json"
+      }
+    },
+    "5180": {
+      "source_cell": 2059,
+      "symmetry": 2,
+      "source_proof": {
+        "kind": "direct",
+        "factor": "c*(a + 2*b)",
+        "batch": "results/target279_certificates.json"
+      }
+    },
+    "7662": {
+      "source_cell": 2059,
+      "symmetry": 4,
+      "source_proof": {
+        "kind": "direct",
+        "factor": "c*(a + 2*b)",
+        "batch": "results/target279_certificates.json"
+      }
+    },
+    "4047": {
+      "source_cell": 2059,
+      "symmetry": 6,
+      "source_proof": {
+        "kind": "direct",
+        "factor": "c*(a + 2*b)",
+        "batch": "results/target279_certificates.json"
+      }
+    },
+    "5448": {
+      "source_cell": 3780,
+      "symmetry": 2,
+      "source_proof": {
+        "kind": "direct",
+        "factor": "c*(a + 2*b)",
+        "batch": "results/target279_certificates.json"
+      }
+    },
+    "7672": {
+      "source_cell": 3780,
+      "symmetry": 4,
+      "source_proof": {
+        "kind": "direct",
+        "factor": "c*(a + 2*b)",
+        "batch": "results/target279_certificates.json"
+      }
+    },
+    "4109": {
+      "source_cell": 3780,
+      "symmetry": 6,
+      "source_proof": {
+        "kind": "direct",
+        "factor": "c*(a + 2*b)",
+        "batch": "results/target279_certificates.json"
+      }
+    }
+  },
+  "base_generic_count": 10749,
+  "base_uniform_count": 9358,
+  "generic_union_count": 10965,
+  "uniform_union_count": 9585,
+  "unmatched_transformed_weights": 0,
+  "dependency_sha256": {
+    "inputs/sys.json": "9fe6b7f56d1a1c70510b2076122c528ad6ee5d9423a7550c39f79927db6eb6a4",
+    "inputs/fan.out": "8e6c56201e6b77787c6152c929466f5058651678ca34e7ba405ef6a28a71ce5c",
+    "checkers/symmetry_closure.py": "88cb373b3a8e5023c1aae6f2880d92c2d75f39976c3cc882eecd9bdc1ca0bf4e",
+    "results/structural_verification.json": "396c92ede4b3fef0d72839e6c2bb169af99ec777d94584131286ab71f1dcfece",
+    "results/ratio325_transfer_verification.json": "d624d2005782cb530b0bbfd4880c6b59376d8012995232eabe5522f65796c0e5",
+    "results/cell_binomial_certificates.json": "3eeb534c3641bf39e903b029ac29d915fa7a64c1cb9cdf7608b56c7d034c9d0c",
+    "results/equality_certificates.json": "dd4ee5d7bddb69a0a116c365b863e8c5aaffff2ee4da646e71fe466cbf570209",
+    "results/shifted_certificates.json": "630899ccdc4a748053c4eaecfc565bcf632b47a784f1e289a33f3a56c2c11db4",
+    "results/reduction_certificates.json": "7cf466730cedebd74562300e596f7a55b0b88f8fc92cd1f897e85ac84fab21c7",
+    "results/target16_certificates.json": "de189cd959772eaf31092c8506f168d75fd9d21a0cc02c352d275a0cfde36b46",
+    "results/target301_certificates.json": "57b9c69ba5dfa359b8a4f9aa4f92db51b987579717a2d05ef88f01679c516e5d",
+    "results/pair_certificates.json": "1c10414e9a09ab9809d2fdce03aafc12ae69e294169b296d4886eebb182276cd",
+    "results/transfer_certificates.json": "325d96b920da6439d16fa7f9674892fc00a8434d3436d30bf253b5baea2fb6ae",
+    "results/pair2_certificates.json": "471379806fcc385c070e00ebadc6c259576bc846f38dd3332ef11227e27bb625",
+    "results/transfer2_certificates.json": "3991cfe58215c91507f9cb1a1983d2741bcf8bcc2e650d27157fabb15d6966e7",
+    "results/target247_certificates.json": "60939e0f061303948d6df7cce0634d82302343cf7f2dbb61e96c84f2a21b84c9",
+    "results/target279_certificates.json": "001b99adf9d32f9b3068c136ca44ab3b727aa2077124ec154053e64445147275",
+    "results/target897_certificates.json": "eeb4b5381f1b4c878257ba7dd978636380ae86b2d9e853422058534298a1d0cd",
+    "results/transfer897_certificates.json": "a3d5a600613abe79e486d882ec0f086f46abe244578518237ebc7db40676dda4"
+  },
+  "scope": "Exact full-system symmetries and positively proportional interior weights. Generic conditions must be parameter-permuted, not discarded. Not a fan-completeness proof."
+}
