@@ -1,0 +1,99 @@
+{
+  "input_sha256": {
+    "sys.json": "9fe6b7f56d1a1c70510b2076122c528ad6ee5d9423a7550c39f79927db6eb6a4",
+    "fan.out": "8e6c56201e6b77787c6152c929466f5058651678ca34e7ba405ef6a28a71ce5c"
+  },
+  "certificates": [
+    {
+      "ray_index": 897,
+      "weight": [
+        4,
+        0,
+        0,
+        4,
+        0,
+        1,
+        -2,
+        4,
+        1,
+        0
+      ],
+      "generators": [
+        13,
+        1,
+        4,
+        34
+      ],
+      "shifts": [
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          3,
+          0,
+          3
+        ],
+        [
+          3,
+          1,
+          0,
+          3,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          1,
+          0,
+          0,
+          0,
+          3,
+          3,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          2,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          2,
+          0,
+          0
+        ]
+      ],
+      "multipliers": [
+        "2*a + 2*b + 2*c",
+        "2*a + 2*b",
+        "r14**3*(-2*a - 2*b)",
+        "b*(r14**3*(a + b + c) - (a + b)*(r14**3 - 1))"
+      ],
+      "target_exponent": [
+        2,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "parameter_factor": "2*a**2 + 2*a*c - 2*b**2"
+    }
+  ],
+  "scope": "Generic exclusion; positive-mass exceptional locus b^2=a(a+c) unresolved."
+}
