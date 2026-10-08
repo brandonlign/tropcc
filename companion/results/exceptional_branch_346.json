@@ -1,0 +1,14 @@
+{
+  "a_over_c": 4,
+  "forced_t": 1,
+  "forced_h": -2,
+  "ratio_constraints": [
+    "d**3 - 1",
+    "-2*d**2 + e**2 - 2",
+    "B + 2*e**3"
+  ],
+  "first_resultant": "(e - 2)*(e + 2)*(e**4 - 2*e**2 + 4)",
+  "mass_ratio_resultant": "(B - 16)*(B + 16)*(B**2 + 32)**2",
+  "positive_mass_necessary_b_over_c": 16,
+  "scope": "Necessary conditions only. Full original-input branch derivation audit and remaining equation solvability still required."
+}

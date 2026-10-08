@@ -1,0 +1,9 @@
+cff-version: 1.2.0
+message: "Please cite the manuscript when using this work."
+title: "Finiteness of planar five-body central configurations for generic equal-pair masses"
+type: software
+authors:
+  - family-names: Li
+    given-names: Brandon
+repository-code: "https://github.com/brandonlign/tropcc"
+version: 1.2.1
