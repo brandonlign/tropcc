@@ -1,0 +1,17 @@
+{
+  "complete": true,
+  "nonzero_cones": 16438,
+  "dimensions": {
+    "1": 1603,
+    "2": 6110,
+    "3": 6525,
+    "4": 2200
+  },
+  "facets_checked": 44998,
+  "normal_regions_equal": true,
+  "closed_under_faces": true,
+  "rays_extreme_and_primitive": true,
+  "full_fan_symmetry_checked": true,
+  "fan_sha256": "8e6c56201e6b77787c6152c929466f5058651678ca34e7ba405ef6a28a71ce5c",
+  "system_sha256": "9fe6b7f56d1a1c70510b2076122c528ad6ee5d9423a7550c39f79927db6eb6a4"
+}
