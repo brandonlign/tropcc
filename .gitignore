@@ -1,0 +1,17 @@
+__pycache__/
+*.py[cod]
+.venv/
+.DS_Store
+logs/
+*.aux
+*.log
+*.out
+*.toc
+*.synctex.gz
+!data/fan.out
+!companion/inputs/fan.out
+verifier/data/fan062.out
+data/exact/
+data/lemS/
+certificates.tar.xz
+tmp/

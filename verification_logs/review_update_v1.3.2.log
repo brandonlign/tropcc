@@ -1,0 +1,92 @@
+Tropcc v1.3.2: checks affected by the review revisions
+The full v1.3.1 proof replay remains recorded in full_replay_v1.3.1.log.
+This is a targeted replay, not a new run of the entire proof pipeline.
+RUN verifier/review_checks.py
+PASS elimination inputs 334
+PASS elimination inputs 49
+PASS homogeneous mass reduction (a,b) -> (a/b,1)
+PASS odd-order nonsquare and primitive phi: irreducibility by Gauss
+PASS negative control: empty special fiber but generic solutions; star detects escape
+PASS finite-field negative control: no F_3 torus root, but roots over its closure
+ALL PASS
+EXIT 0; elapsed 0.53 seconds
+RUN verifier/verify_companion.py
+PASS mass homogeneity: c=1 reduction is valid
+PASS Laurent batch cell_binomial 7488
+PASS Laurent batch equality 1961
+PASS Laurent batch shifted 24
+PASS Laurent batch reduction 7
+PASS Laurent batch target16 11
+PASS Laurent batch target301 11
+PASS Laurent batch pair 3
+PASS Laurent batch transfer 13
+PASS Laurent batch pair2 5
+PASS Laurent batch transfer2 23
+PASS Laurent batch target247 8
+PASS Laurent batch target279 8
+PASS Laurent batch target897 1
+PASS Laurent batch transfer897 3
+RUN verify_structural.py
+ut branch derivation audit and remaining equation solvability still required.'}
+{'cell': 346, 'original_input_initials_recomputed': True, 'subsystem_consequences_verified': True, 'CM_and_AC_remainders_verified': True, 'ratio_resultant_verified': True, 'independent_specialized_sylvester_determinant': '50625', 'necessary_mass_polynomial': '(-a + 4*c)*(a + 4*c)*(a**2 + 4*c**2)**2*(a**4 + 4*a**3*c + 6*a**2*c**2 + 3*a*c**3 + c**4)*(a**8 - a**7*c + a**6*c**2 - a**4*c**4 + 8*a**3*c**5 + 3*a**2*c**6 - 3*a*c**7 + c**8)', 'nonvanishing_assumptions': ['a', 'c', 'all ten distances'], 'derived_nonvanishing': ['1+t^3 (from H and nonzero c,h)', '1+t (divides 1+t^3)'], 'conclusion': 'The original initial-generator system at cell 346 has no torus solution over Q(a,b,c); for fixed masses the nonzero resultant is a sufficient exclusion condition with a*c != 0.'}
+{'cell': 346, 'original_initial_branch_reductions_verified': True, 'positive_mass_exceptional_ratios': {'a/c': 4, 'b/c': 16}, 'forced_distance_ratios': {'r14/r13': 1, 'r34/r13': -2}, 'final_generator_8': '-72*c*r13**4*r35**2', 'conclusion': 'Combined with audited ratio resultant and Sturm argument, cell 346 is excluded for ALL positive a,b,c. No torus solution of its initial-generator system exists for those masses.', 'scope': 'One cell only; uses exact elimination and branch reasoning, not yet a single exported Laurent identity.'}
+Verified symmetries: 8 orbit cells: [346, 399, 682, 1554]
+STRUCTURAL PROOF VERIFIED [346, 399, 682, 1554]
+
+RUN verify_ratio325_transfer.py
+{'cell': 325, 'used_generators': [1, 2, 8], 'ratio_variables': {'T': 'r14/r13', 'U': 'r34/r13', 'A': 'a/b'}, 'necessary_mass_polynomial': '(16*a**2-b**2)*(4*a**2+b**2)', 'positive_mass_necessary_condition': 'b=4*a', 'positive_mass_forced_distance_ratios': {'r14/r13': 1, 'r34/r13': -2}, 'scope': 'Necessary conditions only; exceptional b=4a not resolved by this subsystem. No full torus solution claimed.', 'input_sha256': {'sys.json': '9fe6b7f56d1a1c70510b2076122c528ad6ee5d9423a7550c39f79927db6eb6a4', 'fan.out': '8e6c56201e6b77787c6152c929466f5058651678ca34e7ba405ef6a28a71ce5c'}}
+Verified coefficient-level matches: 2944 cells: 1528
+
+RUN audit_symmetry_closure.py
+{'verified_records': 443, 'closure_sha256': '9df1d18200af58d71a3b6493ad550c9881427173632010e1f7f0a219ef657682', 'auditor_sha256': 'f5678119d454ac4126101a13383f157e4f8f412b6af94437103786bfbb401762', 'scope': 'Checks content provenance, positive proportionality and noncircular source types; polynomial-system symmetry itself is verified by symmetry_closure.py.'}
+
+RUN verify_equations.py
+{'matched': 35, 'failures': [], 'unmatched_formulas': [], 'elapsed_seconds': 1.2839449160001095, 'normalization': 'Distance monomial unit and nonzero rational scalar only; mass factors not removed.'}
+
+RUN audit_cells.py
+{
+  "ray_count": 1603,
+  "nonzero_cells": 16438,
+  "polynomials": 35,
+  "ray_support_failures": 0,
+  "cell_support_failures": 0,
+  "certificate_weights_match_cell_sums": true,
+  "lineality_dimension_recorded": [
+    "0"
+  ],
+  "scope": "Exact max-normal support compatibility, not completeness or irredundancy of fan."
+}
+
+ALL PASS companion generic exclusions: 10965
+EXIT 0; elapsed 43.02 seconds
+RUN verifier/mass_factor_inventory.py --output data/mass_factor_inventory.json
+Factored 0 of 55810
+Factored 5000 of 55810
+Factored 10000 of 55810
+Factored 15000 of 55810
+Factored 20000 of 55810
+Factored 25000 of 55810
+Factored 30000 of 55810
+Factored 35000 of 55810
+Factored 40000 of 55810
+Factored 45000 of 55810
+Factored 50000 of 55810
+Factored 55000 of 55810
+PASS factor reconstruction and exact positive witnesses: {'positive_zero_by_continuity': 393, 'nonvanishing_same_sign_coefficients': 295, 'undetermined': 82, 'positive_zero': 28}
+Companion irreducible factors: 22
+Conditional-transfer irreducible factors: 6
+EXIT 0; elapsed 77.33 seconds
+RUN verifier/cone_accounting.py
+PASS disjoint accounting: {'Laurent identities': 5258, 'Laurent/structural companion': 10965, 'Additional symmetry transport': 4, 'Elimination': 25, 'Modular stars': 16, 'Scaling ray': 1, 'Resultant specialization': 8, 'Single-term virial': 57, 'Split trees': 6}
+Laurent identities 1562 representatives; see JSON
+Additional symmetry transport 2 representatives; 353:2, 3097:2
+Elimination 11 representatives; 49:2, 218:2, 334:1, 1767:2, 2171:4, 2174:2, 2175:2, 2345:2, 2885:4, 3494:2, 3545:2
+Modular stars 6 representatives; 50:4, 81:2, 121:4, 206:2, 220:2, 316:2
+Scaling ray 1 representatives; 79:1
+Resultant specialization 2 representatives; 227:4, 2440:4
+Single-term virial 23 representatives; 280:4, 1046:1, 1095:1, 2173:2, 2178:4, 2181:2, 2518:1, 2519:2, 2520:4, 2526:1, 2555:1, 3425:1, 3544:4, 3551:2, 3645:4, 6732:1, 8584:4, 8587:2, 8600:4, 9100:2, 9105:4, 10181:2, 10381:4
+Split trees 2 representatives; 378:2, 427:4
+EXIT 0; elapsed 0.36 seconds
+PASS all 1865 installed certificate hashes match the unchanged manifest
+PASS both full transfer polynomials, mass exchange, exceptional-line controls, and factor reconstruction
+ALL PASS targeted v1.3.2 review checks

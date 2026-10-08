@@ -1,0 +1,21 @@
+{
+  "verified": true,
+  "positive_mass_cells": [
+    346,
+    399,
+    682,
+    1554
+  ],
+  "proof_type": "Exact elimination, positive-mass Sturm classification, exceptional-branch contradiction, polynomial-system symmetries",
+  "dependency_sha256": {
+    "checkers/eliminate_ratio_346.py": "d1e4ea21fdeca92ec42767f473bb15f35b5bccd6770c4264f2c312e6a6070be3",
+    "checkers/audit_ratio_346.py": "3032824e2ca8a97609e7306f9ffda13921b711d55e9b5a2485c702c3610acc16",
+    "checkers/sturm_mass_factor.py": "bc7d3af340aafb9b7e7ef0fe54654dc069e4b270af32e46ac62afe086c9b6776",
+    "checkers/exceptional_branch_346.py": "6b8ef03b8d8208b46a26b8b4aa81b6b85b5b45eaca9930cf5411cc4a08b0b2dd",
+    "checkers/audit_exceptional_346.py": "519fb3c522ae303b522d26c26cca204f71cc512090be20cccf49124dbeabe544",
+    "checkers/symmetry_346.py": "0122649faf08c4dcc92592afe1a9a025ccb08abf4a50bc84f627471900132154",
+    "inputs/sys.json": "9fe6b7f56d1a1c70510b2076122c528ad6ee5d9423a7550c39f79927db6eb6a4",
+    "inputs/fan.out": "8e6c56201e6b77787c6152c929466f5058651678ca34e7ba405ef6a28a71ce5c"
+  },
+  "scope": "No assertion of complete fan coverage or overall finiteness."
+}

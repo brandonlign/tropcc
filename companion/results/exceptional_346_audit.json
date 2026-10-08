@@ -1,0 +1,15 @@
+{
+  "cell": 346,
+  "original_initial_branch_reductions_verified": true,
+  "positive_mass_exceptional_ratios": {
+    "a/c": 4,
+    "b/c": 16
+  },
+  "forced_distance_ratios": {
+    "r14/r13": 1,
+    "r34/r13": -2
+  },
+  "final_generator_8": "-72*c*r13**4*r35**2",
+  "conclusion": "Combined with audited ratio resultant and Sturm argument, cell 346 is excluded for ALL positive a,b,c. No torus solution of its initial-generator system exists for those masses.",
+  "scope": "One cell only; uses exact elimination and branch reasoning, not yet a single exported Laurent identity."
+}
