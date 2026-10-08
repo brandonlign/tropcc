@@ -1,0 +1,24 @@
+{
+  "cell": 325,
+  "used_generators": [
+    1,
+    2,
+    8
+  ],
+  "ratio_variables": {
+    "T": "r14/r13",
+    "U": "r34/r13",
+    "A": "a/b"
+  },
+  "necessary_mass_polynomial": "(16*a**2-b**2)*(4*a**2+b**2)",
+  "positive_mass_necessary_condition": "b=4*a",
+  "positive_mass_forced_distance_ratios": {
+    "r14/r13": 1,
+    "r34/r13": -2
+  },
+  "scope": "Necessary conditions only; exceptional b=4a not resolved by this subsystem. No full torus solution claimed.",
+  "input_sha256": {
+    "sys.json": "9fe6b7f56d1a1c70510b2076122c528ad6ee5d9423a7550c39f79927db6eb6a4",
+    "fan.out": "8e6c56201e6b77787c6152c929466f5058651678ca34e7ba405ef6a28a71ce5c"
+  }
+}

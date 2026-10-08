@@ -1,0 +1,60 @@
+{
+  "complete": true,
+  "solver": "Yices 2.7.0\nCopyright SRI International.\nLinked with GMP 6.3.0\nCopyright Free Software Foundation, Inc.\nBuild date: 2025-09-11\nPlatform: arm-apple-darwin25.0.0 (release)\nRevision: unknown",
+  "cases": [
+    {
+      "case": 0,
+      "coordinate": 0,
+      "sign": -1,
+      "result": "unsat",
+      "seconds": 202.22666654099885,
+      "query_sha256": "6f64c6661ed43640e59652ade3e1121415e5820b827259fd68bde627a2e28066"
+    },
+    {
+      "case": 1,
+      "coordinate": 0,
+      "sign": 1,
+      "result": "unsat",
+      "seconds": 264.893438957999,
+      "query_sha256": "cd7883f1cc946efd64b82a1a1a5a35411a569a76e5a92e52d80f4aae9f7c1dd3"
+    },
+    {
+      "case": 2,
+      "coordinate": 1,
+      "sign": -1,
+      "result": "unsat",
+      "seconds": 226.21347979200073,
+      "query_sha256": "d0fdfe9e6174875d8bc0cd90e7a30a59a65af588ef205fcf74962a186a37a7ed"
+    },
+    {
+      "case": 3,
+      "coordinate": 1,
+      "sign": 1,
+      "result": "unsat",
+      "seconds": 214.95303000000058,
+      "query_sha256": "78abf534b670d6f014a80a0bf944a461f83d5219e5e6b6e0babf6243fd004995"
+    },
+    {
+      "case": 4,
+      "coordinate": 3,
+      "sign": -1,
+      "result": "unsat",
+      "seconds": 205.09106441699987,
+      "query_sha256": "9b9fae3a9ec843a87a12a2605064c536d0011bc02f09e6726cee0a8c8314a7d2"
+    },
+    {
+      "case": 5,
+      "coordinate": 3,
+      "sign": 1,
+      "result": "unsat",
+      "seconds": 345.47306408299846,
+      "query_sha256": "36248a86386f823952ca4d6c49f440aeea4b777c02eedb2b559b4413caf47a3c"
+    }
+  ],
+  "fan_sha256": "8e6c56201e6b77787c6152c929466f5058651678ca34e7ba405ef6a28a71ce5c",
+  "system_sha256": "9fe6b7f56d1a1c70510b2076122c528ad6ee5d9423a7550c39f79927db6eb6a4",
+  "base_query_sha256": "18019f12bf14bc087307cbd3f4c910067888558d86106b08672fe8a2ec15b7ab",
+  "halfspaces_regenerated_and_matched": true,
+  "execution": "Six separate normalized case invocations; each requires UNSAT.",
+  "cardinality_encoding": "At least one maximum term, and every maximum term has a different maximum term."
+}

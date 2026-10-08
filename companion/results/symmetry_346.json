@@ -1,0 +1,224 @@
+{
+  "source_cell": 346,
+  "symmetries": [
+    {
+      "body_permutation_0based": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "exchange_a_b": false,
+      "full_polynomial_system_invariant": true,
+      "target_weight": [
+        -2,
+        -2,
+        -2,
+        -2,
+        1,
+        1,
+        -2,
+        -2,
+        1,
+        1
+      ],
+      "matching_cells": [
+        346
+      ]
+    },
+    {
+      "body_permutation_0based": [
+        0,
+        1,
+        3,
+        2,
+        4
+      ],
+      "exchange_a_b": false,
+      "full_polynomial_system_invariant": true,
+      "target_weight": [
+        -2,
+        -2,
+        -2,
+        -2,
+        1,
+        1,
+        -2,
+        -2,
+        1,
+        1
+      ],
+      "matching_cells": [
+        346
+      ]
+    },
+    {
+      "body_permutation_0based": [
+        1,
+        0,
+        2,
+        3,
+        4
+      ],
+      "exchange_a_b": false,
+      "full_polynomial_system_invariant": true,
+      "target_weight": [
+        -2,
+        1,
+        1,
+        -2,
+        -2,
+        -2,
+        -2,
+        -2,
+        1,
+        1
+      ],
+      "matching_cells": [
+        682
+      ]
+    },
+    {
+      "body_permutation_0based": [
+        1,
+        0,
+        3,
+        2,
+        4
+      ],
+      "exchange_a_b": false,
+      "full_polynomial_system_invariant": true,
+      "target_weight": [
+        -2,
+        1,
+        1,
+        -2,
+        -2,
+        -2,
+        -2,
+        -2,
+        1,
+        1
+      ],
+      "matching_cells": [
+        682
+      ]
+    },
+    {
+      "body_permutation_0based": [
+        2,
+        3,
+        0,
+        1,
+        4
+      ],
+      "exchange_a_b": true,
+      "full_polynomial_system_invariant": true,
+      "target_weight": [
+        -2,
+        -2,
+        1,
+        1,
+        -2,
+        1,
+        1,
+        -2,
+        -2,
+        -2
+      ],
+      "matching_cells": [
+        1554
+      ]
+    },
+    {
+      "body_permutation_0based": [
+        2,
+        3,
+        1,
+        0,
+        4
+      ],
+      "exchange_a_b": true,
+      "full_polynomial_system_invariant": true,
+      "target_weight": [
+        -2,
+        -2,
+        1,
+        1,
+        -2,
+        1,
+        1,
+        -2,
+        -2,
+        -2
+      ],
+      "matching_cells": [
+        1554
+      ]
+    },
+    {
+      "body_permutation_0based": [
+        3,
+        2,
+        0,
+        1,
+        4
+      ],
+      "exchange_a_b": true,
+      "full_polynomial_system_invariant": true,
+      "target_weight": [
+        -2,
+        1,
+        -2,
+        1,
+        1,
+        -2,
+        1,
+        -2,
+        -2,
+        -2
+      ],
+      "matching_cells": [
+        399
+      ]
+    },
+    {
+      "body_permutation_0based": [
+        3,
+        2,
+        1,
+        0,
+        4
+      ],
+      "exchange_a_b": true,
+      "full_polynomial_system_invariant": true,
+      "target_weight": [
+        -2,
+        1,
+        -2,
+        1,
+        1,
+        -2,
+        1,
+        -2,
+        -2,
+        -2
+      ],
+      "matching_cells": [
+        399
+      ]
+    }
+  ],
+  "orbit_cells": [
+    346,
+    399,
+    682,
+    1554
+  ],
+  "input_sha256": {
+    "sys.json": "9fe6b7f56d1a1c70510b2076122c528ad6ee5d9423a7550c39f79927db6eb6a4",
+    "fan.out": "8e6c56201e6b77787c6152c929466f5058651678ca34e7ba405ef6a28a71ce5c"
+  },
+  "scope": "All positive masses preserved by parameter permutation; each listed cell has a positive-proportional transformed interior weight."
+}
