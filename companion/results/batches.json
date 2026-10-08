@@ -1,0 +1,60 @@
+{
+  "batches": [
+    {
+      "path": "results/cell_binomial_certificates.json",
+      "sha256": "3eeb534c3641bf39e903b029ac29d915fa7a64c1cb9cdf7608b56c7d034c9d0c"
+    },
+    {
+      "path": "results/equality_certificates.json",
+      "sha256": "dd4ee5d7bddb69a0a116c365b863e8c5aaffff2ee4da646e71fe466cbf570209"
+    },
+    {
+      "path": "results/shifted_certificates.json",
+      "sha256": "630899ccdc4a748053c4eaecfc565bcf632b47a784f1e289a33f3a56c2c11db4"
+    },
+    {
+      "path": "results/reduction_certificates.json",
+      "sha256": "7cf466730cedebd74562300e596f7a55b0b88f8fc92cd1f897e85ac84fab21c7"
+    },
+    {
+      "path": "results/target16_certificates.json",
+      "sha256": "de189cd959772eaf31092c8506f168d75fd9d21a0cc02c352d275a0cfde36b46"
+    },
+    {
+      "path": "results/target301_certificates.json",
+      "sha256": "57b9c69ba5dfa359b8a4f9aa4f92db51b987579717a2d05ef88f01679c516e5d"
+    },
+    {
+      "path": "results/pair_certificates.json",
+      "sha256": "1c10414e9a09ab9809d2fdce03aafc12ae69e294169b296d4886eebb182276cd"
+    },
+    {
+      "path": "results/transfer_certificates.json",
+      "sha256": "325d96b920da6439d16fa7f9674892fc00a8434d3436d30bf253b5baea2fb6ae"
+    },
+    {
+      "path": "results/pair2_certificates.json",
+      "sha256": "471379806fcc385c070e00ebadc6c259576bc846f38dd3332ef11227e27bb625"
+    },
+    {
+      "path": "results/transfer2_certificates.json",
+      "sha256": "3991cfe58215c91507f9cb1a1983d2741bcf8bcc2e650d27157fabb15d6966e7"
+    },
+    {
+      "path": "results/target247_certificates.json",
+      "sha256": "60939e0f061303948d6df7cce0634d82302343cf7f2dbb61e96c84f2a21b84c9"
+    },
+    {
+      "path": "results/target279_certificates.json",
+      "sha256": "001b99adf9d32f9b3068c136ca44ab3b727aa2077124ec154053e64445147275"
+    },
+    {
+      "path": "results/target897_certificates.json",
+      "sha256": "eeb4b5381f1b4c878257ba7dd978636380ae86b2d9e853422058534298a1d0cd"
+    },
+    {
+      "path": "results/transfer897_certificates.json",
+      "sha256": "a3d5a600613abe79e486d882ec0f086f46abe244578518237ebc7db40676dda4"
+    }
+  ]
+}

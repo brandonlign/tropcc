@@ -1,0 +1,67 @@
+{
+  "complete": true,
+  "method": "Exact cddlib/GMP double description and Z3 quantifier-free rational linear arithmetic",
+  "z3_version": "5.1.0",
+  "fan_sha256": "8e6c56201e6b77787c6152c929466f5058651678ca34e7ba405ef6a28a71ce5c",
+  "system_sha256": "9fe6b7f56d1a1c70510b2076122c528ad6ee5d9423a7550c39f79927db6eb6a4",
+  "smt2_sha256": "e1a0b070794824876e82c851f1e0ac118881b698b59bda35cb0f4128c590dcf6",
+  "maximal_cones": 3120,
+  "symmetries_checked": true,
+  "negative_control": "Complete toy fan UNSAT; remove one ray -> SAT",
+  "cases": [
+    {
+      "case": 0,
+      "coordinate": 0,
+      "sign": -1,
+      "algorithm": 2,
+      "result": "unsat",
+      "seconds": 224.40901487500014,
+      "stabilizer_inequalities_used": false
+    },
+    {
+      "case": 1,
+      "coordinate": 0,
+      "sign": 1,
+      "algorithm": 2,
+      "result": "unsat",
+      "seconds": 196.36425583399978,
+      "stabilizer_inequalities_used": true
+    },
+    {
+      "case": 2,
+      "coordinate": 1,
+      "sign": -1,
+      "algorithm": 2,
+      "result": "unsat",
+      "seconds": 229.2298960420012,
+      "stabilizer_inequalities_used": false
+    },
+    {
+      "case": 3,
+      "coordinate": 1,
+      "sign": 1,
+      "algorithm": 2,
+      "result": "unsat",
+      "seconds": 146.39802129099917,
+      "stabilizer_inequalities_used": true
+    },
+    {
+      "case": 4,
+      "coordinate": 3,
+      "sign": -1,
+      "algorithm": 2,
+      "result": "unsat",
+      "seconds": 295.07696479100014,
+      "stabilizer_inequalities_used": false
+    },
+    {
+      "case": 5,
+      "coordinate": 3,
+      "sign": 1,
+      "algorithm": 2,
+      "result": "unsat",
+      "seconds": 191.01000779199967,
+      "stabilizer_inequalities_used": true
+    }
+  ]
+}
