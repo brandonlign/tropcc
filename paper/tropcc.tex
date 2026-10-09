@@ -402,7 +402,7 @@ By homogeneity we may assume $\max_j|w_j|=1$. The order-eight symmetry group has
 \section{Code and data}\label{sec:repro}
 The source code, verifier, and certificate manifest are available at
 \begin{center}\url{https://github.com/brandonlign/tropcc}\end{center}
-and archived at \url{https://doi.org/10.5281/zenodo.23248651}~\citep{TropCC}. The complete certificate archive, \path{certificates.tar.xz}, is hosted separately as an asset of the GitHub release \texttt{v1.3.9}; its SHA-256 digest and the individual certificate digests are listed in \path{certificate_manifest.json}. The README gives the commands for a full replay. Table~\ref{tab:components} lists the main components and their locations.
+and archived at \url{https://doi.org/10.5281/zenodo.23251220}~\citep{TropCC}. The complete certificate archive, \path{certificates.tar.xz}, is available in the same Zenodo record and as an asset of the GitHub release \texttt{v1.4.0}; its SHA-256 digest and the individual certificate digests are listed in \path{certificate_manifest.json}. The README gives the commands for a full replay. Table~\ref{tab:components} lists the main components and their locations.
 
 \begin{table}[ht]
 \centering\small
@@ -427,7 +427,7 @@ Negative controls&\path{verifier/review_checks.py}\\
 \end{table}
 
 \section*{Statements and declarations}
-\topic{Data availability.} The source code, verification package, and certificate manifest are archived at \url{https://doi.org/10.5281/zenodo.23248651} (release \texttt{v1.3.9}). The full certificate archive is openly available as \path{certificates.tar.xz} at \url{https://github.com/brandonlign/tropcc/releases/tag/v1.3.9}. Running \texttt{python scripts/fetch\_certificates.py} downloads the archive and verifies its hashes; \texttt{python scripts/verify\_all.py} then replays the proof.
+\topic{Data availability.} The source code, verification package, certificate manifest, and full certificate archive are archived at \url{https://doi.org/10.5281/zenodo.23251220} (release \texttt{v1.4.0}). The full certificate archive is openly available as \path{certificates.tar.xz} at \url{https://github.com/brandonlign/tropcc/releases/tag/v1.4.0}. Running \texttt{python scripts/fetch\_certificates.py} downloads the archive and verifies its hashes; \texttt{python scripts/verify\_all.py} then replays the proof.
 
 \topic{Funding.} No funding was received for this work.
 
@@ -592,7 +592,7 @@ up to a unit in $\Q(a)$, with $e>0$; $\operatorname{prim}_s$ removes parameter c
 \bibitem[Jensen(2026)]{gfan} A.~Jensen, Gfan, a software system for Gr\"obner fans and tropical varieties, version 0.7, \url{https://users-math.au.dk/jensen/software/gfan/gfan.html}. Accessed October 7, 2026.
 \bibitem[Jensen and Leykin(2025)]{JL} A.~Jensen, A.~Leykin, Smale's 6th problem for generic masses, J.\ Exp.\ Math.\ 1 (2025), no.~2, 306--314; \url{https://doi.org/10.56994/JXM.001.002.006}.
 \bibitem[Lee and Santoprete(2009)]{LS} T.-L.~Lee, M.~Santoprete, Central configurations of the five-body problem with equal masses, Celestial Mech.\ Dynam.\ Astronom.\ 104 (2009), 369--381. \url{https://doi.org/10.1007/s10569-009-9219-0}.
-\bibitem[Li and Yeroushalmi(2026)]{TropCC} B.~Li, E.~Yeroushalmi, Finiteness of planar five-body central configurations for generic equal-pair masses: source and verification package, version v1.3.9, Zenodo (2026). \url{https://doi.org/10.5281/zenodo.23248651}.
+\bibitem[Li and Yeroushalmi(2026)]{TropCC} B.~Li, E.~Yeroushalmi, Finiteness of planar five-body central configurations for generic equal-pair masses: source and verification package, version v1.4.0, Zenodo (2026). \url{https://doi.org/10.5281/zenodo.23251220}.
 \bibitem[Maclagan and Sturmfels(2015)]{MS} D.~Maclagan, B.~Sturmfels, Introduction to Tropical Geometry, AMS GSM 161, 2015.
 \bibitem[Moczurad and Zgliczy\'nski(2019)]{MZ19} M.~Moczurad, P.~Zgliczy\'nski, Central configurations in planar $n$-body problem with equal masses for $n=5,6,7$, Celestial Mech.\ Dynam.\ Astronom.\ 131 (2019), 46; arXiv:1812.07279. \url{https://doi.org/10.1007/s10569-019-9920-6}.
 \bibitem[Shoaib et~al.(2016)Shoaib, Kashif, and Sivasankaran]{SKS} M.~Shoaib, A.~R.~Kashif, A.~Sivasankaran, Planar central configurations of symmetric five-body problems with two pairs of equal masses, Advances in Astronomy (2016), Article 9897681. \url{https://doi.org/10.1155/2016/9897681}.

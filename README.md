@@ -2,7 +2,7 @@
 
 **Brandon Li · Ethan Yeroushalmi**
 
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.23197573.svg)](https://doi.org/10.5281/zenodo.23197573)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.23251220.svg)](https://doi.org/10.5281/zenodo.23251220)
 
 **Paper:** [`paper/tropcc.pdf`](paper/tropcc.pdf) · [LaTeX source](paper/tropcc.tex) · [Certificate map](CERTIFICATES.md)
 
@@ -41,7 +41,7 @@ python scripts/fetch_certificates.py   # downloads and hash-checks the certifica
 python scripts/verify_all.py           # full replay
 ```
 
-The certificate archive (167 MB) is attached to the [v1.3.9 release](https://github.com/brandonlign/tropcc/releases/tag/v1.3.9). `fetch_certificates.py` downloads it, checks its SHA-256 digest and checks every extracted file against `certificate_manifest.json`. For an offline copy, pass `--archive /path/to/certificates.tar.xz`.
+The certificate archive (167 MB) is available in the [Zenodo archive](https://doi.org/10.5281/zenodo.23251220) and attached to the [v1.4.0 release](https://github.com/brandonlign/tropcc/releases/tag/v1.4.0). `fetch_certificates.py` downloads it, checks its SHA-256 digest and checks every extracted file against `certificate_manifest.json`. For an offline copy, pass `--archive /path/to/certificates.tar.xz`.
 
 A successful run rechecks every certificate and every symmetry transport. It then rebuilds the coverage from scratch and confirms the 98-cone residual and the half-space pairing. Use the full replay, not `coverage.py --fast`, which trusts cached markers.
 
@@ -57,7 +57,7 @@ The full replay was rerun on October 8, 2026, at v1.3.8 (commit `eb2645f`) and p
 | Peak memory | about 3.8 GB |
 | Disk | about 1.3 GB after extracting the certificates |
 
-The [current manuscript (v1.3.10)](https://doi.org/10.5281/zenodo.23249007) cites the verified [v1.3.9 package](https://doi.org/10.5281/zenodo.23248651). Its equations, certificates, fan, and computational checkers are unchanged from the recorded full v1.3.8 replay.
+The [v1.4.0 archive](https://doi.org/10.5281/zenodo.23251220) contains the current manuscript, source code, and complete certificate archive. Its equations, certificates, fan, and computational checkers are unchanged from the recorded full v1.3.8 replay.
 
 ## Repository layout
 
@@ -87,6 +87,6 @@ The replay uses exact arithmetic throughout: Python, FLINT (python-flint), and S
 
 ## Citation
 
-The paper cites the verified [v1.3.9 package](https://doi.org/10.5281/zenodo.23248651). The [concept record](https://doi.org/10.5281/zenodo.23197573) covers all versions; `CITATION.cff` intentionally cites that record without a version number. Code is released under the MIT License; the paper under CC BY 4.0.
+The paper and `CITATION.cff` cite the [v1.4.0 archive](https://doi.org/10.5281/zenodo.23251220). Code is released under the MIT License; the paper under CC BY 4.0.
 
 Contact: brandon.li.gn@gmail.com

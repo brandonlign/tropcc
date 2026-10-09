@@ -1,5 +1,5 @@
 cff-version: 1.2.0
-message: "If you use this result or code, please cite the paper. This citation uses the all-versions concept DOI; the manuscript pins the verified v1.3.9 package separately."
+message: "If you use this result or code, please cite the archived paper and verification package."
 title: "Finiteness of planar five-body central configurations for generic equal-pair masses"
 type: software
 authors:
@@ -11,8 +11,9 @@ authors:
     email: eyeroushalmi1@gmail.com
 repository-code: "https://github.com/brandonlign/tropcc"
 license: MIT
-doi: "10.5281/zenodo.23197573"
-date-released: 2026-10-08
+doi: "10.5281/zenodo.23251220"
+version: v1.4.0
+date-released: 2026-10-09
 keywords:
   - central configurations
   - five-body problem
@@ -28,4 +29,4 @@ preferred-citation:
       given-names: Ethan
   title: "Finiteness of planar five-body central configurations for generic equal-pair masses"
   year: 2026
-  doi: "10.5281/zenodo.23197573"
+  doi: "10.5281/zenodo.23251220"

@@ -4,7 +4,7 @@ import argparse, hashlib, json, os, shutil, tarfile, tempfile, urllib.request
 
 ROOT = Path(__file__).resolve().parents[1]
 REPOSITORY = "brandonlign/tropcc"
-RELEASE = "v1.3.9"
+RELEASE = "v1.4.0"
 
 def digest(path):
     h = hashlib.sha256()
