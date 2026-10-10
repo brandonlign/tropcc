@@ -21,14 +21,8 @@ jobs:
           from pathlib import Path
           p = Path('paper/tropcc.tex')
           text = p.read_text()
-          anchor = r'''\topic{Author contributions.} Brandon Li developed the research and computational proof and prepared the manuscript. Ethan Yeroushalmi helped frame the mathematical arguments and contributed to drafting and revising the manuscript.
-
-\appendix'''
-          replacement = r'''\topic{Author contributions.} Brandon Li developed the research and computational proof and prepared the manuscript. Ethan Yeroushalmi helped frame the mathematical arguments and contributed to drafting and revising the manuscript.
-
-\topic{AI declaration.} The authors used generative AI tools, including OpenAI ChatGPT and Anthropic Claude, to assist with literature discovery, manuscript drafting and editing, code generation and review, and exploratory proof development. AI-generated outputs were not treated as mathematical evidence or computational certificates. All claims, citations, code, computations, and mathematical arguments presented in the manuscript were reviewed and verified by the authors, who take full responsibility for the final content.
-
-\appendix'''
+          anchor = "\\topic{Author contributions.} Brandon Li developed the research and computational proof and prepared the manuscript. Ethan Yeroushalmi helped frame the mathematical arguments and contributed to drafting and revising the manuscript.\n\n\\appendix"
+          replacement = "\\topic{Author contributions.} Brandon Li developed the research and computational proof and prepared the manuscript. Ethan Yeroushalmi helped frame the mathematical arguments and contributed to drafting and revising the manuscript.\n\n\\topic{AI declaration.} The authors used generative AI tools, including OpenAI ChatGPT and Anthropic Claude, to assist with literature discovery, manuscript drafting and editing, code generation and review, and exploratory proof development. AI-generated outputs were not treated as mathematical evidence or computational certificates. All claims, citations, code, computations, and mathematical arguments presented in the manuscript were reviewed and verified by the authors, who take full responsibility for the final content.\n\n\\appendix"
           if 'AI declaration.' in text:
               raise SystemExit('AI declaration already present; no patch needed')
           if anchor not in text:
